@@ -15,3 +15,4 @@ Project Structure
 - css/style.css – Website styling
 - js/script.js – D3 visualisation code
 - data – Project datasets
+Website development initiated for Assignment 3B/3C.
