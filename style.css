@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+footer {
+    text-align: center;
+    /* headings 1, 2, 3 and footer will be centred */
+}
+
+.ellipse-box {
+    /* this is a class for styling the box containing the content */
+    width: 80%;
+    /* width of the box */
+    margin: 20px auto;
+    /* the box gets 20px spacing from top and buttom and gets perfectly centred horizontally in the page */
+    padding: 20px;
+    /* this adds 20px of internal space between the content and the border */
+    background: #6a45da;
+    /* background colour of the box */
+    color: white;
+    /* text colour */
+    border-radius: 10%;
+    /* it creates an ellipse (10% radius on borders) */
+    text-align: center;
+    /* everything inside the box will be centred */
+    line-height: 1.6;
+    /* the space between lins will be 1.6 times the font size */
+    font-size: 18px;
+    /* size of the text inside the box */
+}
+
+#list {
+    text-align: left;
+    /* text starts from left */
+    padding-left: 40px;
+    /* space between bullets and border of the box */
+    list-style-position: inside;
+    /* bullets are inside the content box of the list */
+    font-weight: bold;
+    /* make items bold */
+    color: rgb(255, 255, 255);
+    /* text color */
+}
+
+.caption {
+    color: #fffdfd;
+    /* color of the caption's text which is nearly white */
+    margin-top: 5px;
+    /* adds 5px space above the cation separting it from the image */
+    font-style: italic;
+}
+
+#link {
+    color: #fffefe;
+    /* text color of the link is black */
+    font-weight: bold;
+    /* makes the link text bold */
+    transition: all 0.3s ease;
+    /* smooth animation */
+    display: inline-block;
+    /* needed for transform to work properly */
+}
+
+#link:hover {
+    color: #04fb90;
+    /* change color on hover */
+    transform: translateX(15px) scale(1.1);
+    /* move right and enlarge */
+}
+
+.small-box {
+    width: 30%;
+    /* narrower than main box */
+    margin: 10px auto;
+    /* center horizontally and add spacing */
+    padding: 15px;
+    /* space inside the box */
+    background: #6a45da;
+    /* box color */
+    color: white;
+    /* text color */
+    border-radius: 50px;
+    /* rounded corners */
+    text-align: center;
+    /* center the text inside */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    /* optional shadow */
+}
+
