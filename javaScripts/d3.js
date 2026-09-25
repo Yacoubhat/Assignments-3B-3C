@@ -1,6 +1,6 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-const margin = {top: 20, right: 30, bottom: 40, left: 90};
+const margin = {top: 20, right: 30, bottom: 70, left: 90};
 const width = 800 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
 
