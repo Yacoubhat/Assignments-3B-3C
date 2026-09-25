@@ -48,3 +48,7 @@ svg.append("g")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Life Expectancy (Years)");
+
+// Make axis tick numbers larger
+svg.selectAll(".tick text")
+    .style("font-size", "14px");
