@@ -31,7 +31,7 @@ svg.append("g")
     .append("text")
     .attr("x", width / 2)
     .attr("y", 40)
-    .attr("fill", "white")
+    .style("fill", "white")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Healthcare Expenditure per Capita (USD)");
