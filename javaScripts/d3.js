@@ -44,6 +44,7 @@ svg.append("g")
     .attr("x", -height / 2)
     .attr("y", -40)
     .style("fill", "white")
+    .style("font-size", "26px")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Life Expectancy (Years)");
