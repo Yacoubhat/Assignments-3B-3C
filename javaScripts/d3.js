@@ -42,7 +42,7 @@ svg.append("g")
     .attr("transform", "rotate(-90)")
     .attr("x", -height / 2)
     .attr("y", -40)
-    .attr("fill", "white")
+    .style("fill", "white")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Life Expectancy (Years)");
