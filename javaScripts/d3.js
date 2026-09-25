@@ -21,7 +21,8 @@ const yScale = d3.scaleLinear()
     .domain([0, 90]);
 
 const xAxis = d3.axisBottom(xScale)
-    .tickFormat(d3.format("$.0s"));
+    .ticks(8)
+    .tickFormat(d => "$" + (d / 1000) + "k");
 const yAxis = d3.axisLeft(yScale);
 
 
