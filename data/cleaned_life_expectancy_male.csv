@@ -1,0 +1,1276 @@
+Country,Age,Sex,Year,Life Expectancy
+Argentina,0 years,Male,2000,70.5
+Argentina,0 years,Male,2001,70.6
+Argentina,0 years,Male,2002,70.7
+Argentina,0 years,Male,2003,70.8
+Argentina,0 years,Male,2004,71.5
+Argentina,0 years,Male,2005,71.8
+Argentina,0 years,Male,2006,72.0
+Argentina,0 years,Male,2007,71.6
+Argentina,0 years,Male,2008,72.2
+Argentina,0 years,Male,2009,72.4
+Argentina,0 years,Male,2010,72.5
+Argentina,0 years,Male,2011,72.7
+Argentina,0 years,Male,2012,72.9
+Argentina,0 years,Male,2013,73.0
+Argentina,0 years,Male,2014,73.3
+Argentina,0 years,Male,2015,73.4
+Argentina,0 years,Male,2016,73.0
+Argentina,0 years,Male,2017,73.8
+Argentina,0 years,Male,2018,74.0
+Argentina,0 years,Male,2019,74.2
+Argentina,0 years,Male,2020,73.0
+Argentina,0 years,Male,2021,71.1
+Argentina,0 years,Male,2022,73.2
+Argentina,0 years,Male,2023,74.8
+Argentina,0 years,Male,2024,75.0
+Australia,0 years,Male,2000,76.6
+Australia,0 years,Male,2001,77.0
+Australia,0 years,Male,2002,77.4
+Australia,0 years,Male,2003,77.8
+Australia,0 years,Male,2004,78.1
+Australia,0 years,Male,2005,78.5
+Australia,0 years,Male,2006,78.7
+Australia,0 years,Male,2007,79.0
+Australia,0 years,Male,2008,79.2
+Australia,0 years,Male,2009,79.3
+Australia,0 years,Male,2010,79.5
+Australia,0 years,Male,2011,79.7
+Australia,0 years,Male,2012,79.9
+Australia,0 years,Male,2013,80.1
+Australia,0 years,Male,2014,80.3
+Australia,0 years,Male,2015,80.4
+Australia,0 years,Male,2016,80.4
+Australia,0 years,Male,2017,80.5
+Australia,0 years,Male,2018,80.7
+Australia,0 years,Male,2019,80.9
+Australia,0 years,Male,2020,81.2
+Australia,0 years,Male,2021,81.3
+Australia,0 years,Male,2022,81.2
+Australia,0 years,Male,2023,81.1
+Australia,0 years,Male,2024,81.1
+Austria,0 years,Male,2000,75.2
+Austria,0 years,Male,2001,75.6
+Austria,0 years,Male,2002,75.8
+Austria,0 years,Male,2003,75.9
+Austria,0 years,Male,2004,76.4
+Austria,0 years,Male,2005,76.6
+Austria,0 years,Male,2006,77.1
+Austria,0 years,Male,2007,77.4
+Austria,0 years,Male,2008,77.7
+Austria,0 years,Male,2009,77.6
+Austria,0 years,Male,2010,77.8
+Austria,0 years,Male,2011,78.3
+Austria,0 years,Male,2012,78.4
+Austria,0 years,Male,2013,78.6
+Austria,0 years,Male,2014,78.9
+Austria,0 years,Male,2015,78.6
+Austria,0 years,Male,2016,79.1
+Austria,0 years,Male,2017,79.3
+Austria,0 years,Male,2018,79.3
+Austria,0 years,Male,2019,79.5
+Austria,0 years,Male,2020,78.9
+Austria,0 years,Male,2021,78.8
+Austria,0 years,Male,2022,79.0
+Austria,0 years,Male,2023,79.4
+Austria,0 years,Male,2024,79.8
+Belgium,0 years,Male,2000,74.6
+Belgium,0 years,Male,2001,74.9
+Belgium,0 years,Male,2002,75.1
+Belgium,0 years,Male,2003,75.3
+Belgium,0 years,Male,2004,76.0
+Belgium,0 years,Male,2005,76.2
+Belgium,0 years,Male,2006,76.6
+Belgium,0 years,Male,2007,77.1
+Belgium,0 years,Male,2008,76.9
+Belgium,0 years,Male,2009,77.4
+Belgium,0 years,Male,2010,77.5
+Belgium,0 years,Male,2011,78.0
+Belgium,0 years,Male,2012,77.8
+Belgium,0 years,Male,2013,78.1
+Belgium,0 years,Male,2014,78.6
+Belgium,0 years,Male,2015,78.6
+Belgium,0 years,Male,2016,78.8
+Belgium,0 years,Male,2017,79.0
+Belgium,0 years,Male,2018,79.2
+Belgium,0 years,Male,2019,79.6
+Belgium,0 years,Male,2020,78.5
+Belgium,0 years,Male,2021,79.3
+Belgium,0 years,Male,2022,79.6
+Belgium,0 years,Male,2023,80.2
+Belgium,0 years,Male,2024,80.3
+Brazil,0 years,Male,2000,66.3
+Brazil,0 years,Male,2001,66.7
+Brazil,0 years,Male,2002,67.1
+Brazil,0 years,Male,2003,67.6
+Brazil,0 years,Male,2004,68.0
+Brazil,0 years,Male,2005,68.5
+Brazil,0 years,Male,2006,69.0
+Brazil,0 years,Male,2007,69.4
+Brazil,0 years,Male,2008,69.7
+Brazil,0 years,Male,2009,70.1
+Brazil,0 years,Male,2010,70.4
+Brazil,0 years,Male,2011,70.7
+Brazil,0 years,Male,2012,70.9
+Brazil,0 years,Male,2013,71.2
+Brazil,0 years,Male,2014,71.5
+Brazil,0 years,Male,2015,71.8
+Brazil,0 years,Male,2016,71.7
+Brazil,0 years,Male,2017,72.1
+Brazil,0 years,Male,2018,72.4
+Brazil,0 years,Male,2019,72.7
+Brazil,0 years,Male,2020,71.5
+Brazil,0 years,Male,2021,69.8
+Brazil,0 years,Male,2022,71.7
+Brazil,0 years,Male,2023,72.8
+Brazil,0 years,Male,2024,73.0
+Bulgaria,0 years,Male,2000,68.4
+Bulgaria,0 years,Male,2001,68.6
+Bulgaria,0 years,Male,2002,68.8
+Bulgaria,0 years,Male,2003,68.9
+Bulgaria,0 years,Male,2004,69.0
+Bulgaria,0 years,Male,2005,69.0
+Bulgaria,0 years,Male,2006,69.2
+Bulgaria,0 years,Male,2007,69.5
+Bulgaria,0 years,Male,2008,69.8
+Bulgaria,0 years,Male,2009,70.2
+Bulgaria,0 years,Male,2010,70.3
+Bulgaria,0 years,Male,2011,70.7
+Bulgaria,0 years,Male,2012,70.9
+Bulgaria,0 years,Male,2013,71.3
+Bulgaria,0 years,Male,2014,70.9
+Bulgaria,0 years,Male,2015,71.1
+Bulgaria,0 years,Male,2016,71.1
+Bulgaria,0 years,Male,2017,71.1
+Bulgaria,0 years,Male,2018,71.2
+Bulgaria,0 years,Male,2019,71.2
+Bulgaria,0 years,Male,2020,69.6
+Bulgaria,0 years,Male,2021,67.7
+Bulgaria,0 years,Male,2022,70.5
+Bulgaria,0 years,Male,2023,71.9
+Bulgaria,0 years,Male,2024,72.2
+Canada,0 years,Male,2000,76.6
+Canada,0 years,Male,2001,76.9
+Canada,0 years,Male,2002,77.2
+Canada,0 years,Male,2003,77.3
+Canada,0 years,Male,2004,77.7
+Canada,0 years,Male,2005,77.8
+Canada,0 years,Male,2006,78.3
+Canada,0 years,Male,2007,78.3
+Canada,0 years,Male,2008,78.5
+Canada,0 years,Male,2009,78.9
+Canada,0 years,Male,2010,79.2
+Canada,0 years,Male,2011,79.4
+Canada,0 years,Male,2012,79.6
+Canada,0 years,Male,2013,79.7
+Canada,0 years,Male,2014,79.8
+Canada,0 years,Male,2015,79.9
+Canada,0 years,Male,2016,79.9
+Canada,0 years,Male,2017,79.7
+Canada,0 years,Male,2018,79.8
+Canada,0 years,Male,2019,80.1
+Canada,0 years,Male,2020,79.3
+Canada,0 years,Male,2021,79.1
+Canada,0 years,Male,2022,78.9
+Canada,0 years,Male,2023,79.5
+Canada,0 years,Male,2024,80.0
+Chile,0 years,Male,2000,74.0
+Chile,0 years,Male,2001,73.8
+Chile,0 years,Male,2002,74.3
+Chile,0 years,Male,2003,74.5
+Chile,0 years,Male,2004,74.6
+Chile,0 years,Male,2005,75.0
+Chile,0 years,Male,2006,75.5
+Chile,0 years,Male,2007,75.0
+Chile,0 years,Male,2008,75.6
+Chile,0 years,Male,2009,75.8
+Chile,0 years,Male,2010,75.7
+Chile,0 years,Male,2011,76.5
+Chile,0 years,Male,2012,76.6
+Chile,0 years,Male,2013,76.8
+Chile,0 years,Male,2014,77.0
+Chile,0 years,Male,2015,77.3
+Chile,0 years,Male,2016,77.7
+Chile,0 years,Male,2017,78.0
+Chile,0 years,Male,2018,78.3
+Chile,0 years,Male,2019,78.4
+Chile,0 years,Male,2020,77.1
+Chile,0 years,Male,2021,76.4
+Chile,0 years,Male,2022,77.1
+Chile,0 years,Male,2023,78.8
+Chile,0 years,Male,2024,78.9
+Chile,0 years,Male,2025,79.2
+China (People’s Republic of),0 years,Male,2000,69.9
+China (People’s Republic of),0 years,Male,2001,70.2
+China (People’s Republic of),0 years,Male,2002,70.6
+China (People’s Republic of),0 years,Male,2003,70.9
+China (People’s Republic of),0 years,Male,2004,71.3
+China (People’s Republic of),0 years,Male,2005,71.6
+China (People’s Republic of),0 years,Male,2006,71.9
+China (People’s Republic of),0 years,Male,2007,72.3
+China (People’s Republic of),0 years,Male,2008,72.4
+China (People’s Republic of),0 years,Male,2009,72.8
+China (People’s Republic of),0 years,Male,2010,73.2
+China (People’s Republic of),0 years,Male,2011,73.3
+China (People’s Republic of),0 years,Male,2012,73.6
+China (People’s Republic of),0 years,Male,2013,73.9
+China (People’s Republic of),0 years,Male,2014,74.1
+China (People’s Republic of),0 years,Male,2015,74.4
+China (People’s Republic of),0 years,Male,2016,74.6
+China (People’s Republic of),0 years,Male,2017,74.4
+China (People’s Republic of),0 years,Male,2018,75.0
+China (People’s Republic of),0 years,Male,2019,75.3
+China (People’s Republic of),0 years,Male,2020,75.2
+China (People’s Republic of),0 years,Male,2021,75.5
+China (People’s Republic of),0 years,Male,2022,75.5
+China (People’s Republic of),0 years,Male,2023,75.2
+China (People’s Republic of),0 years,Male,2024,75.2
+Colombia,0 years,Male,2000,67.1
+Colombia,0 years,Male,2001,67.6
+Colombia,0 years,Male,2002,68.0
+Colombia,0 years,Male,2003,68.5
+Colombia,0 years,Male,2004,68.9
+Colombia,0 years,Male,2005,69.3
+Colombia,0 years,Male,2006,69.6
+Colombia,0 years,Male,2007,69.9
+Colombia,0 years,Male,2008,70.2
+Colombia,0 years,Male,2009,70.5
+Colombia,0 years,Male,2010,70.8
+Colombia,0 years,Male,2011,71.1
+Colombia,0 years,Male,2012,71.4
+Colombia,0 years,Male,2013,71.7
+Colombia,0 years,Male,2014,71.9
+Colombia,0 years,Male,2015,72.2
+Colombia,0 years,Male,2016,72.5
+Colombia,0 years,Male,2017,72.7
+Colombia,0 years,Male,2018,72.7
+Colombia,0 years,Male,2019,72.9
+Colombia,0 years,Male,2020,71.5
+Colombia,0 years,Male,2021,71.3
+Colombia,0 years,Male,2022,72.0
+Colombia,0 years,Male,2023,73.8
+Colombia,0 years,Male,2024,73.9
+Colombia,0 years,Male,2025,74.1
+Costa Rica,0 years,Male,2000,75.5
+Costa Rica,0 years,Male,2001,75.7
+Costa Rica,0 years,Male,2002,76.0
+Costa Rica,0 years,Male,2003,76.1
+Costa Rica,0 years,Male,2004,76.2
+Costa Rica,0 years,Male,2005,76.4
+Costa Rica,0 years,Male,2006,76.5
+Costa Rica,0 years,Male,2007,76.6
+Costa Rica,0 years,Male,2008,76.8
+Costa Rica,0 years,Male,2009,76.9
+Costa Rica,0 years,Male,2010,76.6
+Costa Rica,0 years,Male,2011,76.6
+Costa Rica,0 years,Male,2012,76.9
+Costa Rica,0 years,Male,2013,77.1
+Costa Rica,0 years,Male,2014,77.2
+Costa Rica,0 years,Male,2015,77.4
+Costa Rica,0 years,Male,2016,77.5
+Costa Rica,0 years,Male,2017,77.6
+Costa Rica,0 years,Male,2018,77.8
+Costa Rica,0 years,Male,2019,77.9
+Costa Rica,0 years,Male,2020,78.1
+Costa Rica,0 years,Male,2021,78.2
+Costa Rica,0 years,Male,2022,78.3
+Costa Rica,0 years,Male,2023,78.4
+Costa Rica,0 years,Male,2024,78.4
+Costa Rica,0 years,Male,2025,78.6
+Croatia,0 years,Male,2001,70.9
+Croatia,0 years,Male,2002,71.0
+Croatia,0 years,Male,2003,71.0
+Croatia,0 years,Male,2004,71.8
+Croatia,0 years,Male,2005,71.7
+Croatia,0 years,Male,2006,72.4
+Croatia,0 years,Male,2007,72.2
+Croatia,0 years,Male,2008,72.3
+Croatia,0 years,Male,2009,72.8
+Croatia,0 years,Male,2010,73.4
+Croatia,0 years,Male,2011,73.8
+Croatia,0 years,Male,2012,73.9
+Croatia,0 years,Male,2013,74.5
+Croatia,0 years,Male,2014,74.6
+Croatia,0 years,Male,2015,74.3
+Croatia,0 years,Male,2016,74.8
+Croatia,0 years,Male,2017,74.8
+Croatia,0 years,Male,2018,74.7
+Croatia,0 years,Male,2019,75.2
+Croatia,0 years,Male,2020,74.5
+Croatia,0 years,Male,2021,73.5
+Croatia,0 years,Male,2022,74.6
+Croatia,0 years,Male,2023,75.4
+Croatia,0 years,Male,2024,76.0
+Czechia,0 years,Male,2000,71.6
+Czechia,0 years,Male,2001,72.0
+Czechia,0 years,Male,2002,72.1
+Czechia,0 years,Male,2003,72.0
+Czechia,0 years,Male,2004,72.5
+Czechia,0 years,Male,2005,72.9
+Czechia,0 years,Male,2006,73.5
+Czechia,0 years,Male,2007,73.8
+Czechia,0 years,Male,2008,74.1
+Czechia,0 years,Male,2009,74.3
+Czechia,0 years,Male,2010,74.5
+Czechia,0 years,Male,2011,74.8
+Czechia,0 years,Male,2012,75.1
+Czechia,0 years,Male,2013,75.2
+Czechia,0 years,Male,2014,75.7
+Czechia,0 years,Male,2015,75.6
+Czechia,0 years,Male,2016,76.0
+Czechia,0 years,Male,2017,76.0
+Czechia,0 years,Male,2018,76.1
+Czechia,0 years,Male,2019,76.3
+Czechia,0 years,Male,2020,75.3
+Czechia,0 years,Male,2021,74.1
+Czechia,0 years,Male,2022,76.1
+Czechia,0 years,Male,2023,76.9
+Czechia,0 years,Male,2024,77.1
+Denmark,0 years,Male,2000,74.5
+Denmark,0 years,Male,2001,74.7
+Denmark,0 years,Male,2002,74.8
+Denmark,0 years,Male,2003,75.0
+Denmark,0 years,Male,2004,75.4
+Denmark,0 years,Male,2005,76.0
+Denmark,0 years,Male,2006,76.1
+Denmark,0 years,Male,2007,76.2
+Denmark,0 years,Male,2008,76.5
+Denmark,0 years,Male,2009,76.9
+Denmark,0 years,Male,2010,77.2
+Denmark,0 years,Male,2011,77.8
+Denmark,0 years,Male,2012,78.1
+Denmark,0 years,Male,2013,78.3
+Denmark,0 years,Male,2014,78.6
+Denmark,0 years,Male,2015,78.8
+Denmark,0 years,Male,2016,78.9
+Denmark,0 years,Male,2017,79.1
+Denmark,0 years,Male,2018,79.0
+Denmark,0 years,Male,2019,79.4
+Denmark,0 years,Male,2020,79.6
+Denmark,0 years,Male,2021,79.6
+Denmark,0 years,Male,2022,79.4
+Denmark,0 years,Male,2023,79.7
+Denmark,0 years,Male,2024,80.2
+Estonia,0 years,Male,2000,65.6
+Estonia,0 years,Male,2001,65.2
+Estonia,0 years,Male,2002,65.6
+Estonia,0 years,Male,2003,66.4
+Estonia,0 years,Male,2004,66.7
+Estonia,0 years,Male,2005,67.6
+Estonia,0 years,Male,2006,67.6
+Estonia,0 years,Male,2007,67.5
+Estonia,0 years,Male,2008,68.9
+Estonia,0 years,Male,2009,70.0
+Estonia,0 years,Male,2010,70.9
+Estonia,0 years,Male,2011,71.4
+Estonia,0 years,Male,2012,71.4
+Estonia,0 years,Male,2013,72.8
+Estonia,0 years,Male,2014,72.3
+Estonia,0 years,Male,2015,73.1
+Estonia,0 years,Male,2016,73.2
+Estonia,0 years,Male,2017,73.7
+Estonia,0 years,Male,2018,73.9
+Estonia,0 years,Male,2019,74.4
+Estonia,0 years,Male,2020,74.4
+Estonia,0 years,Male,2021,72.7
+Estonia,0 years,Male,2022,73.6
+Estonia,0 years,Male,2023,74.5
+Estonia,0 years,Male,2024,75.1
+Finland,0 years,Male,2000,74.2
+Finland,0 years,Male,2001,74.6
+Finland,0 years,Male,2002,74.9
+Finland,0 years,Male,2003,75.1
+Finland,0 years,Male,2004,75.4
+Finland,0 years,Male,2005,75.6
+Finland,0 years,Male,2006,75.9
+Finland,0 years,Male,2007,76.0
+Finland,0 years,Male,2008,76.5
+Finland,0 years,Male,2009,76.6
+Finland,0 years,Male,2010,76.9
+Finland,0 years,Male,2011,77.3
+Finland,0 years,Male,2012,77.7
+Finland,0 years,Male,2013,78.0
+Finland,0 years,Male,2014,78.2
+Finland,0 years,Male,2015,78.5
+Finland,0 years,Male,2016,78.4
+Finland,0 years,Male,2017,78.7
+Finland,0 years,Male,2018,78.9
+Finland,0 years,Male,2019,79.2
+Finland,0 years,Male,2020,79.0
+Finland,0 years,Male,2021,79.1
+Finland,0 years,Male,2022,78.6
+Finland,0 years,Male,2023,79.0
+Finland,0 years,Male,2024,79.6
+France,0 years,Male,2000,75.3
+France,0 years,Male,2001,75.5
+France,0 years,Male,2002,75.7
+France,0 years,Male,2003,75.7
+France,0 years,Male,2004,76.7
+France,0 years,Male,2005,76.7
+France,0 years,Male,2006,77.3
+France,0 years,Male,2007,77.6
+France,0 years,Male,2008,77.8
+France,0 years,Male,2009,78.0
+France,0 years,Male,2010,78.2
+France,0 years,Male,2011,78.7
+France,0 years,Male,2012,78.7
+France,0 years,Male,2013,79.0
+France,0 years,Male,2014,79.2
+France,0 years,Male,2015,79.0
+France,0 years,Male,2016,79.3
+France,0 years,Male,2017,79.4
+France,0 years,Male,2018,79.5
+France,0 years,Male,2019,79.7
+France,0 years,Male,2020,79.1
+France,0 years,Male,2021,79.2
+France,0 years,Male,2022,79.3
+France,0 years,Male,2023,80.0
+France,0 years,Male,2024,80.2
+Germany,0 years,Male,2000,75.1
+Germany,0 years,Male,2001,75.6
+Germany,0 years,Male,2002,75.7
+Germany,0 years,Male,2003,75.8
+Germany,0 years,Male,2004,76.5
+Germany,0 years,Male,2005,76.7
+Germany,0 years,Male,2006,77.2
+Germany,0 years,Male,2007,77.4
+Germany,0 years,Male,2008,77.6
+Germany,0 years,Male,2009,77.8
+Germany,0 years,Male,2010,78.0
+Germany,0 years,Male,2011,77.9
+Germany,0 years,Male,2012,78.1
+Germany,0 years,Male,2013,78.1
+Germany,0 years,Male,2014,78.4
+Germany,0 years,Male,2015,78.1
+Germany,0 years,Male,2016,78.4
+Germany,0 years,Male,2017,78.6
+Germany,0 years,Male,2018,78.5
+Germany,0 years,Male,2019,78.8
+Germany,0 years,Male,2020,78.6
+Germany,0 years,Male,2021,78.2
+Germany,0 years,Male,2022,78.1
+Germany,0 years,Male,2023,78.5
+Germany,0 years,Male,2024,78.9
+Greece,0 years,Male,2000,75.9
+Greece,0 years,Male,2001,76.3
+Greece,0 years,Male,2002,76.4
+Greece,0 years,Male,2003,76.6
+Greece,0 years,Male,2004,76.6
+Greece,0 years,Male,2005,76.8
+Greece,0 years,Male,2006,77.1
+Greece,0 years,Male,2007,76.9
+Greece,0 years,Male,2008,77.5
+Greece,0 years,Male,2009,77.5
+Greece,0 years,Male,2010,78.0
+Greece,0 years,Male,2011,78.0
+Greece,0 years,Male,2012,78.0
+Greece,0 years,Male,2013,78.7
+Greece,0 years,Male,2014,78.2
+Greece,0 years,Male,2015,78.0
+Greece,0 years,Male,2016,78.3
+Greece,0 years,Male,2017,78.3
+Greece,0 years,Male,2018,78.7
+Greece,0 years,Male,2019,78.7
+Greece,0 years,Male,2020,78.4
+Greece,0 years,Male,2021,77.3
+Greece,0 years,Male,2022,78.2
+Greece,0 years,Male,2023,79.1
+Greece,0 years,Male,2024,79.4
+Hungary,0 years,Male,2000,67.5
+Hungary,0 years,Male,2001,68.2
+Hungary,0 years,Male,2002,68.3
+Hungary,0 years,Male,2003,68.4
+Hungary,0 years,Male,2004,68.7
+Hungary,0 years,Male,2005,68.7
+Hungary,0 years,Male,2006,69.2
+Hungary,0 years,Male,2007,69.4
+Hungary,0 years,Male,2008,70.0
+Hungary,0 years,Male,2009,70.3
+Hungary,0 years,Male,2010,70.7
+Hungary,0 years,Male,2011,71.2
+Hungary,0 years,Male,2012,71.6
+Hungary,0 years,Male,2013,72.2
+Hungary,0 years,Male,2014,72.2
+Hungary,0 years,Male,2015,72.2
+Hungary,0 years,Male,2016,72.5
+Hungary,0 years,Male,2017,72.4
+Hungary,0 years,Male,2018,72.6
+Hungary,0 years,Male,2019,72.9
+Hungary,0 years,Male,2020,72.2
+Hungary,0 years,Male,2021,70.7
+Hungary,0 years,Male,2022,72.6
+Hungary,0 years,Male,2023,73.4
+Hungary,0 years,Male,2024,73.7
+Iceland,0 years,Male,2000,77.8
+Iceland,0 years,Male,2001,78.3
+Iceland,0 years,Male,2002,78.6
+Iceland,0 years,Male,2003,79.5
+Iceland,0 years,Male,2004,78.9
+Iceland,0 years,Male,2005,79.6
+Iceland,0 years,Male,2006,79.5
+Iceland,0 years,Male,2007,79.6
+Iceland,0 years,Male,2008,80.0
+Iceland,0 years,Male,2009,79.8
+Iceland,0 years,Male,2010,79.8
+Iceland,0 years,Male,2011,80.7
+Iceland,0 years,Male,2012,81.6
+Iceland,0 years,Male,2013,80.5
+Iceland,0 years,Male,2014,81.1
+Iceland,0 years,Male,2015,81.1
+Iceland,0 years,Male,2016,80.3
+Iceland,0 years,Male,2017,80.8
+Iceland,0 years,Male,2018,81.1
+Iceland,0 years,Male,2019,81.5
+Iceland,0 years,Male,2020,81.4
+Iceland,0 years,Male,2021,81.6
+Iceland,0 years,Male,2022,80.9
+Iceland,0 years,Male,2023,80.7
+Iceland,0 years,Male,2024,81.1
+India,0 years,Male,2000,61.8
+India,0 years,Male,2001,62.1
+India,0 years,Male,2002,62.5
+India,0 years,Male,2003,62.9
+India,0 years,Male,2004,63.2
+India,0 years,Male,2005,63.6
+India,0 years,Male,2006,64.0
+India,0 years,Male,2007,64.4
+India,0 years,Male,2008,64.8
+India,0 years,Male,2009,65.2
+India,0 years,Male,2010,65.6
+India,0 years,Male,2011,66.1
+India,0 years,Male,2012,66.5
+India,0 years,Male,2013,67.0
+India,0 years,Male,2014,67.4
+India,0 years,Male,2015,67.8
+India,0 years,Male,2016,68.2
+India,0 years,Male,2017,68.6
+India,0 years,Male,2018,69.0
+India,0 years,Male,2019,69.3
+India,0 years,Male,2020,68.5
+India,0 years,Male,2021,65.9
+India,0 years,Male,2022,70.2
+India,0 years,Male,2023,70.5
+India,0 years,Male,2024,70.7
+Indonesia,0 years,Male,2000,64.6
+Indonesia,0 years,Male,2001,64.9
+Indonesia,0 years,Male,2002,65.2
+Indonesia,0 years,Male,2003,65.4
+Indonesia,0 years,Male,2004,64.1
+Indonesia,0 years,Male,2005,65.8
+Indonesia,0 years,Male,2006,65.9
+Indonesia,0 years,Male,2007,66.1
+Indonesia,0 years,Male,2008,66.3
+Indonesia,0 years,Male,2009,66.5
+Indonesia,0 years,Male,2010,66.6
+Indonesia,0 years,Male,2011,66.8
+Indonesia,0 years,Male,2012,67.0
+Indonesia,0 years,Male,2013,67.2
+Indonesia,0 years,Male,2014,67.4
+Indonesia,0 years,Male,2015,67.6
+Indonesia,0 years,Male,2016,67.8
+Indonesia,0 years,Male,2017,68.0
+Indonesia,0 years,Male,2018,68.1
+Indonesia,0 years,Male,2019,68.3
+Indonesia,0 years,Male,2020,66.6
+Indonesia,0 years,Male,2021,65.5
+Indonesia,0 years,Male,2022,68.9
+Indonesia,0 years,Male,2023,69.0
+Indonesia,0 years,Male,2024,69.2
+Ireland,0 years,Male,2000,74.0
+Ireland,0 years,Male,2001,74.5
+Ireland,0 years,Male,2002,75.0
+Ireland,0 years,Male,2003,75.7
+Ireland,0 years,Male,2004,76.1
+Ireland,0 years,Male,2005,76.7
+Ireland,0 years,Male,2006,76.9
+Ireland,0 years,Male,2007,77.3
+Ireland,0 years,Male,2008,77.9
+Ireland,0 years,Male,2009,77.8
+Ireland,0 years,Male,2010,78.5
+Ireland,0 years,Male,2011,78.6
+Ireland,0 years,Male,2012,78.7
+Ireland,0 years,Male,2013,78.9
+Ireland,0 years,Male,2014,79.2
+Ireland,0 years,Male,2015,79.5
+Ireland,0 years,Male,2016,79.7
+Ireland,0 years,Male,2017,80.2
+Ireland,0 years,Male,2018,80.2
+Ireland,0 years,Male,2019,80.6
+Ireland,0 years,Male,2020,80.5
+Ireland,0 years,Male,2021,80.3
+Ireland,0 years,Male,2022,80.7
+Ireland,0 years,Male,2023,81.0
+Ireland,0 years,Male,2024,81.4
+Israel,0 years,Male,2000,76.7
+Israel,0 years,Male,2001,77.3
+Israel,0 years,Male,2002,77.5
+Israel,0 years,Male,2003,77.6
+Israel,0 years,Male,2004,78.0
+Israel,0 years,Male,2005,78.2
+Israel,0 years,Male,2006,78.7
+Israel,0 years,Male,2007,78.7
+Israel,0 years,Male,2008,79.0
+Israel,0 years,Male,2009,79.6
+Israel,0 years,Male,2010,79.7
+Israel,0 years,Male,2011,79.9
+Israel,0 years,Male,2012,79.9
+Israel,0 years,Male,2013,80.3
+Israel,0 years,Male,2014,80.3
+Israel,0 years,Male,2015,80.1
+Israel,0 years,Male,2016,80.7
+Israel,0 years,Male,2017,80.6
+Israel,0 years,Male,2018,80.9
+Israel,0 years,Male,2019,81.0
+Israel,0 years,Male,2020,80.6
+Israel,0 years,Male,2021,80.5
+Israel,0 years,Male,2022,80.7
+Israel,0 years,Male,2023,81.0
+Israel,0 years,Male,2024,81.1
+Italy,0 years,Male,2000,76.9
+Italy,0 years,Male,2001,77.2
+Italy,0 years,Male,2002,77.4
+Italy,0 years,Male,2003,77.3
+Italy,0 years,Male,2004,78.0
+Italy,0 years,Male,2005,78.1
+Italy,0 years,Male,2006,78.6
+Italy,0 years,Male,2007,78.8
+Italy,0 years,Male,2008,78.9
+Italy,0 years,Male,2009,79.1
+Italy,0 years,Male,2010,79.5
+Italy,0 years,Male,2011,79.7
+Italy,0 years,Male,2012,79.8
+Italy,0 years,Male,2013,80.3
+Italy,0 years,Male,2014,80.4
+Italy,0 years,Male,2015,80.1
+Italy,0 years,Male,2016,80.7
+Italy,0 years,Male,2017,80.6
+Italy,0 years,Male,2018,80.9
+Italy,0 years,Male,2019,81.2
+Italy,0 years,Male,2020,79.9
+Italy,0 years,Male,2021,80.4
+Italy,0 years,Male,2022,80.6
+Italy,0 years,Male,2023,81.2
+Italy,0 years,Male,2024,81.6
+Japan,0 years,Male,2000,77.7
+Japan,0 years,Male,2001,78.1
+Japan,0 years,Male,2002,78.3
+Japan,0 years,Male,2003,78.4
+Japan,0 years,Male,2004,78.6
+Japan,0 years,Male,2005,78.6
+Japan,0 years,Male,2006,79.0
+Japan,0 years,Male,2007,79.2
+Japan,0 years,Male,2008,79.3
+Japan,0 years,Male,2009,79.6
+Japan,0 years,Male,2010,79.6
+Japan,0 years,Male,2011,79.4
+Japan,0 years,Male,2012,79.9
+Japan,0 years,Male,2013,80.2
+Japan,0 years,Male,2014,80.5
+Japan,0 years,Male,2015,80.8
+Japan,0 years,Male,2016,81.0
+Japan,0 years,Male,2017,81.1
+Japan,0 years,Male,2018,81.3
+Japan,0 years,Male,2019,81.4
+Japan,0 years,Male,2020,81.6
+Japan,0 years,Male,2021,81.5
+Japan,0 years,Male,2022,81.1
+Japan,0 years,Male,2023,81.1
+Japan,0 years,Male,2024,81.1
+Korea,0 years,Male,2000,72.3
+Korea,0 years,Male,2001,72.9
+Korea,0 years,Male,2002,73.4
+Korea,0 years,Male,2003,73.8
+Korea,0 years,Male,2004,74.3
+Korea,0 years,Male,2005,74.9
+Korea,0 years,Male,2006,75.4
+Korea,0 years,Male,2007,75.9
+Korea,0 years,Male,2008,76.2
+Korea,0 years,Male,2009,76.7
+Korea,0 years,Male,2010,76.8
+Korea,0 years,Male,2011,77.3
+Korea,0 years,Male,2012,77.6
+Korea,0 years,Male,2013,78.1
+Korea,0 years,Male,2014,78.6
+Korea,0 years,Male,2015,79.0
+Korea,0 years,Male,2016,79.3
+Korea,0 years,Male,2017,79.7
+Korea,0 years,Male,2018,79.7
+Korea,0 years,Male,2019,80.3
+Korea,0 years,Male,2020,80.5
+Korea,0 years,Male,2021,80.6
+Korea,0 years,Male,2022,79.9
+Korea,0 years,Male,2023,80.6
+Korea,0 years,Male,2024,80.8
+Latvia,0 years,Male,2002,64.4
+Latvia,0 years,Male,2003,65.3
+Latvia,0 years,Male,2004,65.6
+Latvia,0 years,Male,2005,64.9
+Latvia,0 years,Male,2006,65.0
+Latvia,0 years,Male,2007,65.3
+Latvia,0 years,Male,2008,66.5
+Latvia,0 years,Male,2009,67.5
+Latvia,0 years,Male,2010,67.9
+Latvia,0 years,Male,2011,68.6
+Latvia,0 years,Male,2012,68.9
+Latvia,0 years,Male,2013,69.3
+Latvia,0 years,Male,2014,69.1
+Latvia,0 years,Male,2015,69.7
+Latvia,0 years,Male,2016,69.8
+Latvia,0 years,Male,2017,69.8
+Latvia,0 years,Male,2018,70.0
+Latvia,0 years,Male,2019,70.9
+Latvia,0 years,Male,2020,70.6
+Latvia,0 years,Male,2021,68.3
+Latvia,0 years,Male,2022,69.5
+Latvia,0 years,Male,2023,70.5
+Latvia,0 years,Male,2024,71.4
+Lithuania,0 years,Male,2000,66.7
+Lithuania,0 years,Male,2001,65.9
+Lithuania,0 years,Male,2002,66.1
+Lithuania,0 years,Male,2003,66.4
+Lithuania,0 years,Male,2004,66.2
+Lithuania,0 years,Male,2005,65.2
+Lithuania,0 years,Male,2006,65.0
+Lithuania,0 years,Male,2007,64.5
+Lithuania,0 years,Male,2008,65.9
+Lithuania,0 years,Male,2009,67.1
+Lithuania,0 years,Male,2010,67.6
+Lithuania,0 years,Male,2011,68.1
+Lithuania,0 years,Male,2012,68.4
+Lithuania,0 years,Male,2013,68.5
+Lithuania,0 years,Male,2014,69.1
+Lithuania,0 years,Male,2015,69.1
+Lithuania,0 years,Male,2016,69.5
+Lithuania,0 years,Male,2017,70.7
+Lithuania,0 years,Male,2018,70.9
+Lithuania,0 years,Male,2019,71.4
+Lithuania,0 years,Male,2020,70.2
+Lithuania,0 years,Male,2021,69.6
+Lithuania,0 years,Male,2022,71.4
+Lithuania,0 years,Male,2023,72.9
+Lithuania,0 years,Male,2024,73.0
+Luxembourg,0 years,Male,2000,74.6
+Luxembourg,0 years,Male,2001,75.1
+Luxembourg,0 years,Male,2002,74.6
+Luxembourg,0 years,Male,2003,74.8
+Luxembourg,0 years,Male,2004,76.0
+Luxembourg,0 years,Male,2005,76.7
+Luxembourg,0 years,Male,2006,76.8
+Luxembourg,0 years,Male,2007,76.7
+Luxembourg,0 years,Male,2008,78.1
+Luxembourg,0 years,Male,2009,78.1
+Luxembourg,0 years,Male,2010,77.9
+Luxembourg,0 years,Male,2011,78.5
+Luxembourg,0 years,Male,2012,79.1
+Luxembourg,0 years,Male,2013,79.8
+Luxembourg,0 years,Male,2014,79.1
+Luxembourg,0 years,Male,2015,79.7
+Luxembourg,0 years,Male,2016,79.8
+Luxembourg,0 years,Male,2017,79.6
+Luxembourg,0 years,Male,2018,79.8
+Luxembourg,0 years,Male,2019,80.0
+Luxembourg,0 years,Male,2020,79.8
+Luxembourg,0 years,Male,2021,80.4
+Luxembourg,0 years,Male,2022,80.6
+Luxembourg,0 years,Male,2023,81.4
+Luxembourg,0 years,Male,2024,81.0
+Mexico,0 years,Male,2000,72.0
+Mexico,0 years,Male,2001,72.4
+Mexico,0 years,Male,2002,72.4
+Mexico,0 years,Male,2003,72.4
+Mexico,0 years,Male,2004,72.8
+Mexico,0 years,Male,2005,72.6
+Mexico,0 years,Male,2006,72.9
+Mexico,0 years,Male,2007,72.7
+Mexico,0 years,Male,2008,72.2
+Mexico,0 years,Male,2009,71.9
+Mexico,0 years,Male,2010,71.4
+Mexico,0 years,Male,2011,71.8
+Mexico,0 years,Male,2012,72.0
+Mexico,0 years,Male,2013,72.4
+Mexico,0 years,Male,2014,72.4
+Mexico,0 years,Male,2015,72.4
+Mexico,0 years,Male,2016,72.0
+Mexico,0 years,Male,2017,72.0
+Mexico,0 years,Male,2018,71.8
+Mexico,0 years,Male,2019,71.8
+Mexico,0 years,Male,2020,64.9
+Mexico,0 years,Male,2021,64.9
+Mexico,0 years,Male,2022,72.1
+Mexico,0 years,Male,2023,72.3
+Mexico,0 years,Male,2024,72.4
+Mexico,0 years,Male,2025,72.6
+Netherlands,0 years,Male,2000,75.6
+Netherlands,0 years,Male,2001,75.8
+Netherlands,0 years,Male,2002,76.0
+Netherlands,0 years,Male,2003,76.3
+Netherlands,0 years,Male,2004,76.9
+Netherlands,0 years,Male,2005,77.2
+Netherlands,0 years,Male,2006,77.7
+Netherlands,0 years,Male,2007,78.1
+Netherlands,0 years,Male,2008,78.4
+Netherlands,0 years,Male,2009,78.7
+Netherlands,0 years,Male,2010,78.9
+Netherlands,0 years,Male,2011,79.4
+Netherlands,0 years,Male,2012,79.3
+Netherlands,0 years,Male,2013,79.5
+Netherlands,0 years,Male,2014,79.9
+Netherlands,0 years,Male,2015,79.7
+Netherlands,0 years,Male,2016,79.9
+Netherlands,0 years,Male,2017,80.1
+Netherlands,0 years,Male,2018,80.2
+Netherlands,0 years,Male,2019,80.5
+Netherlands,0 years,Male,2020,79.7
+Netherlands,0 years,Male,2021,79.7
+Netherlands,0 years,Male,2022,80.1
+Netherlands,0 years,Male,2023,80.3
+Netherlands,0 years,Male,2024,80.5
+New Zealand,0 years,Male,2000,75.9
+New Zealand,0 years,Male,2001,76.3
+New Zealand,0 years,Male,2002,76.7
+New Zealand,0 years,Male,2003,77.0
+New Zealand,0 years,Male,2004,77.4
+New Zealand,0 years,Male,2005,77.7
+New Zealand,0 years,Male,2006,78.0
+New Zealand,0 years,Male,2007,78.2
+New Zealand,0 years,Male,2008,78.4
+New Zealand,0 years,Male,2009,78.7
+New Zealand,0 years,Male,2010,78.9
+New Zealand,0 years,Male,2011,79.1
+New Zealand,0 years,Male,2012,79.3
+New Zealand,0 years,Male,2013,79.5
+New Zealand,0 years,Male,2014,79.6
+New Zealand,0 years,Male,2015,79.7
+New Zealand,0 years,Male,2016,79.8
+New Zealand,0 years,Male,2017,79.9
+New Zealand,0 years,Male,2018,80.0
+New Zealand,0 years,Male,2019,80.0
+New Zealand,0 years,Male,2020,80.0
+New Zealand,0 years,Male,2021,80.1
+New Zealand,0 years,Male,2022,80.1
+New Zealand,0 years,Male,2023,80.1
+New Zealand,0 years,Male,2024,80.4
+Norway,0 years,Male,2000,76.0
+Norway,0 years,Male,2001,76.2
+Norway,0 years,Male,2002,76.4
+Norway,0 years,Male,2003,77.1
+Norway,0 years,Male,2004,77.6
+Norway,0 years,Male,2005,77.8
+Norway,0 years,Male,2006,78.2
+Norway,0 years,Male,2007,78.3
+Norway,0 years,Male,2008,78.4
+Norway,0 years,Male,2009,78.7
+Norway,0 years,Male,2010,79.0
+Norway,0 years,Male,2011,79.1
+Norway,0 years,Male,2012,79.5
+Norway,0 years,Male,2013,79.8
+Norway,0 years,Male,2014,80.0
+Norway,0 years,Male,2015,80.4
+Norway,0 years,Male,2016,80.6
+Norway,0 years,Male,2017,80.9
+Norway,0 years,Male,2018,81.0
+Norway,0 years,Male,2019,81.2
+Norway,0 years,Male,2020,81.5
+Norway,0 years,Male,2021,81.6
+Norway,0 years,Male,2022,80.9
+Norway,0 years,Male,2023,81.4
+Norway,0 years,Male,2024,81.6
+Peru,0 years,Male,2000,68.0
+Peru,0 years,Male,2001,68.8
+Peru,0 years,Male,2002,69.5
+Peru,0 years,Male,2003,70.2
+Peru,0 years,Male,2004,70.7
+Peru,0 years,Male,2005,71.1
+Peru,0 years,Male,2006,71.2
+Peru,0 years,Male,2007,71.3
+Peru,0 years,Male,2008,71.4
+Peru,0 years,Male,2009,71.4
+Peru,0 years,Male,2010,72.0
+Peru,0 years,Male,2011,72.2
+Peru,0 years,Male,2012,72.5
+Peru,0 years,Male,2013,72.7
+Peru,0 years,Male,2014,73.0
+Peru,0 years,Male,2015,73.2
+Peru,0 years,Male,2016,73.4
+Peru,0 years,Male,2017,73.6
+Peru,0 years,Male,2018,73.8
+Peru,0 years,Male,2019,74.0
+Peru,0 years,Male,2020,74.1
+Peru,0 years,Male,2021,74.3
+Peru,0 years,Male,2022,74.4
+Peru,0 years,Male,2023,74.6
+Peru,0 years,Male,2024,74.7
+Peru,0 years,Male,2025,74.9
+Poland,0 years,Male,2000,69.6
+Poland,0 years,Male,2001,70.0
+Poland,0 years,Male,2002,70.3
+Poland,0 years,Male,2003,70.5
+Poland,0 years,Male,2004,70.6
+Poland,0 years,Male,2005,70.8
+Poland,0 years,Male,2006,70.9
+Poland,0 years,Male,2007,71.0
+Poland,0 years,Male,2008,71.3
+Poland,0 years,Male,2009,71.5
+Poland,0 years,Male,2010,72.2
+Poland,0 years,Male,2011,72.5
+Poland,0 years,Male,2012,72.6
+Poland,0 years,Male,2013,73.0
+Poland,0 years,Male,2014,73.6
+Poland,0 years,Male,2015,73.4
+Poland,0 years,Male,2016,73.8
+Poland,0 years,Male,2017,73.8
+Poland,0 years,Male,2018,73.7
+Poland,0 years,Male,2019,74.0
+Poland,0 years,Male,2020,72.4
+Poland,0 years,Male,2021,71.5
+Poland,0 years,Male,2022,73.2
+Poland,0 years,Male,2023,74.5
+Poland,0 years,Male,2024,74.8
+Portugal,0 years,Male,2000,73.3
+Portugal,0 years,Male,2001,73.6
+Portugal,0 years,Male,2002,73.9
+Portugal,0 years,Male,2003,74.2
+Portugal,0 years,Male,2004,75.0
+Portugal,0 years,Male,2005,74.9
+Portugal,0 years,Male,2006,75.5
+Portugal,0 years,Male,2007,75.9
+Portugal,0 years,Male,2008,76.2
+Portugal,0 years,Male,2009,76.5
+Portugal,0 years,Male,2010,76.8
+Portugal,0 years,Male,2011,77.3
+Portugal,0 years,Male,2012,77.3
+Portugal,0 years,Male,2013,77.6
+Portugal,0 years,Male,2014,78.1
+Portugal,0 years,Male,2015,78.2
+Portugal,0 years,Male,2016,78.2
+Portugal,0 years,Male,2017,78.5
+Portugal,0 years,Male,2018,78.5
+Portugal,0 years,Male,2019,79.0
+Portugal,0 years,Male,2020,78.4
+Portugal,0 years,Male,2021,78.4
+Portugal,0 years,Male,2022,78.8
+Portugal,0 years,Male,2023,79.4
+Portugal,0 years,Male,2024,79.7
+Romania,0 years,Male,2000,67.7
+Romania,0 years,Male,2001,67.5
+Romania,0 years,Male,2002,67.3
+Romania,0 years,Male,2003,67.4
+Romania,0 years,Male,2004,67.8
+Romania,0 years,Male,2005,68.4
+Romania,0 years,Male,2006,69.0
+Romania,0 years,Male,2007,69.5
+Romania,0 years,Male,2008,69.7
+Romania,0 years,Male,2009,69.8
+Romania,0 years,Male,2010,70.0
+Romania,0 years,Male,2011,70.8
+Romania,0 years,Male,2012,70.9
+Romania,0 years,Male,2013,71.6
+Romania,0 years,Male,2014,71.3
+Romania,0 years,Male,2015,71.3
+Romania,0 years,Male,2016,71.6
+Romania,0 years,Male,2017,71.6
+Romania,0 years,Male,2018,71.6
+Romania,0 years,Male,2019,71.9
+Romania,0 years,Male,2020,70.3
+Romania,0 years,Male,2021,69.2
+Romania,0 years,Male,2022,71.3
+Romania,0 years,Male,2023,72.6
+Romania,0 years,Male,2024,72.8
+Russia,0 years,Male,2000,59.0
+Russia,0 years,Male,2001,58.9
+Russia,0 years,Male,2002,58.7
+Russia,0 years,Male,2003,58.5
+Russia,0 years,Male,2004,58.9
+Russia,0 years,Male,2005,58.9
+Russia,0 years,Male,2006,60.4
+Russia,0 years,Male,2007,61.5
+Russia,0 years,Male,2008,61.9
+Russia,0 years,Male,2009,62.9
+Russia,0 years,Male,2010,63.1
+Russia,0 years,Male,2011,64.0
+Russia,0 years,Male,2012,64.6
+Russia,0 years,Male,2013,65.1
+Russia,0 years,Male,2014,65.3
+Russia,0 years,Male,2015,65.9
+Russia,0 years,Male,2016,66.5
+Russia,0 years,Male,2017,67.5
+Russia,0 years,Male,2018,67.8
+Russia,0 years,Male,2019,68.2
+Russia,0 years,Male,2020,66.5
+Russia,0 years,Male,2021,65.5
+Russia,0 years,Male,2022,67.6
+Russia,0 years,Male,2023,68.0
+Slovak Republic,0 years,Male,2000,69.2
+Slovak Republic,0 years,Male,2001,69.5
+Slovak Republic,0 years,Male,2002,69.8
+Slovak Republic,0 years,Male,2003,69.8
+Slovak Republic,0 years,Male,2004,70.3
+Slovak Republic,0 years,Male,2005,70.2
+Slovak Republic,0 years,Male,2006,70.4
+Slovak Republic,0 years,Male,2007,70.6
+Slovak Republic,0 years,Male,2008,70.9
+Slovak Republic,0 years,Male,2009,71.4
+Slovak Republic,0 years,Male,2010,71.8
+Slovak Republic,0 years,Male,2011,72.3
+Slovak Republic,0 years,Male,2012,72.5
+Slovak Republic,0 years,Male,2013,72.9
+Slovak Republic,0 years,Male,2014,73.3
+Slovak Republic,0 years,Male,2015,73.1
+Slovak Republic,0 years,Male,2016,73.8
+Slovak Republic,0 years,Male,2017,73.8
+Slovak Republic,0 years,Male,2018,73.9
+Slovak Republic,0 years,Male,2019,74.3
+Slovak Republic,0 years,Male,2020,73.6
+Slovak Republic,0 years,Male,2021,71.2
+Slovak Republic,0 years,Male,2022,73.6
+Slovak Republic,0 years,Male,2023,74.9
+Slovak Republic,0 years,Male,2024,75.2
+Slovenia,0 years,Male,2000,72.2
+Slovenia,0 years,Male,2001,72.3
+Slovenia,0 years,Male,2002,72.6
+Slovenia,0 years,Male,2003,72.5
+Slovenia,0 years,Male,2004,73.5
+Slovenia,0 years,Male,2005,73.9
+Slovenia,0 years,Male,2006,74.5
+Slovenia,0 years,Male,2007,74.6
+Slovenia,0 years,Male,2008,75.5
+Slovenia,0 years,Male,2009,75.9
+Slovenia,0 years,Male,2010,76.4
+Slovenia,0 years,Male,2011,76.8
+Slovenia,0 years,Male,2012,77.1
+Slovenia,0 years,Male,2013,77.2
+Slovenia,0 years,Male,2014,78.0
+Slovenia,0 years,Male,2015,77.6
+Slovenia,0 years,Male,2016,78.0
+Slovenia,0 years,Male,2017,78.1
+Slovenia,0 years,Male,2018,78.3
+Slovenia,0 years,Male,2019,78.5
+Slovenia,0 years,Male,2020,77.8
+Slovenia,0 years,Male,2021,77.6
+Slovenia,0 years,Male,2022,78.4
+Slovenia,0 years,Male,2023,78.9
+Slovenia,0 years,Male,2024,79.5
+South Africa,0 years,Male,2000,55.4
+South Africa,0 years,Male,2001,54.6
+South Africa,0 years,Male,2002,53.2
+South Africa,0 years,Male,2003,52.0
+South Africa,0 years,Male,2004,51.9
+South Africa,0 years,Male,2005,52.1
+South Africa,0 years,Male,2006,52.2
+South Africa,0 years,Male,2007,52.7
+South Africa,0 years,Male,2008,53.5
+South Africa,0 years,Male,2009,54.8
+South Africa,0 years,Male,2010,56.2
+South Africa,0 years,Male,2011,57.7
+South Africa,0 years,Male,2012,58.7
+South Africa,0 years,Male,2013,59.2
+South Africa,0 years,Male,2014,59.9
+South Africa,0 years,Male,2015,60.8
+South Africa,0 years,Male,2016,61.3
+South Africa,0 years,Male,2017,62.0
+South Africa,0 years,Male,2018,62.3
+South Africa,0 years,Male,2019,62.7
+South Africa,0 years,Male,2020,62.2
+South Africa,0 years,Male,2021,59.2
+South Africa,0 years,Male,2022,61.8
+South Africa,0 years,Male,2023,62.6
+South Africa,0 years,Male,2024,62.8
+Spain,0 years,Male,2000,75.8
+Spain,0 years,Male,2001,76.3
+Spain,0 years,Male,2002,76.4
+Spain,0 years,Male,2003,76.4
+Spain,0 years,Male,2004,77.0
+Spain,0 years,Male,2005,77.0
+Spain,0 years,Male,2006,77.8
+Spain,0 years,Male,2007,77.9
+Spain,0 years,Male,2008,78.3
+Spain,0 years,Male,2009,78.8
+Spain,0 years,Male,2010,79.2
+Spain,0 years,Male,2011,79.5
+Spain,0 years,Male,2012,79.5
+Spain,0 years,Male,2013,80.2
+Spain,0 years,Male,2014,80.1
+Spain,0 years,Male,2015,79.9
+Spain,0 years,Male,2016,80.2
+Spain,0 years,Male,2017,80.3
+Spain,0 years,Male,2018,80.4
+Spain,0 years,Male,2019,80.8
+Spain,0 years,Male,2020,79.5
+Spain,0 years,Male,2021,80.2
+Spain,0 years,Male,2022,80.3
+Spain,0 years,Male,2023,81.1
+Spain,0 years,Male,2024,81.4
+Sweden,0 years,Male,2000,77.4
+Sweden,0 years,Male,2001,77.6
+Sweden,0 years,Male,2002,77.7
+Sweden,0 years,Male,2003,78.0
+Sweden,0 years,Male,2004,78.4
+Sweden,0 years,Male,2005,78.5
+Sweden,0 years,Male,2006,78.8
+Sweden,0 years,Male,2007,79.0
+Sweden,0 years,Male,2008,79.2
+Sweden,0 years,Male,2009,79.4
+Sweden,0 years,Male,2010,79.6
+Sweden,0 years,Male,2011,79.9
+Sweden,0 years,Male,2012,79.9
+Sweden,0 years,Male,2013,80.2
+Sweden,0 years,Male,2014,80.3
+Sweden,0 years,Male,2015,80.3
+Sweden,0 years,Male,2016,80.6
+Sweden,0 years,Male,2017,80.7
+Sweden,0 years,Male,2018,80.8
+Sweden,0 years,Male,2019,81.3
+Sweden,0 years,Male,2020,80.6
+Sweden,0 years,Male,2021,81.2
+Sweden,0 years,Male,2022,81.3
+Sweden,0 years,Male,2023,81.6
+Sweden,0 years,Male,2024,82.3
+Switzerland,0 years,Male,2000,77.0
+Switzerland,0 years,Male,2001,77.5
+Switzerland,0 years,Male,2002,77.9
+Switzerland,0 years,Male,2003,78.0
+Switzerland,0 years,Male,2004,78.6
+Switzerland,0 years,Male,2005,78.7
+Switzerland,0 years,Male,2006,79.2
+Switzerland,0 years,Male,2007,79.5
+Switzerland,0 years,Male,2008,79.8
+Switzerland,0 years,Male,2009,79.9
+Switzerland,0 years,Male,2010,80.3
+Switzerland,0 years,Male,2011,80.5
+Switzerland,0 years,Male,2012,80.6
+Switzerland,0 years,Male,2013,80.7
+Switzerland,0 years,Male,2014,80.9
+Switzerland,0 years,Male,2015,80.7
+Switzerland,0 years,Male,2016,81.5
+Switzerland,0 years,Male,2017,81.4
+Switzerland,0 years,Male,2018,81.6
+Switzerland,0 years,Male,2019,81.9
+Switzerland,0 years,Male,2020,81.0
+Switzerland,0 years,Male,2021,81.6
+Switzerland,0 years,Male,2022,81.6
+Switzerland,0 years,Male,2023,82.2
+Switzerland,0 years,Male,2024,82.4
+Thailand,0 years,Male,2000,67.4
+Thailand,0 years,Male,2001,67.7
+Thailand,0 years,Male,2002,68.0
+Thailand,0 years,Male,2003,68.4
+Thailand,0 years,Male,2004,68.5
+Thailand,0 years,Male,2005,69.3
+Thailand,0 years,Male,2006,69.9
+Thailand,0 years,Male,2007,70.4
+Thailand,0 years,Male,2008,70.9
+Thailand,0 years,Male,2009,71.3
+Thailand,0 years,Male,2010,71.4
+Thailand,0 years,Male,2011,71.5
+Thailand,0 years,Male,2012,71.7
+Thailand,0 years,Male,2013,72.0
+Thailand,0 years,Male,2014,72.3
+Thailand,0 years,Male,2015,72.5
+Thailand,0 years,Male,2016,72.6
+Thailand,0 years,Male,2017,72.8
+Thailand,0 years,Male,2018,73.0
+Thailand,0 years,Male,2019,72.8
+Thailand,0 years,Male,2020,73.0
+Thailand,0 years,Male,2021,73.3
+Thailand,0 years,Male,2022,71.0
+Thailand,0 years,Male,2023,72.2
+Thailand,0 years,Male,2024,72.3
+Türkiye,0 years,Male,2000,69.0
+Türkiye,0 years,Male,2001,69.4
+Türkiye,0 years,Male,2002,69.8
+Türkiye,0 years,Male,2003,70.2
+Türkiye,0 years,Male,2004,70.6
+Türkiye,0 years,Male,2005,71.0
+Türkiye,0 years,Male,2006,71.2
+Türkiye,0 years,Male,2007,71.4
+Türkiye,0 years,Male,2008,71.5
+Türkiye,0 years,Male,2009,71.7
+Türkiye,0 years,Male,2010,71.8
+Türkiye,0 years,Male,2011,72.0
+Türkiye,0 years,Male,2012,72.0
+Türkiye,0 years,Male,2013,75.3
+Türkiye,0 years,Male,2014,75.3
+Türkiye,0 years,Male,2015,75.3
+Türkiye,0 years,Male,2016,75.3
+Türkiye,0 years,Male,2017,75.6
+Türkiye,0 years,Male,2018,75.9
+Türkiye,0 years,Male,2019,75.6
+Türkiye,0 years,Male,2020,75.0
+Türkiye,0 years,Male,2021,74.8
+Türkiye,0 years,Male,2022,74.7
+Türkiye,0 years,Male,2023,75.5
+Ukraine,0 years,Male,2000,62.2
+Ukraine,0 years,Male,2001,62.0
+Ukraine,0 years,Male,2002,62.1
+Ukraine,0 years,Male,2003,62.0
+Ukraine,0 years,Male,2004,61.8
+Ukraine,0 years,Male,2005,61.8
+Ukraine,0 years,Male,2006,61.7
+Ukraine,0 years,Male,2007,62.0
+Ukraine,0 years,Male,2008,62.7
+Ukraine,0 years,Male,2009,63.8
+Ukraine,0 years,Male,2010,65.0
+Ukraine,0 years,Male,2011,65.6
+Ukraine,0 years,Male,2012,66.0
+Ukraine,0 years,Male,2013,66.3
+Ukraine,0 years,Male,2014,66.6
+Ukraine,0 years,Male,2015,67.7
+Ukraine,0 years,Male,2016,68.5
+Ukraine,0 years,Male,2017,69.1
+Ukraine,0 years,Male,2018,68.6
+Ukraine,0 years,Male,2019,68.9
+Ukraine,0 years,Male,2020,68.3
+Ukraine,0 years,Male,2021,67.1
+Ukraine,0 years,Male,2022,66.2
+Ukraine,0 years,Male,2023,66.9
+Ukraine,0 years,Male,2024,69.8
+United Kingdom,0 years,Male,2000,75.4
+United Kingdom,0 years,Male,2001,75.7
+United Kingdom,0 years,Male,2002,75.8
+United Kingdom,0 years,Male,2003,76.1
+United Kingdom,0 years,Male,2004,76.6
+United Kingdom,0 years,Male,2005,76.9
+United Kingdom,0 years,Male,2006,77.2
+United Kingdom,0 years,Male,2007,77.4
+United Kingdom,0 years,Male,2008,77.6
+United Kingdom,0 years,Male,2009,78.1
+United Kingdom,0 years,Male,2010,78.4
+United Kingdom,0 years,Male,2011,78.8
+United Kingdom,0 years,Male,2012,79.0
+United Kingdom,0 years,Male,2013,79.0
+United Kingdom,0 years,Male,2014,79.2
+United Kingdom,0 years,Male,2015,79.0
+United Kingdom,0 years,Male,2016,79.2
+United Kingdom,0 years,Male,2017,79.2
+United Kingdom,0 years,Male,2018,79.2
+United Kingdom,0 years,Male,2019,79.5
+United Kingdom,0 years,Male,2020,78.3
+United Kingdom,0 years,Male,2021,78.5
+United Kingdom,0 years,Male,2022,79.0
+United Kingdom,0 years,Male,2023,79.0
+United Kingdom,0 years,Male,2024,79.4
+United States,0 years,Male,2000,74.1
+United States,0 years,Male,2001,74.3
+United States,0 years,Male,2002,74.4
+United States,0 years,Male,2003,74.5
+United States,0 years,Male,2004,75.0
+United States,0 years,Male,2005,75.0
+United States,0 years,Male,2006,75.2
+United States,0 years,Male,2007,75.5
+United States,0 years,Male,2008,75.6
+United States,0 years,Male,2009,76.0
+United States,0 years,Male,2010,76.2
+United States,0 years,Male,2011,76.3
+United States,0 years,Male,2012,76.4
+United States,0 years,Male,2013,76.4
+United States,0 years,Male,2014,76.5
+United States,0 years,Male,2015,76.3
+United States,0 years,Male,2016,76.2
+United States,0 years,Male,2017,76.1
+United States,0 years,Male,2018,76.2
+United States,0 years,Male,2019,76.3
+United States,0 years,Male,2020,74.2
+United States,0 years,Male,2021,73.5
+United States,0 years,Male,2022,74.8
+United States,0 years,Male,2023,75.8
+United States,0 years,Male,2024,76.5

@@ -1,0 +1,1276 @@
+Country,Age,Sex,Year,Life Expectancy
+Argentina,0 years,Female,2000,77.3
+Argentina,0 years,Female,2001,77.6
+Argentina,0 years,Female,2002,77.9
+Argentina,0 years,Female,2003,77.8
+Argentina,0 years,Female,2004,78.2
+Argentina,0 years,Female,2005,78.6
+Argentina,0 years,Female,2006,78.4
+Argentina,0 years,Female,2007,77.9
+Argentina,0 years,Female,2008,78.6
+Argentina,0 years,Female,2009,78.6
+Argentina,0 years,Female,2010,78.7
+Argentina,0 years,Female,2011,79.4
+Argentina,0 years,Female,2012,78.7
+Argentina,0 years,Female,2013,78.6
+Argentina,0 years,Female,2014,79.2
+Argentina,0 years,Female,2015,79.8
+Argentina,0 years,Female,2016,79.1
+Argentina,0 years,Female,2017,79.2
+Argentina,0 years,Female,2018,79.5
+Argentina,0 years,Female,2019,79.4
+Argentina,0 years,Female,2020,78.8
+Argentina,0 years,Female,2021,76.9
+Argentina,0 years,Female,2022,78.3
+Argentina,0 years,Female,2023,79.9
+Argentina,0 years,Female,2024,80.0
+Australia,0 years,Female,2000,82.0
+Australia,0 years,Female,2001,82.4
+Australia,0 years,Female,2002,82.6
+Australia,0 years,Female,2003,82.8
+Australia,0 years,Female,2004,83.0
+Australia,0 years,Female,2005,83.3
+Australia,0 years,Female,2006,83.5
+Australia,0 years,Female,2007,83.7
+Australia,0 years,Female,2008,83.7
+Australia,0 years,Female,2009,83.9
+Australia,0 years,Female,2010,84.0
+Australia,0 years,Female,2011,84.2
+Australia,0 years,Female,2012,84.3
+Australia,0 years,Female,2013,84.3
+Australia,0 years,Female,2014,84.4
+Australia,0 years,Female,2015,84.5
+Australia,0 years,Female,2016,84.6
+Australia,0 years,Female,2017,84.6
+Australia,0 years,Female,2018,84.9
+Australia,0 years,Female,2019,85.0
+Australia,0 years,Female,2020,85.3
+Australia,0 years,Female,2021,85.4
+Australia,0 years,Female,2022,85.3
+Australia,0 years,Female,2023,85.1
+Australia,0 years,Female,2024,85.1
+Austria,0 years,Female,2000,81.2
+Austria,0 years,Female,2001,81.7
+Austria,0 years,Female,2002,81.7
+Austria,0 years,Female,2003,81.5
+Austria,0 years,Female,2004,82.1
+Austria,0 years,Female,2005,82.2
+Austria,0 years,Female,2006,82.8
+Austria,0 years,Female,2007,83.1
+Austria,0 years,Female,2008,83.3
+Austria,0 years,Female,2009,83.2
+Austria,0 years,Female,2010,83.5
+Austria,0 years,Female,2011,83.8
+Austria,0 years,Female,2012,83.6
+Austria,0 years,Female,2013,83.8
+Austria,0 years,Female,2014,83.7
+Austria,0 years,Female,2015,83.6
+Austria,0 years,Female,2016,84.0
+Austria,0 years,Female,2017,83.9
+Austria,0 years,Female,2018,84.0
+Austria,0 years,Female,2019,84.2
+Austria,0 years,Female,2020,83.7
+Austria,0 years,Female,2021,83.7
+Austria,0 years,Female,2022,83.8
+Austria,0 years,Female,2023,84.2
+Austria,0 years,Female,2024,84.3
+Belgium,0 years,Female,2000,81.0
+Belgium,0 years,Female,2001,81.2
+Belgium,0 years,Female,2002,81.2
+Belgium,0 years,Female,2003,81.1
+Belgium,0 years,Female,2004,81.9
+Belgium,0 years,Female,2005,81.9
+Belgium,0 years,Female,2006,82.3
+Belgium,0 years,Female,2007,82.6
+Belgium,0 years,Female,2008,82.6
+Belgium,0 years,Female,2009,82.8
+Belgium,0 years,Female,2010,83.0
+Belgium,0 years,Female,2011,83.3
+Belgium,0 years,Female,2012,83.1
+Belgium,0 years,Female,2013,83.2
+Belgium,0 years,Female,2014,83.5
+Belgium,0 years,Female,2015,83.2
+Belgium,0 years,Female,2016,83.7
+Belgium,0 years,Female,2017,83.7
+Belgium,0 years,Female,2018,83.7
+Belgium,0 years,Female,2019,84.0
+Belgium,0 years,Female,2020,83.1
+Belgium,0 years,Female,2021,84.1
+Belgium,0 years,Female,2022,83.8
+Belgium,0 years,Female,2023,84.3
+Belgium,0 years,Female,2024,84.4
+Brazil,0 years,Female,2000,73.0
+Brazil,0 years,Female,2001,73.4
+Brazil,0 years,Female,2002,73.8
+Brazil,0 years,Female,2003,74.3
+Brazil,0 years,Female,2004,74.8
+Brazil,0 years,Female,2005,75.3
+Brazil,0 years,Female,2006,75.7
+Brazil,0 years,Female,2007,76.2
+Brazil,0 years,Female,2008,76.6
+Brazil,0 years,Female,2009,76.9
+Brazil,0 years,Female,2010,77.3
+Brazil,0 years,Female,2011,77.5
+Brazil,0 years,Female,2012,77.8
+Brazil,0 years,Female,2013,78.1
+Brazil,0 years,Female,2014,78.3
+Brazil,0 years,Female,2015,78.5
+Brazil,0 years,Female,2016,78.5
+Brazil,0 years,Female,2017,78.8
+Brazil,0 years,Female,2018,79.0
+Brazil,0 years,Female,2019,79.0
+Brazil,0 years,Female,2020,77.6
+Brazil,0 years,Female,2021,76.4
+Brazil,0 years,Female,2022,78.1
+Brazil,0 years,Female,2023,79.0
+Brazil,0 years,Female,2024,79.1
+Bulgaria,0 years,Female,2000,75.0
+Bulgaria,0 years,Female,2001,75.4
+Bulgaria,0 years,Female,2002,75.5
+Bulgaria,0 years,Female,2003,75.9
+Bulgaria,0 years,Female,2004,76.2
+Bulgaria,0 years,Female,2005,76.2
+Bulgaria,0 years,Female,2006,76.3
+Bulgaria,0 years,Female,2007,76.6
+Bulgaria,0 years,Female,2008,77.0
+Bulgaria,0 years,Female,2009,77.4
+Bulgaria,0 years,Female,2010,77.4
+Bulgaria,0 years,Female,2011,77.8
+Bulgaria,0 years,Female,2012,77.9
+Bulgaria,0 years,Female,2013,78.6
+Bulgaria,0 years,Female,2014,77.9
+Bulgaria,0 years,Female,2015,78.0
+Bulgaria,0 years,Female,2016,78.4
+Bulgaria,0 years,Female,2017,78.2
+Bulgaria,0 years,Female,2018,78.3
+Bulgaria,0 years,Female,2019,78.5
+Bulgaria,0 years,Female,2020,77.3
+Bulgaria,0 years,Female,2021,75.0
+Bulgaria,0 years,Female,2022,77.9
+Bulgaria,0 years,Female,2023,79.5
+Bulgaria,0 years,Female,2024,79.5
+Canada,0 years,Female,2000,81.8
+Canada,0 years,Female,2001,82.0
+Canada,0 years,Female,2002,82.0
+Canada,0 years,Female,2003,82.2
+Canada,0 years,Female,2004,82.4
+Canada,0 years,Female,2005,82.5
+Canada,0 years,Female,2006,82.9
+Canada,0 years,Female,2007,82.9
+Canada,0 years,Female,2008,83.1
+Canada,0 years,Female,2009,83.3
+Canada,0 years,Female,2010,83.5
+Canada,0 years,Female,2011,83.7
+Canada,0 years,Female,2012,83.8
+Canada,0 years,Female,2013,83.9
+Canada,0 years,Female,2014,83.9
+Canada,0 years,Female,2015,83.9
+Canada,0 years,Female,2016,84.0
+Canada,0 years,Female,2017,84.0
+Canada,0 years,Female,2018,84.0
+Canada,0 years,Female,2019,84.3
+Canada,0 years,Female,2020,83.8
+Canada,0 years,Female,2021,83.9
+Canada,0 years,Female,2022,83.4
+Canada,0 years,Female,2023,83.9
+Canada,0 years,Female,2024,84.3
+Chile,0 years,Female,2000,80.2
+Chile,0 years,Female,2001,80.1
+Chile,0 years,Female,2002,80.7
+Chile,0 years,Female,2003,80.7
+Chile,0 years,Female,2004,80.7
+Chile,0 years,Female,2005,81.1
+Chile,0 years,Female,2006,81.4
+Chile,0 years,Female,2007,81.0
+Chile,0 years,Female,2008,81.6
+Chile,0 years,Female,2009,81.9
+Chile,0 years,Female,2010,81.6
+Chile,0 years,Female,2011,82.1
+Chile,0 years,Female,2012,82.0
+Chile,0 years,Female,2013,82.4
+Chile,0 years,Female,2014,82.5
+Chile,0 years,Female,2015,82.7
+Chile,0 years,Female,2016,83.0
+Chile,0 years,Female,2017,83.1
+Chile,0 years,Female,2018,83.5
+Chile,0 years,Female,2019,83.6
+Chile,0 years,Female,2020,82.8
+Chile,0 years,Female,2021,82.1
+Chile,0 years,Female,2022,82.5
+Chile,0 years,Female,2023,83.7
+Chile,0 years,Female,2024,83.7
+Chile,0 years,Female,2025,84.0
+China (People’s Republic of),0 years,Female,2000,74.9
+China (People’s Republic of),0 years,Female,2001,75.3
+China (People’s Republic of),0 years,Female,2002,75.7
+China (People’s Republic of),0 years,Female,2003,76.0
+China (People’s Republic of),0 years,Female,2004,76.4
+China (People’s Republic of),0 years,Female,2005,76.8
+China (People’s Republic of),0 years,Female,2006,77.1
+China (People’s Republic of),0 years,Female,2007,77.4
+China (People’s Republic of),0 years,Female,2008,77.5
+China (People’s Republic of),0 years,Female,2009,78.0
+China (People’s Republic of),0 years,Female,2010,78.3
+China (People’s Republic of),0 years,Female,2011,78.7
+China (People’s Republic of),0 years,Female,2012,79.0
+China (People’s Republic of),0 years,Female,2013,79.2
+China (People’s Republic of),0 years,Female,2014,79.5
+China (People’s Republic of),0 years,Female,2015,79.8
+China (People’s Republic of),0 years,Female,2016,80.1
+China (People’s Republic of),0 years,Female,2017,80.3
+China (People’s Republic of),0 years,Female,2018,80.6
+China (People’s Republic of),0 years,Female,2019,80.7
+China (People’s Republic of),0 years,Female,2020,81.0
+China (People’s Republic of),0 years,Female,2021,80.9
+China (People’s Republic of),0 years,Female,2022,81.1
+China (People’s Republic of),0 years,Female,2023,80.9
+China (People’s Republic of),0 years,Female,2024,81.0
+Colombia,0 years,Female,2000,75.0
+Colombia,0 years,Female,2001,75.4
+Colombia,0 years,Female,2002,75.7
+Colombia,0 years,Female,2003,76.1
+Colombia,0 years,Female,2004,76.5
+Colombia,0 years,Female,2005,76.8
+Colombia,0 years,Female,2006,77.0
+Colombia,0 years,Female,2007,77.3
+Colombia,0 years,Female,2008,77.5
+Colombia,0 years,Female,2009,77.7
+Colombia,0 years,Female,2010,77.9
+Colombia,0 years,Female,2011,78.1
+Colombia,0 years,Female,2012,78.3
+Colombia,0 years,Female,2013,78.5
+Colombia,0 years,Female,2014,78.7
+Colombia,0 years,Female,2015,78.9
+Colombia,0 years,Female,2016,79.1
+Colombia,0 years,Female,2017,79.3
+Colombia,0 years,Female,2018,78.1
+Colombia,0 years,Female,2019,78.3
+Colombia,0 years,Female,2020,77.4
+Colombia,0 years,Female,2021,77.4
+Colombia,0 years,Female,2022,77.9
+Colombia,0 years,Female,2023,78.9
+Colombia,0 years,Female,2024,79.0
+Colombia,0 years,Female,2025,79.2
+Costa Rica,0 years,Female,2000,80.2
+Costa Rica,0 years,Female,2001,80.4
+Costa Rica,0 years,Female,2002,80.6
+Costa Rica,0 years,Female,2003,80.8
+Costa Rica,0 years,Female,2004,81.0
+Costa Rica,0 years,Female,2005,81.2
+Costa Rica,0 years,Female,2006,81.4
+Costa Rica,0 years,Female,2007,81.6
+Costa Rica,0 years,Female,2008,81.8
+Costa Rica,0 years,Female,2009,82.0
+Costa Rica,0 years,Female,2010,81.6
+Costa Rica,0 years,Female,2011,81.6
+Costa Rica,0 years,Female,2012,81.9
+Costa Rica,0 years,Female,2013,82.1
+Costa Rica,0 years,Female,2014,82.3
+Costa Rica,0 years,Female,2015,82.4
+Costa Rica,0 years,Female,2016,82.6
+Costa Rica,0 years,Female,2017,82.7
+Costa Rica,0 years,Female,2018,82.9
+Costa Rica,0 years,Female,2019,83.0
+Costa Rica,0 years,Female,2020,83.2
+Costa Rica,0 years,Female,2021,83.3
+Costa Rica,0 years,Female,2022,83.5
+Costa Rica,0 years,Female,2023,83.6
+Costa Rica,0 years,Female,2024,83.4
+Costa Rica,0 years,Female,2025,83.5
+Croatia,0 years,Female,2001,78.1
+Croatia,0 years,Female,2002,78.3
+Croatia,0 years,Female,2003,78.1
+Croatia,0 years,Female,2004,78.8
+Croatia,0 years,Female,2005,78.8
+Croatia,0 years,Female,2006,79.3
+Croatia,0 years,Female,2007,79.2
+Croatia,0 years,Female,2008,79.7
+Croatia,0 years,Female,2009,79.7
+Croatia,0 years,Female,2010,79.9
+Croatia,0 years,Female,2011,80.4
+Croatia,0 years,Female,2012,80.6
+Croatia,0 years,Female,2013,81.0
+Croatia,0 years,Female,2014,80.8
+Croatia,0 years,Female,2015,80.4
+Croatia,0 years,Female,2016,81.1
+Croatia,0 years,Female,2017,80.8
+Croatia,0 years,Female,2018,81.2
+Croatia,0 years,Female,2019,81.3
+Croatia,0 years,Female,2020,80.7
+Croatia,0 years,Female,2021,79.7
+Croatia,0 years,Female,2022,80.8
+Croatia,0 years,Female,2023,81.7
+Croatia,0 years,Female,2024,81.8
+Czechia,0 years,Female,2000,78.5
+Czechia,0 years,Female,2001,78.5
+Czechia,0 years,Female,2002,78.7
+Czechia,0 years,Female,2003,78.6
+Czechia,0 years,Female,2004,79.1
+Czechia,0 years,Female,2005,79.2
+Czechia,0 years,Female,2006,79.9
+Czechia,0 years,Female,2007,80.2
+Czechia,0 years,Female,2008,80.5
+Czechia,0 years,Female,2009,80.5
+Czechia,0 years,Female,2010,80.9
+Czechia,0 years,Female,2011,81.1
+Czechia,0 years,Female,2012,81.2
+Czechia,0 years,Female,2013,81.3
+Czechia,0 years,Female,2014,81.7
+Czechia,0 years,Female,2015,81.5
+Czechia,0 years,Female,2016,81.9
+Czechia,0 years,Female,2017,81.9
+Czechia,0 years,Female,2018,81.9
+Czechia,0 years,Female,2019,82.1
+Czechia,0 years,Female,2020,81.3
+Czechia,0 years,Female,2021,80.5
+Czechia,0 years,Female,2022,81.9
+Czechia,0 years,Female,2023,82.7
+Czechia,0 years,Female,2024,83.0
+Denmark,0 years,Female,2000,79.2
+Denmark,0 years,Female,2001,79.3
+Denmark,0 years,Female,2002,79.4
+Denmark,0 years,Female,2003,79.8
+Denmark,0 years,Female,2004,80.2
+Denmark,0 years,Female,2005,80.5
+Denmark,0 years,Female,2006,80.7
+Denmark,0 years,Female,2007,80.6
+Denmark,0 years,Female,2008,81.0
+Denmark,0 years,Female,2009,81.1
+Denmark,0 years,Female,2010,81.4
+Denmark,0 years,Female,2011,81.9
+Denmark,0 years,Female,2012,82.1
+Denmark,0 years,Female,2013,82.4
+Denmark,0 years,Female,2014,82.7
+Denmark,0 years,Female,2015,82.7
+Denmark,0 years,Female,2016,82.8
+Denmark,0 years,Female,2017,83.1
+Denmark,0 years,Female,2018,82.9
+Denmark,0 years,Female,2019,83.4
+Denmark,0 years,Female,2020,83.5
+Denmark,0 years,Female,2021,83.3
+Denmark,0 years,Female,2022,83.2
+Denmark,0 years,Female,2023,83.6
+Denmark,0 years,Female,2024,83.9
+Estonia,0 years,Female,2000,76.4
+Estonia,0 years,Female,2001,76.5
+Estonia,0 years,Female,2002,77.2
+Estonia,0 years,Female,2003,77.2
+Estonia,0 years,Female,2004,78.0
+Estonia,0 years,Female,2005,78.2
+Estonia,0 years,Female,2006,78.6
+Estonia,0 years,Female,2007,78.9
+Estonia,0 years,Female,2008,79.5
+Estonia,0 years,Female,2009,80.3
+Estonia,0 years,Female,2010,80.8
+Estonia,0 years,Female,2011,81.3
+Estonia,0 years,Female,2012,81.5
+Estonia,0 years,Female,2013,81.7
+Estonia,0 years,Female,2014,81.5
+Estonia,0 years,Female,2015,81.8
+Estonia,0 years,Female,2016,81.9
+Estonia,0 years,Female,2017,82.3
+Estonia,0 years,Female,2018,82.4
+Estonia,0 years,Female,2019,82.8
+Estonia,0 years,Female,2020,82.8
+Estonia,0 years,Female,2021,81.4
+Estonia,0 years,Female,2022,82.2
+Estonia,0 years,Female,2023,83.0
+Estonia,0 years,Female,2024,83.4
+Finland,0 years,Female,2000,81.2
+Finland,0 years,Female,2001,81.7
+Finland,0 years,Female,2002,81.6
+Finland,0 years,Female,2003,81.9
+Finland,0 years,Female,2004,82.5
+Finland,0 years,Female,2005,82.5
+Finland,0 years,Female,2006,83.1
+Finland,0 years,Female,2007,83.1
+Finland,0 years,Female,2008,83.3
+Finland,0 years,Female,2009,83.5
+Finland,0 years,Female,2010,83.5
+Finland,0 years,Female,2011,83.8
+Finland,0 years,Female,2012,83.7
+Finland,0 years,Female,2013,84.1
+Finland,0 years,Female,2014,83.9
+Finland,0 years,Female,2015,84.1
+Finland,0 years,Female,2016,84.1
+Finland,0 years,Female,2017,84.2
+Finland,0 years,Female,2018,84.3
+Finland,0 years,Female,2019,84.6
+Finland,0 years,Female,2020,84.6
+Finland,0 years,Female,2021,84.5
+Finland,0 years,Female,2022,83.8
+Finland,0 years,Female,2023,84.2
+Finland,0 years,Female,2024,84.8
+France,0 years,Female,2000,83.0
+France,0 years,Female,2001,83.0
+France,0 years,Female,2002,83.0
+France,0 years,Female,2003,82.7
+France,0 years,Female,2004,83.8
+France,0 years,Female,2005,83.8
+France,0 years,Female,2006,84.5
+France,0 years,Female,2007,84.8
+France,0 years,Female,2008,84.8
+France,0 years,Female,2009,85.0
+France,0 years,Female,2010,85.3
+France,0 years,Female,2011,85.7
+France,0 years,Female,2012,85.4
+France,0 years,Female,2013,85.6
+France,0 years,Female,2014,85.4
+France,0 years,Female,2015,85.1
+France,0 years,Female,2016,85.3
+France,0 years,Female,2017,85.3
+France,0 years,Female,2018,85.5
+France,0 years,Female,2019,85.6
+France,0 years,Female,2020,85.1
+France,0 years,Female,2021,85.2
+France,0 years,Female,2022,85.1
+France,0 years,Female,2023,85.7
+France,0 years,Female,2024,85.8
+Germany,0 years,Female,2000,81.2
+Germany,0 years,Female,2001,81.4
+Germany,0 years,Female,2002,81.3
+Germany,0 years,Female,2003,81.3
+Germany,0 years,Female,2004,81.9
+Germany,0 years,Female,2005,82.0
+Germany,0 years,Female,2006,82.4
+Germany,0 years,Female,2007,82.7
+Germany,0 years,Female,2008,82.7
+Germany,0 years,Female,2009,82.8
+Germany,0 years,Female,2010,83.0
+Germany,0 years,Female,2011,83.1
+Germany,0 years,Female,2012,83.1
+Germany,0 years,Female,2013,83.0
+Germany,0 years,Female,2014,83.3
+Germany,0 years,Female,2015,83.0
+Germany,0 years,Female,2016,83.3
+Germany,0 years,Female,2017,83.3
+Germany,0 years,Female,2018,83.2
+Germany,0 years,Female,2019,83.6
+Germany,0 years,Female,2020,83.4
+Germany,0 years,Female,2021,83.2
+Germany,0 years,Female,2022,82.9
+Germany,0 years,Female,2023,83.2
+Germany,0 years,Female,2024,83.5
+Greece,0 years,Female,2000,81.3
+Greece,0 years,Female,2001,81.9
+Greece,0 years,Female,2002,82.0
+Greece,0 years,Female,2003,82.0
+Greece,0 years,Female,2004,82.2
+Greece,0 years,Female,2005,82.5
+Greece,0 years,Female,2006,82.7
+Greece,0 years,Female,2007,82.5
+Greece,0 years,Female,2008,83.0
+Greece,0 years,Female,2009,83.3
+Greece,0 years,Female,2010,83.3
+Greece,0 years,Female,2011,83.6
+Greece,0 years,Female,2012,83.4
+Greece,0 years,Female,2013,84.0
+Greece,0 years,Female,2014,83.8
+Greece,0 years,Female,2015,83.5
+Greece,0 years,Female,2016,83.7
+Greece,0 years,Female,2017,83.7
+Greece,0 years,Female,2018,84.2
+Greece,0 years,Female,2019,84.1
+Greece,0 years,Female,2020,83.8
+Greece,0 years,Female,2021,82.9
+Greece,0 years,Female,2022,83.4
+Greece,0 years,Female,2023,84.2
+Greece,0 years,Female,2024,84.4
+Hungary,0 years,Female,2000,76.2
+Hungary,0 years,Female,2001,76.7
+Hungary,0 years,Female,2002,76.7
+Hungary,0 years,Female,2003,76.7
+Hungary,0 years,Female,2004,77.2
+Hungary,0 years,Female,2005,77.2
+Hungary,0 years,Female,2006,77.8
+Hungary,0 years,Female,2007,77.8
+Hungary,0 years,Female,2008,78.3
+Hungary,0 years,Female,2009,78.4
+Hungary,0 years,Female,2010,78.6
+Hungary,0 years,Female,2011,78.7
+Hungary,0 years,Female,2012,78.7
+Hungary,0 years,Female,2013,79.1
+Hungary,0 years,Female,2014,79.2
+Hungary,0 years,Female,2015,78.8
+Hungary,0 years,Female,2016,79.4
+Hungary,0 years,Female,2017,79.1
+Hungary,0 years,Female,2018,79.4
+Hungary,0 years,Female,2019,79.5
+Hungary,0 years,Female,2020,78.8
+Hungary,0 years,Female,2021,77.6
+Hungary,0 years,Female,2022,79.2
+Hungary,0 years,Female,2023,79.8
+Hungary,0 years,Female,2024,79.9
+Iceland,0 years,Female,2000,81.6
+Iceland,0 years,Female,2001,83.2
+Iceland,0 years,Female,2002,82.5
+Iceland,0 years,Female,2003,82.5
+Iceland,0 years,Female,2004,83.2
+Iceland,0 years,Female,2005,83.5
+Iceland,0 years,Female,2006,82.9
+Iceland,0 years,Female,2007,83.4
+Iceland,0 years,Female,2008,83.3
+Iceland,0 years,Female,2009,83.8
+Iceland,0 years,Female,2010,84.1
+Iceland,0 years,Female,2011,84.1
+Iceland,0 years,Female,2012,84.3
+Iceland,0 years,Female,2013,83.7
+Iceland,0 years,Female,2014,84.1
+Iceland,0 years,Female,2015,83.6
+Iceland,0 years,Female,2016,83.9
+Iceland,0 years,Female,2017,84.1
+Iceland,0 years,Female,2018,84.2
+Iceland,0 years,Female,2019,84.6
+Iceland,0 years,Female,2020,84.4
+Iceland,0 years,Female,2021,84.5
+Iceland,0 years,Female,2022,83.5
+Iceland,0 years,Female,2023,84.1
+Iceland,0 years,Female,2024,84.5
+India,0 years,Female,2000,63.8
+India,0 years,Female,2001,64.3
+India,0 years,Female,2002,64.9
+India,0 years,Female,2003,65.4
+India,0 years,Female,2004,65.8
+India,0 years,Female,2005,66.4
+India,0 years,Female,2006,66.9
+India,0 years,Female,2007,67.4
+India,0 years,Female,2008,67.8
+India,0 years,Female,2009,68.3
+India,0 years,Female,2010,68.8
+India,0 years,Female,2011,69.3
+India,0 years,Female,2012,69.7
+India,0 years,Female,2013,70.2
+India,0 years,Female,2014,70.6
+India,0 years,Female,2015,70.9
+India,0 years,Female,2016,71.3
+India,0 years,Female,2017,71.6
+India,0 years,Female,2018,72.0
+India,0 years,Female,2019,72.3
+India,0 years,Female,2020,71.9
+India,0 years,Female,2021,68.8
+India,0 years,Female,2022,73.3
+India,0 years,Female,2023,73.6
+India,0 years,Female,2024,73.9
+Indonesia,0 years,Female,2000,68.0
+Indonesia,0 years,Female,2001,68.3
+Indonesia,0 years,Female,2002,68.7
+Indonesia,0 years,Female,2003,68.8
+Indonesia,0 years,Female,2004,66.9
+Indonesia,0 years,Female,2005,69.3
+Indonesia,0 years,Female,2006,69.4
+Indonesia,0 years,Female,2007,69.7
+Indonesia,0 years,Female,2008,69.9
+Indonesia,0 years,Female,2009,70.0
+Indonesia,0 years,Female,2010,70.2
+Indonesia,0 years,Female,2011,70.5
+Indonesia,0 years,Female,2012,70.7
+Indonesia,0 years,Female,2013,71.0
+Indonesia,0 years,Female,2014,71.2
+Indonesia,0 years,Female,2015,71.5
+Indonesia,0 years,Female,2016,71.7
+Indonesia,0 years,Female,2017,71.9
+Indonesia,0 years,Female,2018,72.1
+Indonesia,0 years,Female,2019,72.4
+Indonesia,0 years,Female,2020,71.1
+Indonesia,0 years,Female,2021,69.4
+Indonesia,0 years,Female,2022,73.0
+Indonesia,0 years,Female,2023,73.3
+Indonesia,0 years,Female,2024,73.4
+Ireland,0 years,Female,2000,79.2
+Ireland,0 years,Female,2001,79.9
+Ireland,0 years,Female,2002,80.4
+Ireland,0 years,Female,2003,80.7
+Ireland,0 years,Female,2004,81.1
+Ireland,0 years,Female,2005,81.3
+Ireland,0 years,Female,2006,81.7
+Ireland,0 years,Female,2007,82.1
+Ireland,0 years,Female,2008,82.4
+Ireland,0 years,Female,2009,82.7
+Ireland,0 years,Female,2010,83.1
+Ireland,0 years,Female,2011,83.0
+Ireland,0 years,Female,2012,83.1
+Ireland,0 years,Female,2013,83.1
+Ireland,0 years,Female,2014,83.3
+Ireland,0 years,Female,2015,83.3
+Ireland,0 years,Female,2016,83.4
+Ireland,0 years,Female,2017,83.8
+Ireland,0 years,Female,2018,83.9
+Ireland,0 years,Female,2019,84.4
+Ireland,0 years,Female,2020,84.1
+Ireland,0 years,Female,2021,84.0
+Ireland,0 years,Female,2022,84.0
+Ireland,0 years,Female,2023,84.5
+Ireland,0 years,Female,2024,84.7
+Israel,0 years,Female,2000,80.9
+Israel,0 years,Female,2001,81.2
+Israel,0 years,Female,2002,81.5
+Israel,0 years,Female,2003,81.8
+Israel,0 years,Female,2004,82.4
+Israel,0 years,Female,2005,82.2
+Israel,0 years,Female,2006,82.5
+Israel,0 years,Female,2007,82.4
+Israel,0 years,Female,2008,83.0
+Israel,0 years,Female,2009,83.3
+Israel,0 years,Female,2010,83.6
+Israel,0 years,Female,2011,83.5
+Israel,0 years,Female,2012,83.6
+Israel,0 years,Female,2013,83.9
+Israel,0 years,Female,2014,84.1
+Israel,0 years,Female,2015,84.1
+Israel,0 years,Female,2016,84.2
+Israel,0 years,Female,2017,84.6
+Israel,0 years,Female,2018,84.8
+Israel,0 years,Female,2019,84.7
+Israel,0 years,Female,2020,84.8
+Israel,0 years,Female,2021,84.6
+Israel,0 years,Female,2022,84.8
+Israel,0 years,Female,2023,85.5
+Israel,0 years,Female,2024,85.4
+Italy,0 years,Female,2000,82.8
+Italy,0 years,Female,2001,83.2
+Italy,0 years,Female,2002,83.2
+Italy,0 years,Female,2003,82.8
+Italy,0 years,Female,2004,83.7
+Italy,0 years,Female,2005,83.6
+Italy,0 years,Female,2006,84.1
+Italy,0 years,Female,2007,84.2
+Italy,0 years,Female,2008,84.2
+Italy,0 years,Female,2009,84.3
+Italy,0 years,Female,2010,84.7
+Italy,0 years,Female,2011,84.8
+Italy,0 years,Female,2012,84.8
+Italy,0 years,Female,2013,85.2
+Italy,0 years,Female,2014,85.0
+Italy,0 years,Female,2015,84.6
+Italy,0 years,Female,2016,85.2
+Italy,0 years,Female,2017,84.9
+Italy,0 years,Female,2018,85.2
+Italy,0 years,Female,2019,85.5
+Italy,0 years,Female,2020,84.5
+Italy,0 years,Female,2021,84.8
+Italy,0 years,Female,2022,84.8
+Italy,0 years,Female,2023,85.3
+Italy,0 years,Female,2024,85.7
+Japan,0 years,Female,2000,84.6
+Japan,0 years,Female,2001,84.9
+Japan,0 years,Female,2002,85.2
+Japan,0 years,Female,2003,85.3
+Japan,0 years,Female,2004,85.6
+Japan,0 years,Female,2005,85.5
+Japan,0 years,Female,2006,85.8
+Japan,0 years,Female,2007,86.0
+Japan,0 years,Female,2008,86.1
+Japan,0 years,Female,2009,86.4
+Japan,0 years,Female,2010,86.3
+Japan,0 years,Female,2011,85.9
+Japan,0 years,Female,2012,86.4
+Japan,0 years,Female,2013,86.6
+Japan,0 years,Female,2014,86.8
+Japan,0 years,Female,2015,87.0
+Japan,0 years,Female,2016,87.1
+Japan,0 years,Female,2017,87.3
+Japan,0 years,Female,2018,87.3
+Japan,0 years,Female,2019,87.4
+Japan,0 years,Female,2020,87.7
+Japan,0 years,Female,2021,87.6
+Japan,0 years,Female,2022,87.1
+Japan,0 years,Female,2023,87.1
+Japan,0 years,Female,2024,87.1
+Korea,0 years,Female,2000,79.7
+Korea,0 years,Female,2001,80.1
+Korea,0 years,Female,2002,80.3
+Korea,0 years,Female,2003,80.8
+Korea,0 years,Female,2004,81.2
+Korea,0 years,Female,2005,81.6
+Korea,0 years,Female,2006,82.1
+Korea,0 years,Female,2007,82.5
+Korea,0 years,Female,2008,83.0
+Korea,0 years,Female,2009,83.4
+Korea,0 years,Female,2010,83.6
+Korea,0 years,Female,2011,84.0
+Korea,0 years,Female,2012,84.2
+Korea,0 years,Female,2013,84.6
+Korea,0 years,Female,2014,85.0
+Korea,0 years,Female,2015,85.2
+Korea,0 years,Female,2016,85.4
+Korea,0 years,Female,2017,85.7
+Korea,0 years,Female,2018,85.7
+Korea,0 years,Female,2019,86.3
+Korea,0 years,Female,2020,86.5
+Korea,0 years,Female,2021,86.6
+Korea,0 years,Female,2022,85.6
+Korea,0 years,Female,2023,86.4
+Korea,0 years,Female,2024,86.6
+Latvia,0 years,Female,2002,75.8
+Latvia,0 years,Female,2003,75.7
+Latvia,0 years,Female,2004,76.0
+Latvia,0 years,Female,2005,76.3
+Latvia,0 years,Female,2006,76.1
+Latvia,0 years,Female,2007,76.2
+Latvia,0 years,Female,2008,77.5
+Latvia,0 years,Female,2009,77.7
+Latvia,0 years,Female,2010,78.0
+Latvia,0 years,Female,2011,78.8
+Latvia,0 years,Female,2012,78.9
+Latvia,0 years,Female,2013,78.9
+Latvia,0 years,Female,2014,79.2
+Latvia,0 years,Female,2015,79.3
+Latvia,0 years,Female,2016,79.4
+Latvia,0 years,Female,2017,79.5
+Latvia,0 years,Female,2018,79.6
+Latvia,0 years,Female,2019,80.0
+Latvia,0 years,Female,2020,79.9
+Latvia,0 years,Female,2021,78.0
+Latvia,0 years,Female,2022,79.4
+Latvia,0 years,Female,2023,80.5
+Latvia,0 years,Female,2024,81.2
+Lithuania,0 years,Female,2000,77.4
+Lithuania,0 years,Female,2001,77.4
+Lithuania,0 years,Female,2002,77.4
+Lithuania,0 years,Female,2003,77.7
+Lithuania,0 years,Female,2004,77.7
+Lithuania,0 years,Female,2005,77.4
+Lithuania,0 years,Female,2006,77.1
+Lithuania,0 years,Female,2007,77.2
+Lithuania,0 years,Female,2008,77.6
+Lithuania,0 years,Female,2009,78.7
+Lithuania,0 years,Female,2010,78.9
+Lithuania,0 years,Female,2011,79.3
+Lithuania,0 years,Female,2012,79.6
+Lithuania,0 years,Female,2013,79.6
+Lithuania,0 years,Female,2014,79.8
+Lithuania,0 years,Female,2015,79.5
+Lithuania,0 years,Female,2016,79.9
+Lithuania,0 years,Female,2017,80.3
+Lithuania,0 years,Female,2018,80.5
+Lithuania,0 years,Female,2019,80.9
+Lithuania,0 years,Female,2020,80.0
+Lithuania,0 years,Female,2021,78.9
+Lithuania,0 years,Female,2022,80.1
+Lithuania,0 years,Female,2023,81.7
+Lithuania,0 years,Female,2024,81.6
+Luxembourg,0 years,Female,2000,81.3
+Luxembourg,0 years,Female,2001,80.7
+Luxembourg,0 years,Female,2002,81.5
+Luxembourg,0 years,Female,2003,80.8
+Luxembourg,0 years,Female,2004,82.4
+Luxembourg,0 years,Female,2005,82.3
+Luxembourg,0 years,Female,2006,81.9
+Luxembourg,0 years,Female,2007,82.2
+Luxembourg,0 years,Female,2008,83.1
+Luxembourg,0 years,Female,2009,83.3
+Luxembourg,0 years,Female,2010,83.5
+Luxembourg,0 years,Female,2011,83.6
+Luxembourg,0 years,Female,2012,83.8
+Luxembourg,0 years,Female,2013,83.9
+Luxembourg,0 years,Female,2014,84.5
+Luxembourg,0 years,Female,2015,84.3
+Luxembourg,0 years,Female,2016,84.8
+Luxembourg,0 years,Female,2017,84.0
+Luxembourg,0 years,Female,2018,84.3
+Luxembourg,0 years,Female,2019,84.8
+Luxembourg,0 years,Female,2020,84.4
+Luxembourg,0 years,Female,2021,84.6
+Luxembourg,0 years,Female,2022,85.0
+Luxembourg,0 years,Female,2023,84.8
+Luxembourg,0 years,Female,2024,85.5
+Mexico,0 years,Female,2000,77.4
+Mexico,0 years,Female,2001,77.7
+Mexico,0 years,Female,2002,77.7
+Mexico,0 years,Female,2003,77.7
+Mexico,0 years,Female,2004,78.0
+Mexico,0 years,Female,2005,77.8
+Mexico,0 years,Female,2006,78.2
+Mexico,0 years,Female,2007,78.0
+Mexico,0 years,Female,2008,78.1
+Mexico,0 years,Female,2009,77.9
+Mexico,0 years,Female,2010,77.2
+Mexico,0 years,Female,2011,77.7
+Mexico,0 years,Female,2012,77.8
+Mexico,0 years,Female,2013,78.0
+Mexico,0 years,Female,2014,77.8
+Mexico,0 years,Female,2015,77.8
+Mexico,0 years,Female,2016,77.7
+Mexico,0 years,Female,2017,77.9
+Mexico,0 years,Female,2018,78.0
+Mexico,0 years,Female,2019,78.0
+Mexico,0 years,Female,2020,73.5
+Mexico,0 years,Female,2021,73.1
+Mexico,0 years,Female,2022,78.5
+Mexico,0 years,Female,2023,78.6
+Mexico,0 years,Female,2024,78.9
+Mexico,0 years,Female,2025,79.0
+Netherlands,0 years,Female,2000,80.7
+Netherlands,0 years,Female,2001,80.8
+Netherlands,0 years,Female,2002,80.7
+Netherlands,0 years,Female,2003,81.0
+Netherlands,0 years,Female,2004,81.5
+Netherlands,0 years,Female,2005,81.7
+Netherlands,0 years,Female,2006,82.0
+Netherlands,0 years,Female,2007,82.5
+Netherlands,0 years,Female,2008,82.5
+Netherlands,0 years,Female,2009,82.9
+Netherlands,0 years,Female,2010,83.0
+Netherlands,0 years,Female,2011,83.1
+Netherlands,0 years,Female,2012,83.0
+Netherlands,0 years,Female,2013,83.2
+Netherlands,0 years,Female,2014,83.3
+Netherlands,0 years,Female,2015,83.1
+Netherlands,0 years,Female,2016,83.1
+Netherlands,0 years,Female,2017,83.3
+Netherlands,0 years,Female,2018,83.3
+Netherlands,0 years,Female,2019,83.6
+Netherlands,0 years,Female,2020,83.1
+Netherlands,0 years,Female,2021,83.0
+Netherlands,0 years,Female,2022,83.1
+Netherlands,0 years,Female,2023,83.3
+Netherlands,0 years,Female,2024,83.3
+New Zealand,0 years,Female,2000,80.8
+New Zealand,0 years,Female,2001,81.1
+New Zealand,0 years,Female,2002,81.3
+New Zealand,0 years,Female,2003,81.5
+New Zealand,0 years,Female,2004,81.7
+New Zealand,0 years,Female,2005,81.9
+New Zealand,0 years,Female,2006,82.2
+New Zealand,0 years,Female,2007,82.3
+New Zealand,0 years,Female,2008,82.5
+New Zealand,0 years,Female,2009,82.6
+New Zealand,0 years,Female,2010,82.7
+New Zealand,0 years,Female,2011,82.9
+New Zealand,0 years,Female,2012,83.0
+New Zealand,0 years,Female,2013,83.2
+New Zealand,0 years,Female,2014,83.2
+New Zealand,0 years,Female,2015,83.3
+New Zealand,0 years,Female,2016,83.4
+New Zealand,0 years,Female,2017,83.4
+New Zealand,0 years,Female,2018,83.5
+New Zealand,0 years,Female,2019,83.5
+New Zealand,0 years,Female,2020,83.5
+New Zealand,0 years,Female,2021,83.5
+New Zealand,0 years,Female,2022,83.5
+New Zealand,0 years,Female,2023,83.5
+New Zealand,0 years,Female,2024,83.7
+Norway,0 years,Female,2000,81.5
+Norway,0 years,Female,2001,81.6
+Norway,0 years,Female,2002,81.6
+Norway,0 years,Female,2003,82.1
+Norway,0 years,Female,2004,82.5
+Norway,0 years,Female,2005,82.7
+Norway,0 years,Female,2006,82.9
+Norway,0 years,Female,2007,82.9
+Norway,0 years,Female,2008,83.2
+Norway,0 years,Female,2009,83.2
+Norway,0 years,Female,2010,83.3
+Norway,0 years,Female,2011,83.6
+Norway,0 years,Female,2012,83.5
+Norway,0 years,Female,2013,83.8
+Norway,0 years,Female,2014,84.1
+Norway,0 years,Female,2015,84.2
+Norway,0 years,Female,2016,84.2
+Norway,0 years,Female,2017,84.3
+Norway,0 years,Female,2018,84.5
+Norway,0 years,Female,2019,84.7
+Norway,0 years,Female,2020,84.9
+Norway,0 years,Female,2021,84.7
+Norway,0 years,Female,2022,84.3
+Norway,0 years,Female,2023,84.6
+Norway,0 years,Female,2024,84.8
+Peru,0 years,Female,2000,72.9
+Peru,0 years,Female,2001,73.4
+Peru,0 years,Female,2002,73.9
+Peru,0 years,Female,2003,74.4
+Peru,0 years,Female,2004,74.7
+Peru,0 years,Female,2005,75.0
+Peru,0 years,Female,2006,75.2
+Peru,0 years,Female,2007,75.3
+Peru,0 years,Female,2008,75.5
+Peru,0 years,Female,2009,75.7
+Peru,0 years,Female,2010,76.9
+Peru,0 years,Female,2011,77.2
+Peru,0 years,Female,2012,77.5
+Peru,0 years,Female,2013,77.8
+Peru,0 years,Female,2014,78.2
+Peru,0 years,Female,2015,78.5
+Peru,0 years,Female,2016,78.8
+Peru,0 years,Female,2017,79.1
+Peru,0 years,Female,2018,79.3
+Peru,0 years,Female,2019,79.4
+Peru,0 years,Female,2020,79.5
+Peru,0 years,Female,2021,79.6
+Peru,0 years,Female,2022,79.7
+Peru,0 years,Female,2023,79.8
+Peru,0 years,Female,2024,80.0
+Peru,0 years,Female,2025,80.1
+Poland,0 years,Female,2000,78.0
+Poland,0 years,Female,2001,78.4
+Poland,0 years,Female,2002,78.8
+Poland,0 years,Female,2003,78.8
+Poland,0 years,Female,2004,79.2
+Poland,0 years,Female,2005,79.3
+Poland,0 years,Female,2006,79.7
+Poland,0 years,Female,2007,79.8
+Poland,0 years,Female,2008,80.0
+Poland,0 years,Female,2009,80.1
+Poland,0 years,Female,2010,80.7
+Poland,0 years,Female,2011,81.1
+Poland,0 years,Female,2012,81.1
+Poland,0 years,Female,2013,81.2
+Poland,0 years,Female,2014,81.4
+Poland,0 years,Female,2015,81.3
+Poland,0 years,Female,2016,81.7
+Poland,0 years,Female,2017,81.5
+Poland,0 years,Female,2018,81.5
+Poland,0 years,Female,2019,81.7
+Poland,0 years,Female,2020,80.6
+Poland,0 years,Female,2021,79.5
+Poland,0 years,Female,2022,81.0
+Poland,0 years,Female,2023,81.9
+Poland,0 years,Female,2024,82.2
+Portugal,0 years,Female,2000,80.4
+Portugal,0 years,Female,2001,80.7
+Portugal,0 years,Female,2002,80.8
+Portugal,0 years,Female,2003,80.8
+Portugal,0 years,Female,2004,81.8
+Portugal,0 years,Female,2005,81.5
+Portugal,0 years,Female,2006,82.5
+Portugal,0 years,Female,2007,82.5
+Portugal,0 years,Female,2008,82.7
+Portugal,0 years,Female,2009,82.8
+Portugal,0 years,Female,2010,83.2
+Portugal,0 years,Female,2011,83.8
+Portugal,0 years,Female,2012,83.6
+Portugal,0 years,Female,2013,84.0
+Portugal,0 years,Female,2014,84.3
+Portugal,0 years,Female,2015,84.3
+Portugal,0 years,Female,2016,84.3
+Portugal,0 years,Female,2017,84.5
+Portugal,0 years,Female,2018,84.5
+Portugal,0 years,Female,2019,84.8
+Portugal,0 years,Female,2020,84.2
+Portugal,0 years,Female,2021,84.3
+Portugal,0 years,Female,2022,84.4
+Portugal,0 years,Female,2023,85.0
+Portugal,0 years,Female,2024,85.2
+Romania,0 years,Female,2000,74.8
+Romania,0 years,Female,2001,74.9
+Romania,0 years,Female,2002,74.6
+Romania,0 years,Female,2003,74.8
+Romania,0 years,Female,2004,75.1
+Romania,0 years,Female,2005,75.4
+Romania,0 years,Female,2006,76.1
+Romania,0 years,Female,2007,76.8
+Romania,0 years,Female,2008,77.5
+Romania,0 years,Female,2009,77.7
+Romania,0 years,Female,2010,77.7
+Romania,0 years,Female,2011,78.2
+Romania,0 years,Female,2012,78.1
+Romania,0 years,Female,2013,78.7
+Romania,0 years,Female,2014,78.5
+Romania,0 years,Female,2015,78.5
+Romania,0 years,Female,2016,78.9
+Romania,0 years,Female,2017,78.9
+Romania,0 years,Female,2018,79.1
+Romania,0 years,Female,2019,79.4
+Romania,0 years,Female,2020,78.2
+Romania,0 years,Female,2021,76.6
+Romania,0 years,Female,2022,79.1
+Romania,0 years,Female,2023,80.2
+Romania,0 years,Female,2024,80.3
+Russia,0 years,Female,2000,72.3
+Russia,0 years,Female,2001,72.2
+Russia,0 years,Female,2002,71.9
+Russia,0 years,Female,2003,71.9
+Russia,0 years,Female,2004,72.4
+Russia,0 years,Female,2005,72.5
+Russia,0 years,Female,2006,73.3
+Russia,0 years,Female,2007,74.0
+Russia,0 years,Female,2008,74.3
+Russia,0 years,Female,2009,74.8
+Russia,0 years,Female,2010,74.9
+Russia,0 years,Female,2011,75.6
+Russia,0 years,Female,2012,75.9
+Russia,0 years,Female,2013,76.3
+Russia,0 years,Female,2014,76.5
+Russia,0 years,Female,2015,76.7
+Russia,0 years,Female,2016,77.1
+Russia,0 years,Female,2017,77.6
+Russia,0 years,Female,2018,77.8
+Russia,0 years,Female,2019,78.2
+Russia,0 years,Female,2020,76.4
+Russia,0 years,Female,2021,74.5
+Russia,0 years,Female,2022,77.8
+Russia,0 years,Female,2023,78.7
+Slovak Republic,0 years,Female,2000,77.5
+Slovak Republic,0 years,Female,2001,77.7
+Slovak Republic,0 years,Female,2002,77.7
+Slovak Republic,0 years,Female,2003,77.7
+Slovak Republic,0 years,Female,2004,78.0
+Slovak Republic,0 years,Female,2005,78.1
+Slovak Republic,0 years,Female,2006,78.4
+Slovak Republic,0 years,Female,2007,78.4
+Slovak Republic,0 years,Female,2008,79.0
+Slovak Republic,0 years,Female,2009,79.1
+Slovak Republic,0 years,Female,2010,79.3
+Slovak Republic,0 years,Female,2011,79.8
+Slovak Republic,0 years,Female,2012,79.9
+Slovak Republic,0 years,Female,2013,80.1
+Slovak Republic,0 years,Female,2014,80.4
+Slovak Republic,0 years,Female,2015,80.1
+Slovak Republic,0 years,Female,2016,80.6
+Slovak Republic,0 years,Female,2017,80.6
+Slovak Republic,0 years,Female,2018,80.7
+Slovak Republic,0 years,Female,2019,81.1
+Slovak Republic,0 years,Female,2020,80.4
+Slovak Republic,0 years,Female,2021,78.2
+Slovak Republic,0 years,Female,2022,80.4
+Slovak Republic,0 years,Female,2023,81.4
+Slovak Republic,0 years,Female,2024,81.7
+Slovenia,0 years,Female,2000,79.9
+Slovenia,0 years,Female,2001,80.4
+Slovenia,0 years,Female,2002,80.5
+Slovenia,0 years,Female,2003,80.3
+Slovenia,0 years,Female,2004,80.8
+Slovenia,0 years,Female,2005,80.9
+Slovenia,0 years,Female,2006,82.0
+Slovenia,0 years,Female,2007,82.0
+Slovenia,0 years,Female,2008,82.6
+Slovenia,0 years,Female,2009,82.7
+Slovenia,0 years,Female,2010,83.1
+Slovenia,0 years,Female,2011,83.3
+Slovenia,0 years,Female,2012,83.3
+Slovenia,0 years,Female,2013,83.6
+Slovenia,0 years,Female,2014,83.7
+Slovenia,0 years,Female,2015,83.5
+Slovenia,0 years,Female,2016,83.9
+Slovenia,0 years,Female,2017,83.7
+Slovenia,0 years,Female,2018,84.0
+Slovenia,0 years,Female,2019,84.3
+Slovenia,0 years,Female,2020,83.4
+Slovenia,0 years,Female,2021,83.7
+Slovenia,0 years,Female,2022,84.0
+Slovenia,0 years,Female,2023,84.7
+Slovenia,0 years,Female,2024,84.7
+South Africa,0 years,Female,2000,61.1
+South Africa,0 years,Female,2001,59.5
+South Africa,0 years,Female,2002,57.7
+South Africa,0 years,Female,2003,56.3
+South Africa,0 years,Female,2004,55.8
+South Africa,0 years,Female,2005,55.5
+South Africa,0 years,Female,2006,55.9
+South Africa,0 years,Female,2007,56.9
+South Africa,0 years,Female,2008,58.1
+South Africa,0 years,Female,2009,59.7
+South Africa,0 years,Female,2010,61.2
+South Africa,0 years,Female,2011,63.1
+South Africa,0 years,Female,2012,64.4
+South Africa,0 years,Female,2013,65.2
+South Africa,0 years,Female,2014,66.2
+South Africa,0 years,Female,2015,67.0
+South Africa,0 years,Female,2016,67.9
+South Africa,0 years,Female,2017,68.6
+South Africa,0 years,Female,2018,68.9
+South Africa,0 years,Female,2019,69.2
+South Africa,0 years,Female,2020,67.9
+South Africa,0 years,Female,2021,64.8
+South Africa,0 years,Female,2022,69.0
+South Africa,0 years,Female,2023,69.6
+South Africa,0 years,Female,2024,69.8
+Spain,0 years,Female,2000,82.8
+Spain,0 years,Female,2001,83.2
+Spain,0 years,Female,2002,83.3
+Spain,0 years,Female,2003,83.0
+Spain,0 years,Female,2004,83.7
+Spain,0 years,Female,2005,83.6
+Spain,0 years,Female,2006,84.4
+Spain,0 years,Female,2007,84.4
+Spain,0 years,Female,2008,84.6
+Spain,0 years,Female,2009,85.0
+Spain,0 years,Female,2010,85.5
+Spain,0 years,Female,2011,85.6
+Spain,0 years,Female,2012,85.5
+Spain,0 years,Female,2013,86.1
+Spain,0 years,Female,2014,85.6
+Spain,0 years,Female,2015,85.4
+Spain,0 years,Female,2016,85.8
+Spain,0 years,Female,2017,85.7
+Spain,0 years,Female,2018,85.8
+Spain,0 years,Female,2019,86.2
+Spain,0 years,Female,2020,85.0
+Spain,0 years,Female,2021,85.8
+Spain,0 years,Female,2022,85.7
+Spain,0 years,Female,2023,86.3
+Spain,0 years,Female,2024,86.5
+Sweden,0 years,Female,2000,82.0
+Sweden,0 years,Female,2001,82.2
+Sweden,0 years,Female,2002,82.1
+Sweden,0 years,Female,2003,82.5
+Sweden,0 years,Female,2004,82.8
+Sweden,0 years,Female,2005,82.9
+Sweden,0 years,Female,2006,83.1
+Sweden,0 years,Female,2007,83.1
+Sweden,0 years,Female,2008,83.3
+Sweden,0 years,Female,2009,83.5
+Sweden,0 years,Female,2010,83.6
+Sweden,0 years,Female,2011,83.8
+Sweden,0 years,Female,2012,83.6
+Sweden,0 years,Female,2013,83.8
+Sweden,0 years,Female,2014,84.1
+Sweden,0 years,Female,2015,84.0
+Sweden,0 years,Female,2016,84.1
+Sweden,0 years,Female,2017,84.1
+Sweden,0 years,Female,2018,84.3
+Sweden,0 years,Female,2019,84.7
+Sweden,0 years,Female,2020,84.3
+Sweden,0 years,Female,2021,84.8
+Sweden,0 years,Female,2022,84.7
+Sweden,0 years,Female,2023,84.9
+Sweden,0 years,Female,2024,85.3
+Switzerland,0 years,Female,2000,82.8
+Switzerland,0 years,Female,2001,83.2
+Switzerland,0 years,Female,2002,83.2
+Switzerland,0 years,Female,2003,83.2
+Switzerland,0 years,Female,2004,83.8
+Switzerland,0 years,Female,2005,84.0
+Switzerland,0 years,Female,2006,84.2
+Switzerland,0 years,Female,2007,84.4
+Switzerland,0 years,Female,2008,84.6
+Switzerland,0 years,Female,2009,84.6
+Switzerland,0 years,Female,2010,84.9
+Switzerland,0 years,Female,2011,85.0
+Switzerland,0 years,Female,2012,84.9
+Switzerland,0 years,Female,2013,85.0
+Switzerland,0 years,Female,2014,85.1
+Switzerland,0 years,Female,2015,84.9
+Switzerland,0 years,Female,2016,85.2
+Switzerland,0 years,Female,2017,85.4
+Switzerland,0 years,Female,2018,85.4
+Switzerland,0 years,Female,2019,85.6
+Switzerland,0 years,Female,2020,85.1
+Switzerland,0 years,Female,2021,85.6
+Switzerland,0 years,Female,2022,85.4
+Switzerland,0 years,Female,2023,85.8
+Switzerland,0 years,Female,2024,85.9
+Thailand,0 years,Female,2000,75.2
+Thailand,0 years,Female,2001,75.6
+Thailand,0 years,Female,2002,75.7
+Thailand,0 years,Female,2003,76.0
+Thailand,0 years,Female,2004,75.8
+Thailand,0 years,Female,2005,76.6
+Thailand,0 years,Female,2006,77.0
+Thailand,0 years,Female,2007,77.3
+Thailand,0 years,Female,2008,77.7
+Thailand,0 years,Female,2009,78.2
+Thailand,0 years,Female,2010,78.7
+Thailand,0 years,Female,2011,79.2
+Thailand,0 years,Female,2012,79.7
+Thailand,0 years,Female,2013,80.1
+Thailand,0 years,Female,2014,80.5
+Thailand,0 years,Female,2015,80.9
+Thailand,0 years,Female,2016,81.1
+Thailand,0 years,Female,2017,81.4
+Thailand,0 years,Female,2018,81.6
+Thailand,0 years,Female,2019,81.8
+Thailand,0 years,Female,2020,81.9
+Thailand,0 years,Female,2021,82.1
+Thailand,0 years,Female,2022,79.8
+Thailand,0 years,Female,2023,80.9
+Thailand,0 years,Female,2024,81.0
+Türkiye,0 years,Female,2000,73.1
+Türkiye,0 years,Female,2001,73.5
+Türkiye,0 years,Female,2002,73.9
+Türkiye,0 years,Female,2003,74.4
+Türkiye,0 years,Female,2004,74.8
+Türkiye,0 years,Female,2005,75.2
+Türkiye,0 years,Female,2006,75.6
+Türkiye,0 years,Female,2007,75.9
+Türkiye,0 years,Female,2008,76.2
+Türkiye,0 years,Female,2009,76.5
+Türkiye,0 years,Female,2010,76.8
+Türkiye,0 years,Female,2011,77.1
+Türkiye,0 years,Female,2012,77.2
+Türkiye,0 years,Female,2013,80.7
+Türkiye,0 years,Female,2014,80.7
+Türkiye,0 years,Female,2015,80.7
+Türkiye,0 years,Female,2016,80.8
+Türkiye,0 years,Female,2017,81.0
+Türkiye,0 years,Female,2018,81.3
+Türkiye,0 years,Female,2019,81.1
+Türkiye,0 years,Female,2020,80.5
+Türkiye,0 years,Female,2021,80.3
+Türkiye,0 years,Female,2022,80.0
+Türkiye,0 years,Female,2023,80.7
+Ukraine,0 years,Female,2000,73.5
+Ukraine,0 years,Female,2001,73.5
+Ukraine,0 years,Female,2002,73.5
+Ukraine,0 years,Female,2003,73.5
+Ukraine,0 years,Female,2004,73.4
+Ukraine,0 years,Female,2005,73.5
+Ukraine,0 years,Female,2006,73.5
+Ukraine,0 years,Female,2007,73.7
+Ukraine,0 years,Female,2008,74.1
+Ukraine,0 years,Female,2009,74.6
+Ukraine,0 years,Female,2010,75.3
+Ukraine,0 years,Female,2011,75.7
+Ukraine,0 years,Female,2012,76.0
+Ukraine,0 years,Female,2013,76.4
+Ukraine,0 years,Female,2014,76.8
+Ukraine,0 years,Female,2015,77.5
+Ukraine,0 years,Female,2016,78.0
+Ukraine,0 years,Female,2017,78.6
+Ukraine,0 years,Female,2018,78.3
+Ukraine,0 years,Female,2019,78.7
+Ukraine,0 years,Female,2020,78.0
+Ukraine,0 years,Female,2021,76.0
+Ukraine,0 years,Female,2022,79.4
+Ukraine,0 years,Female,2023,80.2
+Ukraine,0 years,Female,2024,79.4
+United Kingdom,0 years,Female,2000,80.2
+United Kingdom,0 years,Female,2001,80.4
+United Kingdom,0 years,Female,2002,80.5
+United Kingdom,0 years,Female,2003,80.5
+United Kingdom,0 years,Female,2004,81.0
+United Kingdom,0 years,Female,2005,81.2
+United Kingdom,0 years,Female,2006,81.5
+United Kingdom,0 years,Female,2007,81.6
+United Kingdom,0 years,Female,2008,81.7
+United Kingdom,0 years,Female,2009,82.2
+United Kingdom,0 years,Female,2010,82.3
+United Kingdom,0 years,Female,2011,82.7
+United Kingdom,0 years,Female,2012,82.7
+United Kingdom,0 years,Female,2013,82.7
+United Kingdom,0 years,Female,2014,83.0
+United Kingdom,0 years,Female,2015,82.7
+United Kingdom,0 years,Female,2016,82.8
+United Kingdom,0 years,Female,2017,82.9
+United Kingdom,0 years,Female,2018,82.9
+United Kingdom,0 years,Female,2019,83.2
+United Kingdom,0 years,Female,2020,82.3
+United Kingdom,0 years,Female,2021,82.5
+United Kingdom,0 years,Female,2022,82.9
+United Kingdom,0 years,Female,2023,82.9
+United Kingdom,0 years,Female,2024,83.3
+United States,0 years,Female,2000,79.3
+United States,0 years,Female,2001,79.5
+United States,0 years,Female,2002,79.6
+United States,0 years,Female,2003,79.7
+United States,0 years,Female,2004,80.1
+United States,0 years,Female,2005,80.1
+United States,0 years,Female,2006,80.3
+United States,0 years,Female,2007,80.6
+United States,0 years,Female,2008,80.6
+United States,0 years,Female,2009,80.9
+United States,0 years,Female,2010,81.0
+United States,0 years,Female,2011,81.1
+United States,0 years,Female,2012,81.2
+United States,0 years,Female,2013,81.2
+United States,0 years,Female,2014,81.3
+United States,0 years,Female,2015,81.1
+United States,0 years,Female,2016,81.1
+United States,0 years,Female,2017,81.1
+United States,0 years,Female,2018,81.2
+United States,0 years,Female,2019,81.4
+United States,0 years,Female,2020,79.9
+United States,0 years,Female,2021,79.3
+United States,0 years,Female,2022,80.2
+United States,0 years,Female,2023,81.1
+United States,0 years,Female,2024,81.4
