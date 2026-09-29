@@ -1,6 +1,6 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-const margin = {top: 20, right: 30, bottom: 40, left: 90};
+const margin = {top: 20, right: 30, bottom: 70, left: 90};
 const width = 800 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
 
@@ -21,7 +21,8 @@ const yScale = d3.scaleLinear()
     .domain([0, 90]);
 
 const xAxis = d3.axisBottom(xScale)
-    .tickFormat(d3.format("$.0s"));
+    .ticks(8)
+    .tickFormat(d => "$" + (d / 1000) + "k");
 const yAxis = d3.axisLeft(yScale);
 
 
@@ -30,8 +31,9 @@ svg.append("g")
     .call(xAxis)
     .append("text")
     .attr("x", width / 2)
-    .attr("y", 40)
-    .attr("fill", "black")
+    .attr("y", 50)
+    .style("fill", "white")
+    .style("font-size", "20px")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Healthcare Expenditure per Capita (USD)");
@@ -42,7 +44,12 @@ svg.append("g")
     .attr("transform", "rotate(-90)")
     .attr("x", -height / 2)
     .attr("y", -40)
-    .attr("fill", "black")
+    .style("fill", "white")
+    .style("font-size", "20px")
     .style("text-anchor", "middle")
     .style("font-weight", "bold")
     .text("Life Expectancy (Years)");
+
+// Make axis tick numbers larger
+svg.selectAll(".tick text")
+    .style("font-size", "14px");
