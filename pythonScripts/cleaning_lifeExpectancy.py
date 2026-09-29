@@ -20,15 +20,22 @@ data_Total = new_data[new_data['Sex'] == 'Total'].copy()
 data_Female = new_data[new_data['Sex'] == 'Female'].copy()
 data_Male = new_data[new_data['Sex'] == 'Male'].copy()  
 
+keep_difference = data_Total[data_Total['Life Expectancy'].abs() <= 20]
+
+remove_difference = data_Total[data_Total['Life Expectancy'].abs() > 20]
+   
+filename_difference = "data/ML_life_expectancy_difference.csv"
+keep_difference.to_csv(filename_difference, index=False)
+
 filename_Total = "data/cleaned_life_expectancy_total.csv"
-data_Total.to_csv(filename_Total, index=False)
+remove_difference.to_csv(filename_Total, index=False)
 filename_Female = "data/cleaned_life_expectancy_female.csv"
 data_Female.to_csv(filename_Female, index=False)
 filename_Male = "data/cleaned_life_expectancy_male.csv"
 data_Male.to_csv(filename_Male, index=False)
 
 print("Total Life Expectancy Data:")
-print(data_Total.head())
+print(remove_difference.head())
 print("\nFemale Life Expectancy Data:")
 print(data_Female.head())
 print("\nMale Life Expectancy Data:")
