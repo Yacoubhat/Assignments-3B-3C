@@ -1,6 +1,8 @@
 // javascripts/scatterPlot.js
-const margin = { top: 40, right: 30, bottom: 60, left: 70 };
-const width = 800 - margin.left - margin.right;
+
+(() => {
+const margin = { top: 40, right: 120, bottom: 60, left: 70 };
+const width = 700 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
 
 const svg = d3.select(".scatter-Plot")
@@ -28,9 +30,13 @@ d3.csv("data/health_data_merged.csv").then(data => {
     d.Year = +d.Year;
   });
 
-  // Filter for valid values and pick the latest common year (e.g. 2021)
- const filteredData = data.filter(d => d.Year === 2019 && d.Expenditure > 0 && d.LifeExpectancy > 0);
 
+
+  // Filter for valid values and pick the latest common year (e.g. 2021)
+
+  const filteredData = data.filter(d => d.Year == 2024 && d.Expenditure > 0 && d.LifeExpectancy > 0);
+
+  const groupedData = d3.group(filteredData, d => d.Country);
   // Scales
   const x = d3.scaleLinear()
     .domain([0, d3.max(data, d => d.Expenditure) * 1.05])
@@ -47,6 +53,11 @@ d3.csv("data/health_data_merged.csv").then(data => {
 
   svg.append("g")
     .call(d3.axisLeft(y));
+
+  const colour = d3.scaleOrdinal()
+        .domain(filteredData.map(d => d.Country))
+        .range(d3.schemeTableau10);
+
 
   // Labels
   svg.append("text")
@@ -72,10 +83,10 @@ d3.csv("data/health_data_merged.csv").then(data => {
     .attr("cx", d => x(d.Expenditure))
     .attr("cy", d => y(d.LifeExpectancy))
     .attr("r", 6)
-    .attr("fill", "#2b6cb0")
+    .attr("fill", d => colour(d.Country))
     .attr("opacity", 0.8)
     .on("mouseover", (event, d) => {
-      tooltip.transition().duration(200).style("opacity", 0.95);
+      tooltip.transition().duration(200).style("opacity", 0.55);
       tooltip.html(`<strong>${d.Country} (${d.Year})</strong><br/>Spend: $${Math.round(d.Expenditure).toLocaleString()}<br/>Life Expectancy: ${d.LifeExpectancy} yrs`)
         .style("left", (event.pageX + 12) + "px")
         .style("top", (event.pageY - 28) + "px");
@@ -83,4 +94,44 @@ d3.csv("data/health_data_merged.csv").then(data => {
     .on("mouseout", () => {
       tooltip.transition().duration(300).style("opacity", 0);
     });
+    
+// Only label points that are not too close to each other
+const minLabelDistance = 28;
+const labelData = [];
+
+filteredData.forEach(d => {
+  const px = x(d.Expenditure);
+  const py = y(d.LifeExpectancy);
+
+  const tooClose = labelData.some(l =>
+    Math.hypot(px - l.px, py - l.py) < minLabelDistance
+  );
+
+  if (!tooClose) {
+    labelData.push({
+      ...d,
+      px,
+      py
+    });
+  }
 });
+  
+
+  // Add country name beside each dot
+svg.selectAll(".country-label")
+  .data(labelData)
+  .enter()
+  .append("text")
+  .attr("class", "country-label")
+  .attr("x", d => x(d.Expenditure) + 9)
+  .attr("y", d => y(d.LifeExpectancy))
+  .attr("dy", "0.35em")
+  .attr("font-size", "11px")
+  .attr("fill", d => colour(d.Country))
+  .text(d => d.Country);
+
+});
+
+})();
+
+

@@ -11,25 +11,38 @@
 <body>
    <header>
         <h1>Hataro</h1>
+        <nav>
+            <ul>
+                <li>Data Visualization Project:</li>
+                <li>Assignment 3A Project standup</li>
+                <li>Assignment 3B Project process book</li>
+                <li>Assignment 3C Website and Visualization</li>
+            </ul>
+        </nav>
     </header>
    <main>
         <article>
-            <h1>Health Expenditure vs. Life Expectancy</h1>
-            <h4>Does higher healthcare expenditure guarantee longer life expectancy?</h4>
-            <h4>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h4>
+            <h2>Does higher healthcare expenditure guarantee longer life expectancy?</h2>
+            <h2>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h2>
             <p>by Husseni Omar, Rohand Chandel, and Yaeghoub Hatamy</p>
             <p>published on 2026</p>
         </article>
     </main>
 
     <section id="scatter-plot">
-        <h2>Health Expenditure vs. Life Expectancy</h2>
+        <h1>Health Expenditure vs. Life Expectancy</h1>
         <p>This analysis explores the relationship between healthcare spending and life expectancy across different countries.</p>
-        <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->       
+        <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->        
+    </section>
+
+    <section id="connected-scatter-plot">
+        <h1>Connected Scatter Plot</h1>
+        <p>This connected scatter plot illustrates the changes in healthcare expenditure and life expectancy over time for selected countries.</p>
+        <div class="connected-scatterPlot"></div> <!-- use this div to render the connected scatter plot -->
     </section>
 
     <section id="gdp-percentage">
-        <h2>Countries healthcare spending as a Percentage of GDP</h2>
+        <h1>Countries healthcare spending as a Percentage of GDP</h1>
         <p>This analysis examines the percentage of GDP that countries allocate to healthcare spending.</p>
         <div class="gdpPercentage"></div>
     </section>
@@ -50,6 +63,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script type="module" src="javaScripts/scatterPlot.js"></script>
+    <script src="javaScripts/scatterPlot.js"></script>
+    <script src="javaScripts/connectedScatterPlot.js"></script>
 </body>
 </html>

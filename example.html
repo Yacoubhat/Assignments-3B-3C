@@ -44,8 +44,7 @@
 <body>
 
 <h2>Health Expenditure vs Life Expectancy</h2>
-<p>How has each country's health expenditure and life expectancy changed over time?</p>
-<p>The lines show the movement of each country over the years.</p>
+<p>Connected scatter plot showing how countries move through time.</p>
 
 <div id="chart"></div>
 <div class="tooltip"></div>
@@ -86,7 +85,7 @@ const tooltip = d3.select(".tooltip");
 // LOAD DATA
 // -----------------------------------------------------
 
-d3.csv("data/health_data_merged.csv").then(data => {
+d3.csv("health_data_merged.csv").then(data => {
 
     // Convert strings from CSV into numbers
     data.forEach(d => {
@@ -106,15 +105,16 @@ d3.csv("data/health_data_merged.csv").then(data => {
     // SELECT COUNTRIES
     // -------------------------------------------------
 
-    const selectedCountryCodes = ['ARG', 'AUS', 'AUT', 'BEL', 'BRA', 'BGR', 'CAN', 'CHL', 'CHN', 'COL', 'CRI',
- 'HRV', 'CZE', 'DNK', 'EST', 'FIN', 'FRA', 'DEU', 'GRC', 'HUN', 'ISL', 'IND',
- 'IDN', 'IRL', 'ISR', 'ITA', 'JPN', 'KOR', 'LVA', 'LTU', 'LUX', 'MEX', 'NLD',
- 'NZL', 'NOR', 'PER', 'POL', 'PRT', 'ROU', 'SVK', 'SVN', 'ZAF', 'ESP', 'SWE',
- 'CHE', 'THA', 'TUR', 'UKR', 'GBR', 'USA']
-        
+    const selectedCountries = [
+        "Australia",
+        "United States",
+        "Japan",
+        "Korea",
+        "United Kingdom"
+    ];
 
     const filteredData = data.filter(d =>
-        selectedCountryCodes.includes(d["Country Code"])
+        selectedCountries.includes(d.Country)
     );
 
 
