@@ -29,9 +29,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
   });
 
   // Filter for valid values and pick the latest common year (e.g. 2021)
-  const availableYears = [...new Set(data.map(d => d.Year))].sort((a, b) => b - a);
-  const selectedYear = availableYears[0];
-  const filteredData = data.filter(d => d.Year === selectedYear && d.Expenditure > 0 && d.LifeExpectancy > 0);
+ const filteredData = data.filter(d => d.Year === 2019 && d.Expenditure > 0 && d.LifeExpectancy > 0);
 
   // Scales
   const x = d3.scaleLinear()
