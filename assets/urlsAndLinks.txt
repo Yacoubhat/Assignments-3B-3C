@@ -1,0 +1,12 @@
+Our World in Data by Esteban Ortiz-Ospina, Pablo Arrigade, and Max Roser Healthcare Spending, March 2024
+link: https://ourworldindata.org/financing-healthcare
+
+Our World in Data, Life expectancy vs. health Spending, 2023
+link: https://ourworldindata.org/grapher/life-expectancy-vs-health-expenditure
+
+Health at a Glance, OECD Data Explorer, health expenditure and financing, 2025
+link: https://data-explorer.oecd.org/vis?fs[0]=Topic,1%7CHealth%23HEA%23%7CHealth%20expenditure%20and%20financing%23HEA_EXP%23&pg=0&fc=Topic&bp=true&snb=5&vw=tb&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_SHA%40DF_SHA&df[ag]=OECD.ELS.HD&df[vs]=1.1&dq=AUS%2BAUT%2BBEL%2BCAN%2BCHL%2BCOL%2BCRI%2BCZE%2BDNK%2BEST%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BIRL%2BISR%2BITA%2BJPN%2BKOR%2BLVA%2BLTU%2BLUX%2BMEX%2BNLD%2BNZL%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BTUR%2BGBR%2BUSA%2BWXOECD%2BALB%2BARG%2BBIH%2BBRA%2BBGR%2BCHN%2BHRV%2BCYP%2BGEO%2BIND%2BIDN%2BXKV%2BLIE%2BMLT%2BMDA%2BMNE%2BMKD%2BPER%2BROU%2BSRB%2BZAF%2BTHA%2BUKR.A.EXP_HEALTH.USD_PPP_PS._T.._T.....V&pd=2000,2025&to[TIME_PERIOD]=false&isAvailabilityDisabled=false&page=0
+
+Health at a Glance, OECD Data Explorer, life expectancy, 2025.
+link: https://data-explorer.oecd.org/vis?pg=0&bp=true&snb=24&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_STAT%40DF_LE&df[ag]=OECD.ELS.HD&df[vs]=1.1&dq=.A.LFEXP..Y0........&pd=2015,&to[TIME_PERIOD]=false&isAvailabilityDisabled=false&page=0&tm=life%20expectancy
+

@@ -3,7 +3,7 @@ const margin = { top: 40, right: 30, bottom: 60, left: 70 };
 const width = 800 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
 
-const svg = d3.select("#visualisation-container")
+const svg = d3.select(".scatter-Plot")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -23,8 +23,8 @@ const tooltip = d3.select("body").append("div")
 d3.csv("data/health_data_merged.csv").then(data => {
   // Parse numeric values
   data.forEach(d => {
-    d.Expenditure = +d["Overall Health Expenditure"];
-    d.LifeExpectancy = +d["Total"];
+    d.Expenditure = +d["Health Expenditure Share of ppp per capita"];
+    d.LifeExpectancy = +d["Life Expectancy"];
     d.Year = +d.Year;
   });
 
