@@ -1,10 +1,10 @@
 (() => {
-const width = 900;
+const width = 950;
 const height = 600;
 
 const margin = {
     top: 40,
-    right: 150,
+    right: 160,
     bottom: 70,
     left: 80
 };
@@ -75,8 +75,10 @@ d3.csv("data/health_data_merged.csv").then(data => {
         .nice()
         .range([chartHeight, 0]);
 
+    const countryNames = Array.from(groupedData.keys());
+
     const colour = d3.scaleOrdinal()
-        .domain(selectedCountryCode)
+        .domain(countryNames)
         .range(d3.schemeTableau10);
 
     // -------------------------------------------------
@@ -123,11 +125,34 @@ d3.csv("data/health_data_merged.csv").then(data => {
         chart.append("path")
             .datum(countryData)
             .attr("class", "country-line")
+            .attr("data-country", country)
             .attr("fill", "none") // Prevents the black SVG blob
             .attr("stroke", colour(country))
-            .attr("stroke-width", 2)
+            .attr("stroke-width", 1.5)
+            .attr("stroke-opacity", 0.55)
             .attr("d", line);
     });
+
+
+    //add subtle grid lines to the background of the chart
+    // chart.append("g")
+    //     .attr("class", "grid")
+    //     .attr("transform", `translate(0,${chartHeight})`)
+    //     .call(d3.axisBottom(x).tickSize(-chartHeight).tickFormat(""))
+    //     .call(g => g.selectAll("line")
+    //         .attr("stroke", "#cfcfcf")
+    //         .attr("stroke-width", 0.8)
+    //         .attr("stroke-opacity", 0.6))
+    //     .call(g => g.select(".domain").remove());
+
+    chart.append("g")
+        .attr("class", "grid")
+        .call(d3.axisLeft(y).tickSize(-chartWidth).tickFormat(""))
+        .call(g => g.selectAll("line")
+            .attr("stroke", "#cfcfcf")
+            .attr("stroke-width", 0.8)
+            .attr("stroke-opacity", 0.6))
+        .call(g => g.select(".domain").remove());
 
     // -------------------------------------------------
     // DRAW YEARLY OBSERVATIONS & TOOLTIPS
@@ -140,13 +165,13 @@ d3.csv("data/health_data_merged.csv").then(data => {
         .attr("class", "point")
         .attr("cx", d => x(d.expenditure))
         .attr("cy", d => y(d.lifeExpectancy))
-        .attr("r", 4)
+        .attr("r", 2.5)
         .attr("fill", d => colour(d.Country))
         .on("mouseover", function(event, d) {
             d3.select(this).attr("r", 2.5);
             
             tooltip
-                .style("opacity", 0.55)
+                .style("opacity", 0.5)
                 .html(`
                     <strong>${d.Country}</strong><br>
                     Year: ${d.Year}<br>
@@ -168,13 +193,28 @@ d3.csv("data/health_data_merged.csv").then(data => {
     // LABEL EACH COUNTRY AT ITS MOST RECENT POINT
     // -------------------------------------------------
 
+    const labelledCountries = new Set([
+    "United States",
+    "South Africa",
+    "India",
+    "Japan",
+    "Switzerland",
+    "Australia",
+    "Germany",
+    "Poland",
+    "Netherlands",
+    "Sweden",
+]);
+
     groupedData.forEach((countryData, country) => {
+
+        if (!labelledCountries.has(country)) return;
         const lastPoint = countryData[countryData.length - 1];
         
         chart.append("text")
             .attr("x", x(lastPoint.expenditure) + 7)
             .attr("y", y(lastPoint.lifeExpectancy))
-            .attr("dy", "0.35em") // Centers the text vertically with the dot
+            .attr("r", 5) // Centers the text vertically with the dot
             .attr("fill", colour(country))
             .attr("font-size", 12)
             .text(country);

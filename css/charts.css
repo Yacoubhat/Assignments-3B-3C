@@ -1,0 +1,8 @@
+.grid line {
+    stroke: #ddd;
+    stroke-opacity: 0.5;
+}
+
+.grid path {
+    display: none;
+}

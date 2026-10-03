@@ -1,9 +1,9 @@
 // javascripts/scatterPlot.js
 
 (() => {
-const margin = { top: 40, right: 120, bottom: 60, left: 70 };
-const width = 700 - margin.left - margin.right;
-const height = 500 - margin.top - margin.bottom;
+const margin = { top: 40, right: 180, bottom: 60, left: 70 };
+const width = 950 - margin.left - margin.right;
+const height = 600 - margin.top - margin.bottom;
 
 const svg = d3.select(".scatter-Plot")
   .append("svg")
@@ -34,7 +34,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
 
   // Filter for valid values and pick the latest common year (e.g. 2021)
 
-  const filteredData = data.filter(d => d.Year == 2024 && d.Expenditure > 0 && d.LifeExpectancy > 0);
+  const filteredData = data.filter(d => d.Year == 2022 && d.Expenditure > 0 && d.LifeExpectancy > 0);
 
   const groupedData = d3.group(filteredData, d => d.Country);
   // Scales
@@ -94,7 +94,8 @@ d3.csv("data/health_data_merged.csv").then(data => {
     .on("mouseout", () => {
       tooltip.transition().duration(300).style("opacity", 0);
     });
-    
+
+
 // Only label points that are not too close to each other
 const minLabelDistance = 28;
 const labelData = [];
@@ -130,6 +131,26 @@ svg.selectAll(".country-label")
   .attr("fill", d => colour(d.Country))
   .text(d => d.Country);
 
+
+  // add subtle grid lines to the background of the chart
+svg.append("g")
+    .attr("class", "grid")
+    .attr("transform", `translate(0,${height})`)
+    .call(d3.axisBottom(x).tickSize(-height).tickFormat(""))
+    .call(g => g.selectAll("line")
+        .attr("stroke", "#cfcfcf")
+        .attr("stroke-width", 0.8)
+        .attr("stroke-opacity", 0.6))
+    .call(g => g.select(".domain").remove());
+
+svg.append("g")
+    .attr("class", "grid")
+    .call(d3.axisLeft(y).tickSize(-width).tickFormat(""))
+    .call(g => g.selectAll("line")
+        .attr("stroke", "#cfcfcf")
+        .attr("stroke-width", 0.8)
+        .attr("stroke-opacity", 0.6))
+    .call(g => g.select(".domain").remove());
 });
 
 })();
