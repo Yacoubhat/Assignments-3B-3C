@@ -1,0 +1,441 @@
+h1,
+h2,
+h3,
+footer {
+    text-align: center;
+    /* headings 1, 2, 3 and footer will be centred */
+}
+
+.ellipse-box {
+    /* this is a class for styling the box containing the content */
+    width: 80%;
+    /* width of the box */
+    margin: 20px auto;
+    /* the box gets 20px spacing from top and buttom and gets perfectly centred horizontally in the page */
+    padding: 20px;
+    /* this adds 20px of internal space between the content and the border */
+    background: #6a45da;
+    /* background colour of the box */
+    color: white;
+    /* text colour */
+    border-radius: 10%;
+    /* it creates an ellipse (10% radius on borders) */
+    text-align: center;
+    /* everything inside the box will be centred */
+    line-height: 1.6;
+    /* the space between lins will be 1.6 times the font size */
+    font-size: 18px;
+    /* size of the text inside the box */
+}
+
+#list {
+    text-align: left;
+    /* text starts from left */
+    padding-left: 40px;
+    /* space between bullets and border of the box */
+    list-style-position: inside;
+    /* bullets are inside the content box of the list */
+    font-weight: bold;
+    /* make items bold */
+    color: rgb(255, 255, 255);
+    /* text color */
+}
+
+.caption {
+    color: #fffdfd;
+    /* color of the caption's text which is nearly white */
+    margin-top: 5px;
+    /* adds 5px space above the cation separting it from the image */
+    font-style: italic;
+}
+
+#link {
+    color: #fffefe;
+    /* text color of the link is black */
+    font-weight: bold;
+    /* makes the link text bold */
+    transition: all 0.3s ease;
+    /* smooth animation */
+    display: inline-block;
+    /* needed for transform to work properly */
+}
+
+#link:hover {
+    color: #04fb90;
+    /* change color on hover */
+    transform: translateX(15px) scale(1.1);
+    /* move right and enlarge */
+}
+
+.small-box {
+    width: 30%;
+    /* narrower than main box */
+    margin: 10px auto;
+    /* center horizontally and add spacing */
+    padding: 15px;
+    /* space inside the box */
+    background: #6a45da;
+    /* box color */
+    color: white;
+    /* text color */
+    border-radius: 50px;
+    /* rounded corners */
+    text-align: center;
+    /* center the text inside */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    /* optional shadow */
+}
+
+.chart1-caption {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* ---------- Visual 1: Healthcare spending vs life expectancy ---------- */
+.visual-section {
+    width: min(1180px, 92%);
+    margin: 50px auto;
+    padding: 28px;
+    box-sizing: border-box;
+    background: #17152b;
+    border-radius: 24px;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.28);
+    color: white;
+}
+
+.visual-heading { max-width: 850px; margin: 0 auto 24px; text-align: center; }
+.visual-heading h1 { margin: 5px 0 10px; font-size: clamp(28px, 4vw, 46px); }
+.visual-heading p { margin: 0; color: #ddd9ff; line-height: 1.6; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.15em; font-size: 13px; font-weight: 700; color: #a99cff !important; }
+
+.visual-controls {
+    display: grid;
+    grid-template-columns: minmax(280px, 1.7fr) minmax(190px, 0.8fr) auto;
+    gap: 18px;
+    align-items: end;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+}
+.control-group { display: flex; flex-direction: column; gap: 8px; }
+.control-group label { font-size: 14px; font-weight: 700; }
+#yearOutput { color: #b9ffdc; font-size: 20px; margin-left: 5px; }
+#yearSlider { width: 100%; accent-color: #7c69ff; cursor: pointer; }
+#countrySelect, .visual-controls button {
+    min-height: 42px; border: 1px solid rgba(255,255,255,.22); border-radius: 10px;
+    padding: 9px 12px; font: inherit;
+}
+#countrySelect { background: #26223e; color: white; }
+.button-group { display: flex; gap: 8px; }
+.visual-controls button { background: #735df5; color: white; font-weight: 700; cursor: pointer; }
+.visual-controls button:hover { filter: brightness(1.12); }
+.visual-controls .secondary-button { background: transparent; }
+
+.story-panel {
+    display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; align-items: center;
+    margin: 18px 0; padding: 18px 20px; background: #24203b; border-left: 4px solid #8c7cff; border-radius: 12px;
+}
+#storyText { margin: 0; line-height: 1.6; color: #eeeaff; }
+.summary-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+.summary-stats div { padding: 10px 6px; background: rgba(255,255,255,.06); border-radius: 10px; }
+.summary-stats span { display: block; font-size: 20px; font-weight: 800; color: #b9ffdc; }
+.summary-stats small { display: block; margin-top: 4px; color: #c9c5de; font-size: 11px; }
+
+.chart-shell { position: relative; width: 100%; background: #100f20; border-radius: 16px; overflow: hidden; }
+.scatter-chart { width: 100%; }
+.scatter-chart svg { display: block; overflow: visible; }
+.axis text { fill: #dedbed; font-size: 13px; }
+.axis path, .axis line { stroke: #8f8aa6; }
+.axis-label { fill: #f5f3ff; font-size: 15px; font-weight: 700; }
+.grid line { stroke: rgba(255,255,255,.09); }
+.grid path { display: none; }
+.country-dot { fill: #75d6ff; stroke: #0c3042; stroke-width: 1.5; opacity: .82; cursor: pointer; transition: opacity .2s; }
+.country-dot:hover { stroke: white; stroke-width: 2.5; opacity: 1; }
+.country-dot.is-selected { fill: #b9ff7b; stroke: white; stroke-width: 3; opacity: 1; }
+.country-dot.is-muted { opacity: .18; }
+.country-label { fill: #d9ffb7; font-size: 13px; font-weight: 800; paint-order: stroke; stroke: #100f20; stroke-width: 4px; stroke-linejoin: round; }
+.trend-line { fill: none; stroke: #ffb45e; stroke-width: 2.5; stroke-dasharray: 7 6; opacity: .9; pointer-events: none; }
+
+.chart-tooltip {
+    position: absolute; pointer-events: none; opacity: 0; transform: translateY(5px);
+    background: rgba(10, 9, 22, .96); border: 1px solid rgba(255,255,255,.2); color: white;
+    padding: 12px 14px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,.35); min-width: 190px;
+    transition: opacity .15s, transform .15s; z-index: 5;
+}
+.chart-tooltip.visible { opacity: 1; transform: translateY(0); }
+.chart-tooltip strong, .chart-tooltip span, .chart-tooltip small { display: block; }
+.chart-tooltip strong { color: #b9ffdc; margin-bottom: 6px; font-size: 16px; }
+.chart-tooltip span { margin: 3px 0; font-size: 13px; }
+.chart-tooltip small { color: #aaa5bf; margin-top: 7px; }
+
+.chart-legend { display: flex; justify-content: center; gap: 24px; margin-top: 14px; color: #cbc7dc; font-size: 13px; }
+.legend-dot { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 50%; background: #75d6ff; }
+.legend-line { display: inline-block; width: 24px; margin: 0 6px 3px 0; border-top: 2px dashed #ffb45e; }
+
+@media (max-width: 820px) {
+    .visual-controls { grid-template-columns: 1fr; }
+    .story-panel { grid-template-columns: 1fr; }
+    .button-group button { flex: 1; }
+}
+@media (max-width: 560px) {
+    .visual-section { width: 96%; padding: 15px; }
+    .summary-stats { grid-template-columns: 1fr; }
+    .chart-legend { flex-direction: column; align-items: center; gap: 8px; }
+    .axis-label { font-size: 12px; }
+}
+
+/* ---------- Visual 2: Healthcare spending over time ---------- */
+#spending-trend-visual { margin-top: 58px; }
+.trend2-controls {
+    display: grid; grid-template-columns: minmax(220px, 1fr) auto minmax(250px, 1.1fr); gap: 14px;
+    align-items: end; padding: 18px; background: rgba(255,255,255,.07); border-radius: 16px;
+}
+.trend2-controls select, .trend2-controls button {
+    min-height: 42px; border: 1px solid rgba(255,255,255,.22); border-radius: 10px;
+    padding: 9px 12px; font: inherit;
+}
+.trend2-controls select { background: #26223e; color: white; }
+.trend2-controls button { background: #735df5; color: white; font-weight: 700; cursor: pointer; }
+.trend2-controls button:hover { filter: brightness(1.12); }
+.year-range-group { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; }
+.year-range-group span { color: #bdb7d4; text-align: center; }
+.selected-countries { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; min-height: 36px; align-items: center; }
+.country-chip {
+    display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.18);
+    background: #24203b; color: white; border-radius: 999px; padding: 7px 11px; font-size: 13px;
+}
+.country-chip i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; background: var(--chip-color); }
+.country-chip button { border: 0; background: transparent; color: #d8d4e8; cursor: pointer; font-size: 17px; line-height: 1; padding: 0; }
+.trend2-story { margin-top: 0; }
+.line-chart { width: 100%; }
+.line-chart svg { display: block; }
+.spending-line { fill: none; stroke-width: 3; opacity: .9; }
+.spending-line.is-muted { opacity: .14; }
+.spending-line-hit { fill: none; stroke: transparent; stroke-width: 14; cursor: pointer; }
+.hover-guide { stroke: rgba(255,255,255,.45); stroke-width: 1; stroke-dasharray: 4 4; pointer-events: none; }
+.hover-point { stroke: #100f20; stroke-width: 2; pointer-events: none; }
+.trend2-empty { color: #c9c5de; font-size: 13px; }
+.trend2-note { color: #bdb7d4; text-align: center; font-size: 13px; margin: 12px auto 0; max-width: 850px; line-height: 1.5; }
+@media (max-width: 820px) {
+    .trend2-controls { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+    .year-range-group { grid-template-columns: 1fr; }
+    .year-range-group span { display: none; }
+}
+
+
+/* ---------- Site introduction and data context ---------- */
+body {
+    margin: 0;
+    color: white;
+}
+.site-hero, .about-data-section {
+    width: min(1180px, 92%);
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+.site-hero {
+    padding: 54px 44px;
+    text-align: center;
+    background: #17152b;
+    border-radius: 24px;
+    box-shadow: 0 16px 45px rgba(0,0,0,.28);
+}
+.site-hero h1 {
+    margin: 8px auto 10px;
+    max-width: 900px;
+    font-size: clamp(36px, 5vw, 62px);
+    line-height: 1.08;
+}
+.site-hero > .eyebrow {
+    font-size: 22px;
+}
+.hero-subtitle {
+    margin: 0 auto 24px;
+    color: #b9ffdc;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 700;
+}
+.hero-intro {
+    max-width: 900px;
+    margin: 12px auto 0;
+    color: #ddd9ff;
+    font-size: 21px;
+    line-height: 1.75;
+}
+.about-data-copy .eyebrow {
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 14px;
+}
+.about-data-section {
+    display: grid;
+    grid-template-columns: 1.45fr .8fr;
+    gap: 24px;
+    padding: 34px;
+    background: #17152b;
+    border-radius: 24px;
+    box-shadow: 0 16px 45px rgba(0,0,0,.24);
+}
+.about-data-copy h2 { margin: 6px 0 18px; font-size: clamp(26px, 3vw, 38px); }
+.about-data-copy p:not(.eyebrow) {
+    color: #ddd9ff;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.visual-heading > .eyebrow {
+    font-size: 21px;
+}
+.data-topics { display: grid; gap: 12px; align-content: center; }
+.data-topics div { padding: 18px; background: #24203b; border-radius: 14px; border-left: 4px solid #8c7cff; }
+.data-topics strong, .data-topics span { display: block; }
+.data-topics strong { color: #b9ffdc; margin-bottom: 6px; }
+.data-topics span { color: #c9c5de; line-height: 1.5; font-size: 14px; }
+.site-footer {
+    width: min(1180px, 92%);
+    margin: 55px auto 30px;
+    padding: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ddd9ff;
+    background: #17152b;
+    border-radius: 18px;
+    line-height: 1.7;
+}
+.site-footer strong { color: white; }
+@media (max-width: 820px) {
+    .about-data-section { grid-template-columns: 1fr; }
+    .site-hero { padding: 38px 24px; }
+}
+@media (max-width: 560px) {
+    .site-hero, .about-data-section { width: 96%; }
+    .about-data-section { padding: 22px 18px; }
+    .hero-intro { font-size: 18px; }
+    .about-data-copy .eyebrow { font-size: 19px; }
+    .site-hero > .eyebrow { font-size: 18px; }
+    .about-data-copy p:not(.eyebrow) { font-size: 17px; }
+    .visual-heading > .eyebrow { font-size: 18px; }
+}
+
+/* ---------- Visuals 3–5: gender trends, gender gap and GDP share ---------- */
+.single-control-row {
+    display: grid;
+    grid-template-columns: minmax(220px, 360px);
+    padding: 18px;
+    background: rgba(255,255,255,.07);
+    border-radius: 16px;
+}
+.single-control-row select,
+.compact-controls select {
+    min-height: 42px;
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 10px;
+    padding: 9px 12px;
+    background: #26223e;
+    color: white;
+    font: inherit;
+}
+.compact-controls { grid-template-columns: minmax(280px, 1.7fr) minmax(180px, .7fr); }
+#gapYearOutput, #gdpYearOutput { color: #b9ffdc; font-size: 20px; margin-left: 5px; }
+#gapYearSlider, #gdpYearSlider { width: 100%; accent-color: #7c69ff; cursor: pointer; }
+.gender-line-chart, .gap-bar-chart, .gdp-bar-chart { width: 100%; }
+.gender-line-chart svg, .gap-bar-chart svg, .gdp-bar-chart svg { display: block; }
+.gender-line { fill: none; stroke-width: 3.5; }
+.gender-point { stroke: #100f20; stroke-width: 2; }
+.legend-swatch { display: inline-block; width: 24px; margin: 0 6px 3px 0; border-top: 3px solid; }
+.female-swatch { border-color: #ff7fc8; }
+.male-swatch { border-color: #75d6ff; }
+.rank-bar { cursor: pointer; transition: filter .15s, opacity .15s; }
+.rank-bar:hover { filter: brightness(1.18); }
+.bar-value { fill: #f5f3ff; font-size: 12px; font-weight: 700; pointer-events: none; }
+.bar-country { fill: #dedbed; font-size: 12px; }
+.chart-error { margin: 0; padding: 40px 24px; color: #ffb9b9; text-align: center; }
+@media (max-width: 820px) {
+    .compact-controls { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+    .single-control-row { grid-template-columns: 1fr; }
+    .bar-country, .bar-value { font-size: 10px; }
+}
+
+/* ---------- Main navigation menu ---------- */
+html { scroll-behavior: smooth; }
+
+.main-menu {
+    position: sticky;
+    top: 16px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: min(1180px, 92%);
+    margin: 16px auto 0;
+    padding: 12px 4%;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: rgba(23, 21, 43, 0.97);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+.main-menu a {
+    color: #f5f3ff;
+    padding: 9px 16px;
+    border-radius: 9px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.main-menu .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.main-menu a:hover,
+.main-menu a:focus-visible {
+    color: #17152b;
+    background: #b9ffdc;
+    outline: none;
+}
+
+.menu-toggle {
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 9px;
+    padding: 9px 14px;
+    color: white;
+    background: #735df5;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#home,
+#about-data,
+.visual-section {
+    scroll-margin-top: 85px;
+}
+
+@media (max-width: 760px) {
+    .main-menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-toggle { display: block; }
+    .main-menu .menu-links {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+    .main-menu .menu-links.is-open { display: flex; }
+    .main-menu a { text-align: center; }
+}
