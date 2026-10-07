@@ -32,7 +32,14 @@
     <section id="scatter-plot">
         <h1>Health Expenditure vs. Life Expectancy</h1>
         <p>This analysis explores the relationship between healthcare spending and life expectancy across different countries.</p>
-        <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->        
+
+        <div class="scatter-controls">
+            <label for="year-select">Select Year:</label>
+            <select id="year-select"></select>
+        </div>
+
+        <h3>Health Expenditure and life expectancy by country</h3>
+        <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->    
     </section>
 
     <section id="connected-scatter-plot">
@@ -41,11 +48,69 @@
         <div class="connected-scatterPlot"></div> <!-- use this div to render the connected scatter plot -->
     </section>
 
+     <!-- Visual 4: Life expectancy gender gap -->
+    <section id="gender-gap-visual" class="visual-section">
+      <div class="visual-heading">
+        <h1>Where Is the Life Expectancy Gender Gap Largest?</h1>
+        <p>Choose a year and rank countries by the difference between female and male life expectancy.</p>
+      </div>
+      <div class="visual-controls compact-controls">
+        <div class="control-group year-control">
+          <label for="gapYearSlider">Year: <output id="gapYearOutput">2022</output></label>
+          <input id="gapYearSlider" type="range" min="2000" max="2025" value="2022" step="1" />
+        </div>
+        <div class="control-group">
+          <label for="gapCountSelect">Countries shown</label>
+          <select id="gapCountSelect"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="20">Top 20</option></select>
+        </div>
+      </div>
+      <div class="story-panel">
+        <p id="gapStoryText">Loading life-expectancy gap data…</p>
+        <div class="summary-stats">
+          <div><span id="gapLargest">–</span><small>largest gap</small></div>
+          <div><span id="gapAverage">–</span><small>average gap</small></div>
+          <div><span id="gapCountries">–</span><small>countries available</small></div>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <div class="gap-bar-chart"></div>
+        <div class="chart-tooltip gap-tooltip" role="status"></div>
+      </div>
+    </section>
+
     <section id="gdp-percentage">
         <h1>Countries healthcare spending as a Percentage of GDP</h1>
         <p>This analysis examines the percentage of GDP that countries allocate to healthcare spending.</p>
         <div class="lineChart"></div>
     </section>
+
+    <section id="gdp-spending-visual" class="visual-section">
+      <div class="visual-heading">
+        <h1>Which Countries Commit the Largest Share of GDP to Public Health?</h1>
+        <p>Move through time and compare public health expenditure as a percentage of GDP.</p>
+      </div>
+      <div class="visual-controls compact-controls">
+        <div class="control-group year-control">
+          <label for="gdpYearSlider">Year: <output id="gdpYearOutput">2022</output></label>
+          <input id="gdpYearSlider" type="range" min="2000" max="2022" value="2022" step="1" />
+        </div>
+        <div class="control-group">
+          <label for="gdpCountSelect">Countries shown</label>
+          <select id="gdpCountSelect"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="20">Top 20</option></select>
+        </div>
+      </div>
+      <div class="story-panel">
+        <p id="gdpStoryText">Loading public health expenditure data…</p>
+        <div class="summary-stats">
+          <div><span id="gdpHighest">–</span><small>highest share</small></div>
+          <div><span id="gdpAverage">–</span><small>country average</small></div>
+          <div><span id="gdpCountries">–</span><small>countries available</small></div>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <div class="gdp-bar-chart"></div>
+        <div class="chart-tooltip gdp-tooltip"  role="status"></div>
+      </div>
 
     <footer>
         <div class="authors">
@@ -65,6 +130,9 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="javaScripts/scatterPlot.js"></script>
     <script src="javaScripts/connectedScatterPlot.js"></script>
+    <script src="javaScripts/lifeDifference.js"></script>
     <script src="javaScripts/lineChart-gdpShare.js"></script>
+    <script src="javaScripts/bargraph-gdpShare.js"></script>
+
 </body>
 </html>

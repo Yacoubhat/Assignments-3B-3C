@@ -22,9 +22,8 @@ const chart = svg.append("g")
 
 const tooltip = d3.select(".tooltip");
 
-// -----------------------------------------------------
-// LOAD DATA
-// -----------------------------------------------------
+
+// load the merged heath dataset 
 
 d3.csv("data/health_data_merged.csv").then(data => {
 
@@ -35,24 +34,18 @@ d3.csv("data/health_data_merged.csv").then(data => {
         d.lifeExpectancy = +d["Life Expectancy"];
     });
 
-    // -------------------------------------------------
-    // SELECT COUNTRIES
-    // -------------------------------------------------
+    // Display selected countries
 
     const selectedCountryCode = [
         "USA", "CAN", "FRA", "JPN", "GBR",
-        "CHN", "IND", "BRA", "TUR", "POL",
+        "IND", "BRA", "TUR", "POL",
         "KOR", "DEU", "AUS", "ZAF", "FIN",
-        "NOR", "SWE", "NLD", "NZL", "CHE"
+        "NOR", "SWE", "NZL", "CHE"
     ];
 
-    const filteredData = data.filter(d =>
-        selectedCountryCode.includes(d["Country Code"])
-    );
+    const filteredData = data.filter(d =>selectedCountryCode.includes(d["Country Code"]));
 
-    // -------------------------------------------------
-    // GROUP BY COUNTRY
-    // -------------------------------------------------
+    // group the filtered country code data by country
 
     const groupedData = d3.group(filteredData, d => d.Country);
 
@@ -61,15 +54,13 @@ d3.csv("data/health_data_merged.csv").then(data => {
         values.sort((a, b) => a.Year - b.Year);
     });
 
-    // -------------------------------------------------
-    // SCALES
-    // -------------------------------------------------
-
+    //xScale
     const x = d3.scaleLinear()
         .domain(d3.extent(filteredData, d => d.expenditure))
         .nice()
         .range([0, chartWidth]);
 
+    //yScale
     const y = d3.scaleLinear()
         .domain(d3.extent(filteredData, d => d.lifeExpectancy))
         .nice()
@@ -81,9 +72,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
         .domain(countryNames)
         .range(d3.schemeTableau10);
 
-    // -------------------------------------------------
-    // AXES & LABELS
-    // -------------------------------------------------
+    // Axes and labels
 
     chart.append("g")
         .attr("transform", `translate(0,${chartHeight})`)
@@ -92,7 +81,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
     chart.append("g")
         .call(d3.axisLeft(y));
 
-    // X AXIS LABEL
+    // X axis label
     svg.append("text")
         .attr("x", margin.left + chartWidth / 2)
         .attr("y", height - 20)
@@ -100,7 +89,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
         .attr("class", "axis-label")
         .text("Health Expenditure (PPP per capita)");
 
-    // Y AXIS LABEL
+    // Y axis label
     svg.append("text")
         .attr("transform", "rotate(-90)")
         .attr("x", -(margin.top + chartHeight / 2))
@@ -109,17 +98,12 @@ d3.csv("data/health_data_merged.csv").then(data => {
         .attr("class", "axis-label")
         .text("Life Expectancy (Years)");
 
-    // -------------------------------------------------
-    // LINE GENERATOR
-    // -------------------------------------------------
-
+    // generate lines for each each country life expectancy vs expenditure
     const line = d3.line()
         .x(d => x(d.expenditure))
         .y(d => y(d.lifeExpectancy));
 
-    // -------------------------------------------------
-    // DRAW ONE TRAJECTORY PER COUNTRY
-    // -------------------------------------------------
+    // Draw one trajectory per country
 
     groupedData.forEach((countryData, country) => {
         chart.append("path")
@@ -154,10 +138,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
             .attr("stroke-opacity", 0.6))
         .call(g => g.select(".domain").remove());
 
-    // -------------------------------------------------
-    // DRAW YEARLY OBSERVATIONS & TOOLTIPS
-    // -------------------------------------------------
-
+    // Draw yearly observations and display tootip
     chart.selectAll(".point")
         .data(filteredData)
         .enter()
@@ -189,9 +170,7 @@ d3.csv("data/health_data_merged.csv").then(data => {
             tooltip.style("opacity", 0);
         });
 
-    // -------------------------------------------------
-    // LABEL EACH COUNTRY AT ITS MOST RECENT POINT
-    // -------------------------------------------------
+    // Label countries in the graph based on the selected country
 
     const labelledCountries = new Set([
     "United States",
@@ -204,6 +183,11 @@ d3.csv("data/health_data_merged.csv").then(data => {
     "Poland",
     "Netherlands",
     "Sweden",
+    "Canada",
+    "Korea",
+    "Brazil",
+    "Norway",
+    "Turkiye"
 ]);
 
     groupedData.forEach((countryData, country) => {

@@ -35,7 +35,7 @@
             "United Kingdom", "Brazil", "France",
             "Germany", "Costa Rica", "Sweden",
             "Japan", "Turkey", "South Korea",
-            "Canada", "Poland", "China",
+            "Canada", "Poland",
         ];
 
     const labelledCountries = [
