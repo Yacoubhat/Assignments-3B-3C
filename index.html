@@ -1,173 +1,230 @@
-
-    <!DOCTYPE html>
-<!--Tells the browser this is an HTML5 document-->
+<!DOCTYPE html>
 <html lang="en">
-  <!-- Opens the HTML document and sets the language to English -->
-  <head>
-    <!--Contains metadata, scripts, links to CSS, and the page title -->
-    <meta charset="UTF-8" />
-    <!--Ensures the page supports all characters, including special symbols -->
-    <!--The following three metadata are used for search engines and page info-->
-    <meta name="description" content="Data Visualisation Assignment 3C" />
-    <!--short page description -->
-    <meta name="keywords" content="HTML, CSS, Javascript, D3, website" />
-    <!-- search keywords-->
-    <meta name="author" content="Rohan Chandel, Hussein Omar and Yacoub Hatamy" />
-    <!-- author of the document-->
-    <title>website and Visualization</title>
-    <!-- It is the title of the webpage which appears in the browser tab.
-It is used by search engines as the page title in search results.
-It is not displayed inside the page content.-->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- includes D3.js library in my webpage -->
-  </head>
-  <body>
-    <!--Contains everything that appears on the webpage including text, images, links, headings, lists, divs, sections, tables, etc.
-Everything inside <body> is visible in the browser.
- -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Visualization Project: Health Expenditure vs Life Expectancy">
+    <meta name="keywords" content="Data Visualization, Health Expenditure, Life Expectancy, D3.js, Interactive Charts">  
+    <meta name="author" content="Husseni Omar, Rohand Chandel, Yaeghoub Hatamy">  
+    <title>Hataro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scatterplots.css">
+    <link rel="stylesheet" href="css/gadAndDifference.css">
+    <link rel="stylesheet" href="css/expendituregdpshare.css">
+</head>
+<body id="home">
+   <header class="main-header">
+        <h1>Hataro</h1>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Data Visualization Project</a></li>
+                <li><a href="#expenditurevslife">Health expenditure vs. life expectancy</a></li>
+                <li><a href="#gender-gap-visual">Female vs Male health outcomes</a></li>
+                <li><a href="#gdp-percentage">Country expenditure as share of gdp</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+        <article>
+            <h1>Does higher healthcare expenditure guarantee longer life expectancy?</h1>
+            <h1>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h1>
+            <p>by Husseni Omar, Rohand Chandel, and Yaeghoub Hatamy. 2026 Oct</p>
+
+            <div class="findings">
+              <p>
+                Our visualisations reveal that health outcomes are shaped not simply by how much a country spends on healthcare, but by how effectively those resources are translated into better health. 
+                Across the countries and years examined, substantial differences appear in healthcare expenditure, life expectancy, gender-based outcomes, and public health spending as a share of GDP. 
+                The overall pattern suggests that greater investment in healthcare is generally associated with better outcomes, but expenditure alone cannot explain the differences between countries. 
+                Factors such as healthcare-system efficiency, preventive care, socioeconomic conditions, lifestyle, and access to services also influence population health. 
+                This is consistent with the wider evidence considered in the project, which identifies social protection, sanitation, income conditions and public-health policies as important influences on life expectancy.
+              </p>
+            </div>
     
-    <div class="small-box">
-      <h1>
-        Assignment 3C:<br />
-        Website and Visualization
-      </h1>
-    </div>
+        </article>
+    </main>
 
-    <div class="health-spening-vs-life-expectancy">
-        <h2>Healthcare Spending vs Life Expectancy</h2>
-        <p class="chart1"></p>
-        <p>This chart shows the relationship between healthcare spending and life expectancy.</p>
+    <section id="expenditurevslife">
+    
+    <!-- HIGHLIGHTED ARTICLE (Separated from graph) -->
+    <article class="article-featured">
+        <h1>Health Expenditure vs. Life Expectancy</h1>
+        <p class="lead-text">
+            The clearest pattern in our expenditure and life-expectancy visualisations is a positive relationship between healthcare spending per person and life expectancy, followed by diminishing returns at higher spending levels.
+            Countries moving from relatively low levels of healthcare expenditure generally experience substantial improvements in life expectancy, whereas differences become smaller among countries already spending large amounts. 
+            The United States provides an important example: despite spending considerably more per person than other OECD countries, its life expectancy remains below the OECD average and below that of several countries that spend much less. 
+            OECD data confirms that countries such as Japan, Spain, Italy and Korea achieve above-average life expectancy while spending below the OECD average.
+            Our findings therefore suggest that higher spending improves the potential for better health outcomes, but greater expenditure does not automatically produce longer lives.
+        </p>
+    </article>
 
-    <!-- first-level heading-->
-    <div class="small-box">
-      <h2>
-        By:<br />
-        <br />
-        Rohan Chandel, Yacoub Hatamy and Hussein Omar<br />
-      </h2>
+    <!-- SCATTER PLOT -->
+    <section id="scatter-plot" class="graph-section">
+        <h3>Health Expenditure and life expectancy by country</h3>
+        <div class="scatter-controls">
+            <label for="year-select"><strong>Select Year:</strong></label>
+            <select id="year-select"></select>
+        </div>
+        
+        <!-- Wrapper added to fix disappearing axes on minimize -->
+        <div class="graph-wrapper">
+            <div class="scatter-Plot"></div> 
+        </div>
+    </section>
 
-    </div>
-    <!--second-level heading -->
+    <!-- CONNECTED SCATTER PLOT -->
+    <section id="connected-scatter-plot" class="graph-section">
+        <h1>How has each country's health expenditure and life expectancy changed over time?</h1>
+        <p>Select countries below to compare how their health expenditure and life expectancy have changed over time.</p>
 
-    <div class="ellipse-box">
-      <!--div is an HTML element which creates a container for grouping the content.
-       There is a class defined here which applies the CSS associated with it -->
-      <h3>Assignment 3C: Website and Visualization</h3>
-      <!--third-level heading-->
+        <div class="connected-layout">
+            
+            <!-- Side Panel Dropdown Menu -->
+            <aside class="side-controls">
+                <details class="country-dropdown">
+                    <summary>Select Countries</summary>
+                    <div class="dropdown-content">
+                        <div class="country-buttons">
+                            <button id="select-all-countries" type="button" class="btn-blue">Select All</button>
+                            <button id="clear-all-countries" type="button" class="btn-blue-outline">Clear All</button>
+                        </div>
+                        <div id="country-list" class="checkbox-list"></div>
+                    </div>
+                </details>
+            </aside>
+
+            <!-- Graph Area -->
+            <div class="graph-wrapper main-graph-area">
+                <div class="connected-scatterPlot"></div>
+            </div>
+            
+        </div>
+    </section>
+</section>
+
+     <!-- Visual 4: Life expectancy gender gap -->
+    <section id="gender-gap-visual" class="visual-section">
+      <div class="visual-heading">
+        <h1>Difference Between Men and Women Life Expectancy</h1>
+        <article>
+          <p>
+             The gender comparison reveals another important pattern: women generally live longer than men, although the size of the difference varies substantially between countries and over time. 
+             Our visualisation directly measures this gap by subtracting male life expectancy from female life expectancy for each country and year. 
+             OECD evidence similarly reports that women lived about 5.4 years longer than men on average across OECD countries in 2021, with considerably larger gaps in some Central and Eastern European countries.
+              Differences in smoking, alcohol consumption, diet, accidents and other risk factors help explain part of this variation.
+          </p>
+        </article>
+      </div>
+      <div class="visual-controls compact-controls">
+        <div class="control-group year-control">
+          <label for="gapYearSlider">Year: <output id="gapYearOutput">2022</output></label>
+          <input id="gapYearSlider" type="range" min="2000" max="2025" value="2022" step="1" />
+        </div>
+        <div class="control-group">
+          <label for="gapCountSelect">Countries shown</label>
+          <select id="gapCountSelect"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="20">Top 20</option></select>
+        </div>
+      </div>
+      <div class="story-panel">
+        <p id="gapStoryText">Loading life-expectancy gap data…</p>
+        <div class="summary-stats">
+          <div><span id="gapLargest">–</span><small>largest gap</small></div>
+          <div><span id="gapAverage">–</span><small>average gap</small></div>
+          <div><span id="gapCountries">–</span><small>countries available</small></div>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <div class="gap-bar-chart"></div>
+        <div class="chart-tooltip gap-tooltip" role="status"></div>
+      </div>
+    </section>
+
+  <section id="gdp-percentage">
+    <h1>Countries healthcare spending as a Percentage of GDP</h1>
+    <article>
       <p>
-        <!--starts the paragraph -->
-        Word/time limit: N/A <br/> Weighting: 0%,(Please note that this assignment
-        will be assessed alongside Assignment 3B: Project process book).
-        <br>  Due date:  11.59pm AEST Monday 5 October 2026 (Exam Period)<br> 
-        <br>Individual/team task: Team<br>
-         After you have read this information, head over to the
-        Assignment 3 Q&A discussion board to ask any questions and see what your
-        peers are saying about this assignment.<br>  <h2>Assignment Details</h2> For the data
-        visualisation website, it is expected that you program your
-        visualisations in D3. However, if it becomes evident that you cannot
-        achieve your vision using D3 in the time required, then other tools are
-        acceptable. These need to be noted and fully justified in your
-        submission. This assignment supports unit learning outcomes 1, 2, 3 and
-        4.<br> Website requirements:<br> The data visualisation website is a major part
-        of this unit's assessment. It is expected that you program your
-        visualisations in D3. However, if it becomes evident that you cannot
-        achieve your vision using D3 in the time required, then other tools are
-        acceptable. These need to be noted and fully justified in the
-        submission. The assignment criteria provided for this assignment will
-        help guide how you and your team structure and develop your final
-        website. Most notably, you will be assessed on the complexity of your
-        website and your implementation (build and aesthetic). The following
-        table outlines the different levels of complexity and implementation you
-        will be assessed on.<br />
+        Our GDP visualisation shows how strongly governments prioritise healthcare by comparing public health expenditure as a percentage of GDP across countries and years. 
+        A larger share indicates that more of a country's economic resources are being directed toward public healthcare, but it should not be interpreted as a direct measure of healthcare performance. 
+        WHO similarly defines health expenditure as a share of GDP as an indicator of the resources devoted to health relative to the size of the economy.
       </p>
-      <br><br>
-
-      <table border="1">
-  <tr>
-    <th>Website criteria</th>
-    <th>Needs improvement</th>
-    <th>Good</th>
-    <th>Very good</th>
-  </tr>
-  <tr>
-    <td>Complexity of project</td>
-    <td>Very simple data set used and/or limited number of variables.</td>
-    <td>Rich dataset used. The user is able to interact with one or more variables to explore the dataset.</td>
-     <td>Multiple datasets used, datasets from different sources combined in new ways.
-
-Some variables be derived or specially calculated for use in the visualisation.</td>
-  </tr>
-  <tr>
-    <td>Implementation - Part 1</td>
-    <td>One or more of the following:
-
-no website built
-no data visualisation evident
-no interactivity website barely functional (i.e. data not displaying properly or interactivity not working as expected)
-interactivity managed by changing webpages rather than in programming of visualisation.</td>
-    <td>Website built and accessible on Mercury server.
-
-Demonstrates some of the following as appropriate for context:
-
-scalable labeled axis
-data import
-transitions
-May have minor issues in functionality.
-
-Demonstrates one or more of the following interactive features:
-
-zoom
-filter
-brushing
-details on demand
-Code is well formed and commented.
-
-Code from external sources is acknowledged and referenced.
-
-Visualisation is presented with supporting context (i.e. page heading, explanatory text etc).</td>
-     <td>As per good, plus:
-
-Interactivity works as expected.
-
-User is able to interact with one or more variables to explore dataset.
-
-Shows a good response to original data visualisation questions.
-
-Very good supporting context.
-
-Largely programmed using D3.</td>
-  </tr>
-</table>
-
-     <br><br>
-     
-<!-- Healthcare chart -->
-        <h1> Visuals</h1>
-<h2>Healthcare Expenditure & Life Expectancy</h2>
-
-<div class="chartContainer"></div>
-
-<p class="chart1-caption">
-  Graph 1: Healthcare expenditure per capita compared with life expectancy.
-  </p>
-  <!-- Rohan's Scatter Plot Visualisation -->
-    <h2>Healthcare Spending vs. Life Expectancy (OECD Countries)</h2>
-    <div id="visualisation-container"></div>
-    <p class="chart-caption">
-      Interactive scatter plot examining the relationship between health expenditure per capita and total life expectancy.
-    </p>
-
-    <div class="small-box"><br>
-      <footer>Cos30045 Data Visualisation<br />TP3 - 2025</footer>
+    </article>
+    <div class="line-year-control">
+        <label for="lineYearSlider">Year: <span id="lineYearOutput"></span></label>
+        <input type="range" id="lineYearSlider" step="1" >
     </div>
-    <!--Usually appears at the bottom of a page or section containing information like:
 
-Copyright notice, contact info, links to privacy policy or terms, author info or related resources -->
-        <script type="module" src="javaScripts/d3.js"></script>
-        <script type="module" src="javaScripts/scatterPlot.js"></script>
+    <div class="lineChart"></div>
+  </section>
+
+    <section id="gdp-spending-visual" class="visual-section">
+      <div class="visual-heading">
+        <h1>Which Countries Commit the Largest Share of GDP to Public Health?</h1>
+        <p>Move through time and compare public health expenditure as a percentage of GDP.</p>
+      </div>
+      <div class="visual-controls compact-controls">
+        <div class="control-group year-control">
+          <label for="gdpYearSlider">Year: <output id="gdpYearOutput">2022</output></label>
+          <input id="gdpYearSlider" type="range" min="2000" max="2022" value="2022" step="1" />
+        </div>
+        <div class="control-group">
+          <label for="gdpCountSelect">Countries shown</label>
+          <select id="gdpCountSelect"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="20">Top 20</option></select>
+        </div>
+      </div>
+      <div class="story-panel">
+        <p id="gdpStoryText">Loading public health expenditure data…</p>
+        <div class="summary-stats">
+          <div><span id="gdpHighest">–</span><small>highest share</small></div>
+          <div><span id="gdpAverage">–</span><small>country average</small></div>
+          <div><span id="gdpCountries">–</span><small>countries available</small></div>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <div class="gdp-bar-chart"></div>
+        <div class="chart-tooltip gdp-tooltip"  role="status"></div>
+      </div>
+    </section>
+
+    <div id="conclusion">
+      <article>
+        <p>
+          Overall, our visualisations show that money matters, but how effectively it is used matters just as much. 
+          Increasing healthcare expenditure is generally associated with improvements in life expectancy,
+           particularly where initial spending is relatively low, but the relationship weakens as expenditure increases.
+            Differences between countries with similar expenditure demonstrate that healthcare efficiency, prevention, social conditions, behaviour and access to services contribute significantly to health outcomes.
+             Gender differences further show that national averages can conceal important inequalities within populations, 
+             while expenditure as a share of GDP reveals different levels of government commitment without necessarily predicting which country will achieve the longest life expectancy.
+             The central conclusion of our project is therefore that successful health systems should not be judged only by how much they spend, but by the health outcomes they achieve from the resources available to them.
+              This aligns with OECD findings that healthcare resources are important but are not perfect predictors of outcomes because wider social determinants and the efficient use of resources also matter.
+        </p>
+      </article>
+    </div>
+
+    <footer>
+        <div class="authors">
+        <h4>Authors:</h4>
+        <p>Husseni Omar </p>
+        <p>Rohand Chandel</p>
+        <p>Yaeghoub Hatamy</p>
+        </div>
+        <div class="project-info">
+            <h4>Data Visualization Project</h4>
+            <p>This project was conducted as data visualization unit assignment.</p>
+            <p>Swinburne University of Technology</p>
+        </div>
+        <p>&copy; 2026 Hataro. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="javaScripts/scatterPlot.js"></script>
+    <script src="javaScripts/connectedScatterPlot.js"></script>
+    <script src="javaScripts/lifeDifference.js"></script>
+    <script src="javaScripts/lineChart-gdpShare.js"></script>
+    <script src="javaScripts/bargraph-gdpShare.js"></script>
+
 </body>
-</html>
-  </body>
-    
 </html>

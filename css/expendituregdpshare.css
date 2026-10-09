@@ -1,0 +1,158 @@
+/* 
+country expedniture as share of gdp styling
+*/
+#gdp-percentage,
+#gdp-spending-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#gdp-percentage h1,
+.visual-heading h1 {
+    color: #8c7cff; 
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#gdp-percentage article p,
+.visual-heading p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444444;
+    text-align: justify; 
+    margin-bottom: 30px;
+}
+
+.line-year-control,
+.visual-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1dfec; 
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.line-year-control label,
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.line-year-control input[type="range"],
+.control-group select,
+.control-group input[type="range"] {
+    padding: 6px;
+    border: 1px solid #8c7cff;
+    border-radius: 4px;
+    background: #f9f9fa;
+    accent-color: #7f81ff; 
+    cursor: pointer;
+}
+
+.story-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#gdpStoryText {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8c7cff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.summary-stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-top: 4px solid #6040d1; 
+    box-shadow: 0 4px 10px rgba(140, 124, 255, 0.1); 
+    padding: 15px 25px;
+    border-radius: 8px;
+    min-width: 160px;
+    flex: 1 1 auto;
+}
+
+.summary-stats span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #8c7cff; 
+}
+
+.summary-stats small {
+    font-size: 0.85rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.chart-shell {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+@media (max-width: 768px) {
+    .line-year-control,
+    .visual-controls {
+        flex-direction: column;
+        align-items: stretch; 
+    }
+    
+    .line-year-control label,
+    .control-group {
+        justify-content: space-between;
+    }
+
+    .summary-stats {
+        flex-direction: column;
+    }
+    
+    .summary-stats div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #gdp-percentage h1,
+    .visual-heading h1 {
+        font-size: 1.8rem;
+    }
+    
+    #gdp-percentage article p,
+    .visual-heading p {
+        text-align: left; 
+    }
+}
