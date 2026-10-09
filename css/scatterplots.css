@@ -115,9 +115,7 @@
     background-color: #fcfcfc;
 }
 
-/* ----------------------------------------
-   BUTTONS & CHECKBOX LIST
----------------------------------------- */
+
 .country-buttons {
     display: flex;
     gap: 10px;
@@ -174,5 +172,47 @@
     .side-controls {
         flex: 1 1 100%;
         width: 100%;
+    }
+}
+
+.data-story {
+    background-color: var(--light-blue-bg, #ebf8ff);
+    border-left: 4px solid var(--primary-blue, #2b6cb0);
+    padding: 15px 20px;
+    margin-top: 25px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(43, 108, 176, 0.05);
+}
+
+.data-story p {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    color: var(--text-blue, #2c5282);
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.data-story p:last-child {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #4a5568; 
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .data-story {
+        padding: 12px 15px;
+        margin-top: 2px;
+    }
+    
+    .data-story p {
+        font-size: 0.9rem;
+    }
+    
+    .data-story p:last-child {
+        font-size: 0.8rem;
     }
 }
