@@ -9,16 +9,23 @@
     <title>Hataro</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scatterplots.css">
+    <link rel="stylesheet" href="css/gadAndDifference.css">
+    <link rel="stylesheet" href="css/expendituregdpshare.css">
 </head>
-<body>
-   <header>
+<body id="home">
+   <header class="main-header">
         <h1>Hataro</h1>
-        <nav>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <nav class="main-nav">
             <ul>
-                <li>Data Visualization Project:</li>
-                <li>Assignment 3A Project standup</li>
-                <li>Assignment 3B Project process book</li>
-                <li>Assignment 3C Website and Visualization</li>
+                <li><a href="#home">Data Visualization Project</a></li>
+                <li><a href="#expenditurevslife">Health expenditure vs. life expectancy</a></li>
+                <li><a href="#gender-gap-visual">Female vs Male health outcomes</a></li>
+                <li><a href="#gdp-percentage">Country expenditure as share of gdp</a></li>
             </ul>
         </nav>
     </header>
@@ -26,45 +33,78 @@
         <article>
             <h1>Does higher healthcare expenditure guarantee longer life expectancy?</h1>
             <h1>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h1>
-            <p>by Husseni Omar, Rohand Chandel, and Yaeghoub Hatamy</p>
-            <p>published on 2026</p>
+            <p>by Husseni Omar, Rohand Chandel, and Yaeghoub Hatamy. 2026 Oct</p>
+
+            <div class="findings">
+              <p>
+                Our visualisations reveal that health outcomes are shaped not simply by how much a country spends on healthcare, but by how effectively those resources are translated into better health. 
+                Across the countries and years examined, substantial differences appear in healthcare expenditure, life expectancy, gender-based outcomes, and public health spending as a share of GDP. 
+                The overall pattern suggests that greater investment in healthcare is generally associated with better outcomes, but expenditure alone cannot explain the differences between countries. 
+                Factors such as healthcare-system efficiency, preventive care, socioeconomic conditions, lifestyle, and access to services also influence population health. 
+                This is consistent with the wider evidence considered in the project, which identifies social protection, sanitation, income conditions and public-health policies as important influences on life expectancy.
+              </p>
+            </div>
+    
         </article>
     </main>
 
-    <section id="scatter-plot">
-        <h1>Health Expenditure vs. Life Expectancy</h1>
-        <p>This analysis explores the relationship between healthcare spending and life expectancy across different countries.</p>
+    <section id="expenditurevslife">
+      <section id="scatter-plot" class="featured-panel">
+          <h1>Health Expenditure vs. Life Expectancy</h1>
+          <p class="lead-text">
+            The clearest pattern in our expenditure and life-expectancy visualisations is a positive relationship between healthcare spending per person and life expectancy, followed by diminishing returns at higher spending levels.
+             Countries moving from relatively low levels of healthcare expenditure generally experience substantial improvements in life expectancy, whereas differences become smaller among countries already spending large amounts. 
+             The United States provides an important example: despite spending considerably more per person than other OECD countries, its life expectancy remains below the OECD average and below that of several countries that spend much less. 
+             OECD data confirms that countries such as Japan, Spain, Italy and Korea achieve above-average life expectancy while spending below the OECD average.
+             Our findings therefore suggest that higher spending improves the potential for better health outcomes, but greater expenditure does not automatically produce longer lives.
+          </p>
 
-        <div class="scatter-controls">
-            <label for="year-select">Select Year:</label>
-            <select id="year-select"></select>
+          <h3>Health Expenditure and life expectancy by country</h3>
+          <div class="scatter-controls">
+              <label for="year-select"><strong>Select Year:</strong></label>
+              <select id="year-select"></select>
+          </div>
+          <div class="scatter-Plot"></div> 
+      </section>
+      <section id="connected-scatter-plot">
+        <h1>How has each country's health expenditure and life expectancy changed over time?</h1>
+        <p>Select countries below to compare how their health expenditure and life expectancy have changed over time.</p>
+
+        <div class="connected-layout">
+            <!-- Side Panel Dropdown Menu -->
+            <aside class="side-controls">
+                <details class="country-dropdown" open>
+                    <summary>Select Countries</summary>
+                    <div class="dropdown-content">
+                        <div class="country-buttons">
+                            <button id="select-all-countries" type="button" class="btn-blue">Select All</button>
+                            <button id="clear-all-countries" type="button" class="btn-blue-outline">Clear All</button>
+                        </div>
+                        <div id="country-list" class="checkbox-list"></div>
+                    </div>
+                </details>
+            </aside>
+
+            <!-- Graph Area -->
+            <div class="graph-container">
+                <div class="connected-scatterPlot"></div>
+            </div>
         </div>
-
-        <h3>Health Expenditure and life expectancy by country</h3>
-        <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->    
+      </section>
     </section>
-
-  <section id="connected-scatter-plot">
-
-    <h1>How has each country's health expenditure and life expectancy changed over time?</h1>
-    <p>Select countries below to compare how their health expenditure and life expectancy have changed over time.</p>
-
-    <div class="country-controls">
-        <h4>Select Countries</h4>
-        <div class="country-buttons">
-            <button id="select-all-countries" type="button">Select All</button>
-            <button id="clear-all-countries" type="button"> Clear All</button>
-        </div>
-        <div id="country-list"></div>
-    </div>
-    <div class="connected-scatterPlot"></div>
-  </section>
 
      <!-- Visual 4: Life expectancy gender gap -->
     <section id="gender-gap-visual" class="visual-section">
       <div class="visual-heading">
-        <h1>Where Is the Life Expectancy Gender Gap Largest?</h1>
-        <p>Choose a year and rank countries by the difference between female and male life expectancy.</p>
+        <h1>Difference Between Men and Women Life Expectancy</h1>
+        <article>
+          <p>
+             The gender comparison reveals another important pattern: women generally live longer than men, although the size of the difference varies substantially between countries and over time. 
+             Our visualisation directly measures this gap by subtracting male life expectancy from female life expectancy for each country and year. 
+             OECD evidence similarly reports that women lived about 5.4 years longer than men on average across OECD countries in 2021, with considerably larger gaps in some Central and Eastern European countries.
+              Differences in smoking, alcohol consumption, diet, accidents and other risk factors help explain part of this variation.
+          </p>
+        </article>
       </div>
       <div class="visual-controls compact-controls">
         <div class="control-group year-control">
@@ -90,16 +130,22 @@
       </div>
     </section>
 
-    <section id="gdp-percentage">
+  <section id="gdp-percentage">
     <h1>Countries healthcare spending as a Percentage of GDP</h1>
-    <p>This analysis examines the percentage of GDP that countries allocate to healthcare spending.</p>
+    <article>
+      <p>
+        Our GDP visualisation shows how strongly governments prioritise healthcare by comparing public health expenditure as a percentage of GDP across countries and years. 
+        A larger share indicates that more of a country's economic resources are being directed toward public healthcare, but it should not be interpreted as a direct measure of healthcare performance. 
+        WHO similarly defines health expenditure as a share of GDP as an indicator of the resources devoted to health relative to the size of the economy.
+      </p>
+    </article>
     <div class="line-year-control">
         <label for="lineYearSlider">Year: <span id="lineYearOutput"></span></label>
         <input type="range" id="lineYearSlider" step="1" >
     </div>
 
     <div class="lineChart"></div>
-</section>
+  </section>
 
     <section id="gdp-spending-visual" class="visual-section">
       <div class="visual-heading">
@@ -128,11 +174,27 @@
         <div class="gdp-bar-chart"></div>
         <div class="chart-tooltip gdp-tooltip"  role="status"></div>
       </div>
+    </section>
+
+    <div id="conclusion">
+      <article>
+        <p>
+          Overall, our visualisations show that money matters, but how effectively it is used matters just as much. 
+          Increasing healthcare expenditure is generally associated with improvements in life expectancy,
+           particularly where initial spending is relatively low, but the relationship weakens as expenditure increases.
+            Differences between countries with similar expenditure demonstrate that healthcare efficiency, prevention, social conditions, behaviour and access to services contribute significantly to health outcomes.
+             Gender differences further show that national averages can conceal important inequalities within populations, 
+             while expenditure as a share of GDP reveals different levels of government commitment without necessarily predicting which country will achieve the longest life expectancy.
+             The central conclusion of our project is therefore that successful health systems should not be judged only by how much they spend, but by the health outcomes they achieve from the resources available to them.
+              This aligns with OECD findings that healthcare resources are important but are not perfect predictors of outcomes because wider social determinants and the efficient use of resources also matter.
+        </p>
+      </article>
+    </div>
 
     <footer>
         <div class="authors">
-        <h4>Authors</h4>
-        <p>Husseni Omar: </p>
+        <h4>Authors:</h4>
+        <p>Husseni Omar </p>
         <p>Rohand Chandel</p>
         <p>Yaeghoub Hatamy</p>
         </div>

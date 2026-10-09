@@ -12,3 +12,6 @@ link: https://data-explorer.oecd.org/vis?pg=0&bp=true&snb=24&df[ds]=dsDisseminat
 
 Horizontal bar chart in d3.js, D3.js Graph Gallary. 2026
 link: https://d3-graph-gallery.com/graph/barplot_horizontal.html
+
+National library of medicine How Important Are Health Care Expenditures for Life Expectancy? A Comparative, European Analysis, 2017
+link: https://pubmed.ncbi.nlm.nih.gov/28131720/

@@ -1,3 +1,4 @@
+/* global centred */
 section {
     display: flex;
     flex-direction: column;
@@ -79,50 +80,300 @@ section {
     flex-wrap: wrap;
 }
 
-
-/* connected scatter plot styles*/
-.country-controls {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    max-width: 900px;
-}
-
-.country-buttons {
-    margin-bottom: 12px;
-}
-
-.country-buttons button {
-    padding: 6px 12px;
-    margin-right: 8px;
-    cursor: pointer;
-}
-
-#country-list {
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(160px, 1fr));
-
-    gap: 8px 15px;
-
-    max-height: 220px;
-    overflow-y: auto;
-
-    padding: 10px;
-
-    border: 1px solid #eee;
-}
-
-.country-option {
+/* header styles */
+.main-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 6px;
-
-    font-size: 14px;
-    cursor: pointer;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #9157d3; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.country-option input {
-    cursor: pointer;
+.main-header h1 {
+    color: #8c7cff; 
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.menu-toggle,
+.hamburger {
+    display: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ff7fc8; 
+}
+
+@media (max-width: 850px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #8c7cff;
+        user-select: none;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background-color: #ffffff;
+        margin-top: 15px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    /* When the hidden checkbox is checked (hamburger clicked), show the ul */
+    .menu-toggle:checked ~ .main-nav ul {
+        display: flex;
+    }
+
+    .main-nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .main-nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav ul li a {
+        display: block;
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    .main-nav ul li a:hover {
+        background-color: #fef0f8; 
+        color: #8c7cff;
+    }
+}
+
+/* Main container and article */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px; 
+    width: 100%;
+    gap: 15px;
+}
+
+main article h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    color: #000000; 
+}
+
+/* Styles the second H1 as a prominent sub-heading */
+main article h1:nth-of-type(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000; 
+}
+
+main article > p {
+    text-align: center;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.findings {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(140, 124, 255, 0.08), rgba(255, 127, 200, 0.08));
+    border-left: 5px solid #8c7cff; 
+    border-radius: 8px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.findings p {
+    text-align: justify;
+    font-style: normal;
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+    
+    main article h1 {
+        font-size: 1.8rem;
+    }
+    
+    main article h1:nth-of-type(2) {
+        font-size: 1.3rem;
+    }
+    
+    .findings {
+        padding: 20px;
+    }
+    
+    .findings p {
+        text-align: left; 
+        font-size: 1rem;
+    }
+}
+
+
+/* conclusion and footer styling */
+#conclusion {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#conclusion article {
+    max-width: 900px;
+    /* Reuses the subtle background gradient and palette from previous findings */
+    background: linear-gradient(135deg, rgba(140, 124, 255, 0.08), rgba(255, 127, 200, 0.08));
+    border-left: 5px solid #9b7fff; 
+    border-radius: 8px;
+    padding: 35px 45px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#conclusion article p {
+    text-align: justify;
+    color: #333333;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 20px 20px;
+    background-color: #fef0f8; 
+    border-top: 4px solid #8c7cff; 
+    color: #444444;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.authors,
+.project-info {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h4 {
+    color: #8c7cff; 
+    font-size: 1.25rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Copyright notice at the bottom */
+footer > p:last-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(140, 124, 255, 0.2);
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+@media (max-width: 768px) {
+    #conclusion {
+        padding: 40px 15px;
+    }
+    
+    #conclusion article {
+        padding: 25px 20px;
+    }
+    
+    #conclusion article p {
+        text-align: left; 
+        font-size: 1.05rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 15px 20px;
+    }
+    
+    .authors,
+    .project-info {
+        flex: 1 1 auto;
+        width: 100%;
+    }
 }
