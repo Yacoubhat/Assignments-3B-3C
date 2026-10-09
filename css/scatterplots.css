@@ -1,6 +1,3 @@
-/* scatter plots styling */
-
-
 :root {
     --primary-blue: #2b6cb0; 
     --dark-blue: #1a365d;
@@ -10,58 +7,76 @@
 }
 
 
-.featured-panel {
+.article-featured {
     background-color: var(--light-blue-bg);
     border: 2px solid var(--border-blue);
     border-radius: 12px;
     padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(43, 108, 176, 0.08);
+    margin-bottom: 40px; 
 }
 
-.featured-panel h1 {
+.article-featured h1 {
     color: var(--dark-blue);
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 15px;
 }
 
-.featured-panel .lead-text {
-    color: var(--text-blue);
-    font-size: 1.15rem;
-    font-weight: 500;
+.article-featured .lead-text {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-style: normal;
     line-height: 1.7;
     text-align: left;
 }
 
-.featured-panel h3 {
+.graph-section {
+    margin-bottom: 60px;
+}
+
+.graph-section h3 {
     color: var(--primary-blue);
     font-size: 1.4rem;
     font-weight: 700;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
+
+.graph-wrapper {
+    width: 100%;
+    overflow-x: auto; 
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.scatter-Plot svg,
+.connected-scatterPlot svg {
+    min-width: 600px;
+    display: block;
+}
+
 
 .connected-layout {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; 
     gap: 25px;
     align-items: flex-start;
     margin-top: 20px;
 }
 
 .side-controls {
-    flex: 1 1 250px;
-    max-width: 320px;
+    flex: 0 0 280px; 
     background: #ffffff;
     border-radius: 8px;
 }
 
-.graph-container {
-    flex: 3 1 500px;
-    min-width: 0; 
-    display: flex;
-    justify-content: center;
+.main-graph-area {
+    flex: 1; 
+    justify-content: flex-start;
 }
+
 
 .country-dropdown summary {
     background-color: var(--primary-blue);
@@ -71,7 +86,7 @@
     font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
-    list-style: none; 
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +115,9 @@
     background-color: #fcfcfc;
 }
 
+/* ----------------------------------------
+   BUTTONS & CHECKBOX LIST
+---------------------------------------- */
 .country-buttons {
     display: flex;
     gap: 10px;
@@ -136,7 +154,6 @@
     gap: 8px;
     max-height: 400px;
     overflow-y: auto;
-    padding-right: 5px;
 }
 
 .checkbox-list label {
@@ -148,21 +165,14 @@
     cursor: pointer;
 }
 
-@media (max-width: 850px) {
+
+@media (max-width: 900px) {
     .connected-layout {
-        flex-direction: column;
+        flex-direction: column; 
     }
     
-    .side-controls, .graph-container {
-        max-width: 100%;
+    .side-controls {
+        flex: 1 1 100%;
         width: 100%;
-    }
-    
-    .featured-panel {
-        padding: 20px;
-    }
-    
-    .featured-panel h1 {
-        font-size: 1.8rem;
     }
 }
