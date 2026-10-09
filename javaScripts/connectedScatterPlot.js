@@ -1,208 +1,271 @@
 (() => {
-const width = 950;
-const height = 600;
+    const margin = { top: 40, right: 170, bottom: 70, left: 80 };
 
-const margin = {
-    top: 40,
-    right: 160,
-    bottom: 70,
-    left: 80
-};
+    const outerWidth = 950;
+    const outerHeight = 600;
 
-const svg = d3.select(".connected-scatterPlot")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    const width = outerWidth - margin.left - margin.right;
+    const height = outerHeight - margin.top - margin.bottom;
+    const container = d3.select(".connected-scatterPlot");
 
-const chartWidth = width - margin.left - margin.right;
-const chartHeight = height - margin.top - margin.bottom;
+    container.selectAll("*").remove();
 
-const chart = svg.append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+    const svg = container
+        .append("svg")
+        .attr("width", outerWidth)
+        .attr("height", outerHeight)
+        .attr("viewBox", `0 0 ${outerWidth} ${outerHeight}`);
 
-const tooltip = d3.select(".tooltip");
+    const chart = svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    // ------------------------------------------
+    // TOOLTIP INITIALIZATION
+    // ------------------------------------------
+    d3.selectAll(".connected-scatter-tooltip").remove();
 
-// load the merged heath dataset 
+    const tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "connected-scatter-tooltip")
+        .style("position", "absolute")
+        .style("opacity", 0)
+        .style("pointer-events", "none")
+        .style("background", "rgba(0,0,0,0.85)")
+        .style("color", "white")
+        .style("padding", "8px 10px")
+        .style("border-radius", "4px")
+        .style("font-size", "13px");
 
-d3.csv("data/health_data_merged.csv").then(data => {
+    // ------------------------------------------
+    // LOAD DATA
+    // ------------------------------------------
+    d3.csv("data/health_data_merged.csv").then(data => {
 
-    // Convert strings from CSV into numbers
-    data.forEach(d => {
-        d.Year = +d.Year;
-        d.expenditure = +d["Health Expenditure Share of ppp per capita"];
-        d.lifeExpectancy = +d["Life Expectancy"];
-    });
-
-    // Display selected countries
-
-    const selectedCountryCode = [
-        "USA", "CAN", "FRA", "JPN", "GBR",
-        "IND", "BRA", "TUR", "POL",
-        "KOR", "DEU", "AUS", "ZAF", "FIN",
-        "NOR", "SWE", "NZL", "CHE"
-    ];
-
-    const filteredData = data.filter(d =>selectedCountryCode.includes(d["Country Code"]));
-
-    // group the filtered country code data by country
-
-    const groupedData = d3.group(filteredData, d => d.Country);
-
-    // Sort each country's observations chronologically
-    groupedData.forEach(values => {
-        values.sort((a, b) => a.Year - b.Year);
-    });
-
-    //xScale
-    const x = d3.scaleLinear()
-        .domain(d3.extent(filteredData, d => d.expenditure))
-        .nice()
-        .range([0, chartWidth]);
-
-    //yScale
-    const y = d3.scaleLinear()
-        .domain(d3.extent(filteredData, d => d.lifeExpectancy))
-        .nice()
-        .range([chartHeight, 0]);
-
-    const countryNames = Array.from(groupedData.keys());
-
-    const colour = d3.scaleOrdinal()
-        .domain(countryNames)
-        .range(d3.schemeTableau10);
-
-    // Axes and labels
-
-    chart.append("g")
-        .attr("transform", `translate(0,${chartHeight})`)
-        .call(d3.axisBottom(x));
-
-    chart.append("g")
-        .call(d3.axisLeft(y));
-
-    // X axis label
-    svg.append("text")
-        .attr("x", margin.left + chartWidth / 2)
-        .attr("y", height - 20)
-        .attr("text-anchor", "middle")
-        .attr("class", "axis-label")
-        .text("Health Expenditure (PPP per capita)");
-
-    // Y axis label
-    svg.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("x", -(margin.top + chartHeight / 2))
-        .attr("y", 20)
-        .attr("text-anchor", "middle")
-        .attr("class", "axis-label")
-        .text("Life Expectancy (Years)");
-
-    // generate lines for each each country life expectancy vs expenditure
-    const line = d3.line()
-        .x(d => x(d.expenditure))
-        .y(d => y(d.lifeExpectancy));
-
-    // Draw one trajectory per country
-
-    groupedData.forEach((countryData, country) => {
-        chart.append("path")
-            .datum(countryData)
-            .attr("class", "country-line")
-            .attr("data-country", country)
-            .attr("fill", "none") // Prevents the black SVG blob
-            .attr("stroke", colour(country))
-            .attr("stroke-width", 1.5)
-            .attr("stroke-opacity", 0.55)
-            .attr("d", line);
-    });
-
-
-    //add subtle grid lines to the background of the chart
-    // chart.append("g")
-    //     .attr("class", "grid")
-    //     .attr("transform", `translate(0,${chartHeight})`)
-    //     .call(d3.axisBottom(x).tickSize(-chartHeight).tickFormat(""))
-    //     .call(g => g.selectAll("line")
-    //         .attr("stroke", "#cfcfcf")
-    //         .attr("stroke-width", 0.8)
-    //         .attr("stroke-opacity", 0.6))
-    //     .call(g => g.select(".domain").remove());
-
-    chart.append("g")
-        .attr("class", "grid")
-        .call(d3.axisLeft(y).tickSize(-chartWidth).tickFormat(""))
-        .call(g => g.selectAll("line")
-            .attr("stroke", "#cfcfcf")
-            .attr("stroke-width", 0.8)
-            .attr("stroke-opacity", 0.6))
-        .call(g => g.select(".domain").remove());
-
-    // Draw yearly observations and display tootip
-    chart.selectAll(".point")
-        .data(filteredData)
-        .enter()
-        .append("circle")
-        .attr("class", "point")
-        .attr("cx", d => x(d.expenditure))
-        .attr("cy", d => y(d.lifeExpectancy))
-        .attr("r", 2.5)
-        .attr("fill", d => colour(d.Country))
-        .on("mouseover", function(event, d) {
-            d3.select(this).attr("r", 2.5);
-            
-            tooltip
-                .style("opacity", 0.5)
-                .html(`
-                    <strong>${d.Country}</strong><br>
-                    Year: ${d.Year}<br>
-                    Expenditure: $${d.expenditure.toFixed(2)}<br>
-                    Life expectancy: ${d.lifeExpectancy.toFixed(1)}
-                `);
-        })
-        .on("mousemove", function(event) {
-            tooltip
-                .style("left", event.pageX + 15 + "px")
-                .style("top", event.pageY - 20 + "px");
-        })
-        .on("mouseout", function() {
-            d3.select(this).attr("r", 4);
-            tooltip.style("opacity", 0);
+        data.forEach(d => {
+            d.Year = +d.Year;
+            d.expenditure = +d["Health Expenditure Share of ppp per capita"];
+            d.lifeExpectancy = +d["Life Expectancy"];
         });
 
-    // Label countries in the graph based on the selected country
+        // country to start
+        const defaultCountryCodes = [
+            "USA", "CHN", "DEU", "JPN", "AUS", "ZAF", "SWE", "IND", "CHE", "NOR"
+        ]
 
-    const labelledCountries = new Set([
-    "United States",
-    "South Africa",
-    "India",
-    "Japan",
-    "Switzerland",
-    "Australia",
-    "Germany",
-    "Poland",
-    "Netherlands",
-    "Sweden",
-    "Canada",
-    "Korea",
-    "Brazil",
-    "Norway",
-    "Turkiye"
-]);
+        // Filter valid data
+        const validData = data.filter(d =>
+            d.Country && Number.isFinite(d.Year) &&
+            Number.isFinite(d.expenditure) && d.expenditure > 0 &&
+            Number.isFinite(d.lifeExpectancy) && d.lifeExpectancy > 0
+        );
 
-    groupedData.forEach((countryData, country) => {
+        // Get all unique countries
+        const countries = Array.from(new Set(validData.map(d => d.Country))).sort((a, b) => a.localeCompare(b));
 
-        if (!labelledCountries.has(country)) return;
-        const lastPoint = countryData[countryData.length - 1];
-        
-        chart.append("text")
-            .attr("x", x(lastPoint.expenditure) + 7)
-            .attr("y", y(lastPoint.lifeExpectancy))
-            .attr("r", 5) // Centers the text vertically with the dot
-            .attr("fill", colour(country))
-            .attr("font-size", 12)
-            .text(country);
+        console.log("Countries:", countries);
+
+        // Consistent country colours
+        const colour = d3.scaleOrdinal()
+            .domain(countries)
+            .range(d3.quantize(d3.interpolateRainbow, countries.length));
+
+        // ------------------------------------------
+        // FIXED X AND Y SCALES
+        // ------------------------------------------
+        const x = d3.scaleLinear()
+            .domain([0, d3.max(validData, d => d.expenditure) * 1.05])
+            .nice()
+            .range([0, width]);
+
+        const yMin = d3.min(validData, d => d.lifeExpectancy);
+        const yMax = d3.max(validData, d => d.lifeExpectancy);
+
+        const y = d3.scaleLinear()
+            .domain([yMin - 2, yMax + 2])
+            .nice()
+            .range([height, 0]);
+
+        // ------------------------------------------
+        // GRIDLINES & AXES
+        // ------------------------------------------
+        chart.append("g")
+            .attr("class", "grid x-grid")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x).tickSize(-height).tickFormat(""));
+
+        chart.append("g")
+            .attr("class", "grid y-grid")
+            .call(d3.axisLeft(y).tickSize(-width).tickFormat(""));
+
+        // Make grid subtle
+        chart.selectAll(".grid line")
+            .attr("stroke", "#cccccc")
+            .attr("stroke-opacity", 0.25)
+            .attr("stroke-width", 0.7);
+
+        chart.selectAll(".grid .domain").remove();
+
+        chart.append("g")
+            .attr("class", "x-axis")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x));
+
+        chart.append("g")
+            .attr("class", "y-axis")
+            .call(d3.axisLeft(y));
+
+        // X AXIS LABEL
+        svg.append("text")
+            .attr("x", margin.left + width / 2)
+            .attr("y", outerHeight - 20)
+            .attr("text-anchor", "middle")
+            .text("Health Expenditure (PPP per capita)");
+
+        // Y AXIS LABEL
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -(margin.top + height / 2))
+            .attr("y", 20)
+            .attr("text-anchor", "middle")
+            .text("Life Expectancy (Years)");
+
+        const line = d3.line()
+            .x(d => x(d.expenditure))
+            .y(d => y(d.lifeExpectancy));
+
+        // ------------------------------------------
+        // COUNTRY CHECKBOX LIST
+        // ------------------------------------------
+        const countryList = d3.select("#country-list");
+        countryList.selectAll("*").remove();
+
+        const countryItems = countryList
+            .selectAll(".country-option")
+            .data(countries)
+            .join("label")
+            .attr("class", "country-option");
+
+        countryItems.append("input")
+            .attr("type", "checkbox")
+            .attr("class", "country-checkbox")
+            .attr("value", d => d);
+
+        countryItems.append("span")
+            .text(d => d);
+
+        // Default selections
+        const defaultCountries = [...new Set(validData.filter(d => defaultCountryCodes.includes(d["Country Code"])).map(d => d.Country))];
+
+        d3.selectAll(".country-checkbox")
+            .property("checked", d => defaultCountries.includes(d));
+
+        function getSelectedCountries() {
+            const selected = [];
+            d3.selectAll(".country-checkbox").each(function(d) {
+                if (this.checked) {
+                    selected.push(d);
+                }
+            });
+            return selected;
+        }
+
+        // ------------------------------------------
+        // UPDATE CHART FUNCTION
+        // ------------------------------------------
+        function updateChart() {
+            const selectedCountries = getSelectedCountries();
+
+            // Clear previous layers
+            chart.selectAll(".country-trajectory").remove();
+            chart.selectAll(".trajectory-point").remove();
+            chart.selectAll(".country-label").remove();
+
+            if (selectedCountries.length === 0) return;
+
+            const selectedData = validData.filter(d => selectedCountries.includes(d.Country));
+
+            const groupedData = d3.group(selectedData, d => d.Country);
+            groupedData.forEach(countryData => {
+                countryData.sort((a, b) => a.Year - b.Year);
+            });
+
+            // DRAW COUNTRY LINES
+            groupedData.forEach((countryData, country) => {
+                chart.append("path")
+                    .datum(countryData)
+                    .attr("class", "country-trajectory")
+                    .attr("fill", "none")
+                    .attr("stroke", colour(country))
+                    .attr("stroke-width", 2.5)
+                    .attr("stroke-opacity", 0.8)
+                    .attr("d", line);
+            });
+
+            // DRAW DATA POINTS
+            chart.selectAll(".trajectory-point")
+                .data(selectedData)
+                .join("circle")
+                .attr("class", "trajectory-point")
+                .attr("cx", d => x(d.expenditure))
+                .attr("cy", d => y(d.lifeExpectancy))
+                .attr("r", 3.5)
+                .attr("fill", d => colour(d.Country))
+                .attr("stroke", "white")
+                .attr("stroke-width", 0.6)
+                .on("mouseover", function(event, d) {
+                    d3.select(this).attr("r", 7);
+
+                    tooltip
+                        .style("opacity", 1)
+                        .html(`
+                            <strong>${d.Country}</strong><br>
+                            Year: ${d.Year}<br>
+                            Expenditure: ${d.expenditure.toFixed(2)}<br>
+                            Life expectancy: ${d.lifeExpectancy.toFixed(1)} years
+                        `);
+                })
+                .on("mousemove", function(event) {
+                    tooltip
+                        .style("left", `${event.pageX + 15}px`)
+                        .style("top", `${event.pageY - 25}px`); // Syntax error fixed here
+                })
+                .on("mouseout", function() {
+                    d3.select(this).attr("r", 3.5);
+                    tooltip.style("opacity", 0);
+                });
+
+            // COUNTRY LABEL AT END OF TRAJECTORY
+            groupedData.forEach((countryData, country) => {
+                const lastPoint = countryData[countryData.length - 1];
+
+                chart.append("text")
+                    .attr("class", "country-label")
+                    .attr("x", x(lastPoint.expenditure) + 7)
+                    .attr("y", y(lastPoint.lifeExpectancy))
+                    .attr("fill", colour(country))
+                    .attr("font-size", 11)
+                    .attr("font-weight", 600)
+                    .attr("dominant-baseline", "middle")
+                    .text(country);
+            });
+        }
+
+        // ------------------------------------------
+        // EVENT LISTENERS
+        // ------------------------------------------
+        d3.selectAll(".country-checkbox").on("change", updateChart);
+
+        d3.select("#select-all-countries").on("click", function() {
+            d3.selectAll(".country-checkbox").property("checked", true);
+            updateChart();
+        });
+
+        d3.select("#clear-all-countries").on("click", function() {
+            d3.selectAll(".country-checkbox").property("checked", false);
+            updateChart();
+        });
+
+        updateChart();
     });
-});
-
 })();

@@ -1,174 +1,228 @@
 (() => {
-
     const width = 950;
     const height = 500;
 
-    const margin = {top: 35, right: 150, bottom: 45, left: 55 };
-   
+    const margin = {
+        top: 35,
+        right: 150,
+        bottom: 45,
+        left: 55
+    };
 
-    //svg
+    // -----------------------------------------------------
+    // SVG SETUP
+    // -----------------------------------------------------
     const svg = d3.select(".lineChart")
         .append("svg")
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [0, 0, width, height])
         .style("max-width", "100%")
-        .style("height", "auto")
+        .style("height", "auto");
 
-    
-    
-    //load data
+    const xAxisGroup = svg.append("g")
+        .attr("transform", `translate(0, ${height - margin.bottom})`);
+
+    const lineGroup = svg.append("g")
+        .attr("class", "country-lines");
+
+    const labelGroup = svg.append("g")
+        .attr("class", "country-labels");
+
+    // -----------------------------------------------------
+    // LOAD & CLEAN DATA
+    // -----------------------------------------------------
     d3.csv("data/cleaned-health-expenditure-share-gdp.csv").then(data => {
-        data.forEach(d =>{
+        
+        data.forEach(d => {
             d.year = +d.Year;
-            d.Country = d.Country;
-            d.percentage = +d["Public health expenditure as a share of GDP"]
+            d.country = d["Country"];
+            d.percentage = +d["Public health expenditure as a share of GDP"];
         });
 
-    const cleanData = data.filter(d => 
-        d.Country && Number.isFinite(d.year) && Number.isFinite(d.percentage)
-    );
+        const cleanData = data.filter(d =>
+            d.country && Number.isFinite(d.year) && Number.isFinite(d.percentage)
+        );
 
-    const selectedCountries = [
-            "Australia", "South Africa", "Costa Rica",
-            "United States", "India", "Norway",
-            "United Kingdom", "Brazil", "France",
-            "Germany", "Costa Rica", "Sweden",
-            "Japan", "Turkey", "South Korea",
-            "Canada", "Poland",
+        const selectedCountries = [
+            "Australia", "South Africa", "United States", "India", 
+            "United Kingdom", "Brazil", "Germany", "Costa Rica", 
+            "Japan", "Turkey", "Canada", "Poland"
         ];
 
-    const labelledCountries = [
-        "Australia",
-        "United States",
-        "United Kingdom",
-        "Japan",
-        "South Africa",
-        "Poland",
-        "Turkey",
-        "India"
-    ];
+        const countryData = cleanData.filter(d =>
+            selectedCountries.includes(d.country)
+        );
 
-    const filteredData = cleanData.filter(d => selectedCountries.includes(d.Country));
+        const minYear = d3.min(countryData, d => d.year);
+        const maxYear = d3.max(countryData, d => d.year);
 
-    // group data by country
+        // -----------------------------------------------------
+        // SLIDER SETUP
+        // -----------------------------------------------------
+        const slider = d3.select("#lineYearSlider");
+        const yearOutput = d3.select("#lineYearOutput");
 
-    const groupedData = d3.group(filteredData, d => d.Country);
+        slider
+            .attr("min", minYear)
+            .attr("max", maxYear)
+            .attr("value", maxYear);
 
-    // sort each country chronologically
-    groupedData.forEach(values =>{
-        values.sort((a, b) => a.year - b.year);
-    });
+        yearOutput.text(maxYear);
 
-    //scales
-    const xScale = d3.scaleLinear()
-        .domain(d3.extent(filteredData, d => d.year))
-        .range([margin.left, width - margin.right]);
-    
-    const yScale = d3.scaleLinear()
-        .domain([0, d3.max(filteredData, d => d.percentage)])
-        .nice()
-        .range([height - margin.bottom, margin.top]);
+        // -----------------------------------------------------
+        // SCALES & AXES
+        // -----------------------------------------------------
+        const colour = d3.scaleOrdinal()
+            .domain(selectedCountries)
+            .range(d3.schemeTableau10);
 
-    //colour scales
+        // Static Y Scale (Keeps same scale while scrolling)
+        const yScale = d3.scaleLinear()
+            .domain([0, d3.max(countryData, d => d.percentage)])
+            .nice()
+            .range([height - margin.bottom, margin.top]);
 
-    const countries = Array.from(groupedData.keys());
+        // Y Axis & Gridlines
+        const yAxis = svg.append("g")
+            .attr("transform", `translate(${margin.left}, 0)`)
+            .call(d3.axisLeft(yScale)
+                .ticks(8)
+                .tickSize(-(width - margin.left - margin.right))
+                .tickFormat(d => `${d}%`)
+            );
 
-    const colour = d3.scaleOrdinal()
-        .domain(countries)
-        .range(d3.schemeTableau10);
+        yAxis.select(".domain").remove();
+        
+        yAxis.selectAll(".tick text")
+            .attr("font-size", "11px")
+            .attr("fill", "#444");
+            
+        yAxis.selectAll(".tick line")
+            .attr("stroke", "#d9d9d9")
+            .attr("stroke-width", 0.8)
+            .attr("stroke-opacity", 0.5);
 
-    //x-axis
-    const xAxis = svg.append("g")
-        .attr("transform", `translate(0, ${height - margin.bottom})`)
-        .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("d")).tickSizeOuter(0));
+        // Y Axis Title
+        svg.append("text")
+            .attr("x", 5)
+            .attr("y", 15)
+            .attr("fill", "#333")
+            .attr("font-size", "11px")
+            .attr("font-weight", "500")
+            .text("↑ Health expenditure (% of GDP)");
 
-    //subtle axis
-     xAxis.select(".domain")
+        // -----------------------------------------------------
+        // UPDATE CHART FUNCTION
+        // -----------------------------------------------------
+        function updateChart(selectedYear) {
+            const filteredData = countryData.filter(d => d.year <= selectedYear);
+
+            const groupedData = d3.group(filteredData, d => d.country);
+
+            // Sort chronologically
+            groupedData.forEach((values, country) => {
+                values.sort((a, b) => a.year - b.year);
+            });
+
+            // Convert Map into array
+            const countries = Array.from(groupedData, ([country, values]) => ({
+                country,
+                values
+            }));
+
+            // X Scale
+            const xScale = d3.scaleLinear()
+                .domain([minYear, selectedYear])
+                .range([margin.left, width - margin.right]);
+
+            // Update X Axis
+            xAxisGroup
+                .transition()
+                .duration(300)
+                .call(d3.axisBottom(xScale)
+                    .ticks(10)
+                    .tickFormat(d3.format("d"))
+                    .tickSizeOuter(0)
+                );
+
+            xAxisGroup.select(".domain")
                 .attr("stroke", "#777")
                 .attr("stroke-width", 0.8);
 
+            xAxisGroup.selectAll(".tick line")
+                .attr("stroke", "#aaa");
 
-    xAxis.selectAll(".tick line")
-        .attr("stroke", "#aaa");
+            xAxisGroup.selectAll(".tick text")
+                .attr("font-size", "11px")
+                .attr("fill", "#444");
 
+            // Line Generator
+            const line = d3.line()
+                .defined(d => Number.isFinite(d.percentage))
+                .x(d => xScale(d.year))
+                .y(d => yScale(d.percentage));
 
-    xAxis.selectAll(".tick text")
-        .attr("font-size", "11px")
-        .attr("fill", "#444");
+            // Draw Country Lines
+            lineGroup.selectAll(".country-line")
+                .data(countries, d => d.country)
+                .join(
+                    enter => enter.append("path")
+                        .attr("class", "country-line")
+                        .attr("fill", "none")
+                        .attr("stroke", d => colour(d.country))
+                        .attr("stroke-width", 1.7)
+                        .attr("stroke-opacity", 0.9)
+                        .attr("stroke-linejoin", "round")
+                        .attr("stroke-linecap", "round")
+                        .attr("d", d => line(d.values)),
+                    update => update,
+                    exit => exit.remove()
+                )
+                .transition()
+                .duration(300)
+                .attr("d", d => line(d.values));
 
-    // Y-axis
-    const yAxis = svg.append("g")
-        .attr("transform", `translate(${margin.left}, 0)`)
-        .call(d3.axisLeft(yScale).ticks(8).tickFormat(d => d + "%").tickSize(0));
+            // Draw Country Labels
+            labelGroup.selectAll(".country-label")
+                .data(countries, d => d.country)
+                .join(
+                    enter => enter.append("text")
+                        .attr("class", "country-label")
+                        .attr("font-size", "11px")
+                        .attr("font-weight", "500")
+                        .attr("fill", d => colour(d.country))
+                        .text(d => d.country),
+                    update => update,
+                    exit => exit.remove()
+                )
+                .transition()
+                .duration(300)
+                .attr("x", d => {
+                    const lastPoint = d.values[d.values.length - 1];
+                    return xScale(lastPoint.year) + 7;
+                })
+                .attr("y", d => {
+                    const lastPoint = d.values[d.values.length - 1];
+                    return yScale(lastPoint.percentage);
+                })
+                .attr("dy", "0.35em");
+        }
 
-    // Remove vertical y-axis line
-    yAxis.select(".domain")
-        .remove();
+        // -----------------------------------------------------
+        // INITIAL GRAPH & SLIDER EVENT
+        // -----------------------------------------------------
+        updateChart(maxYear);
 
-
-    yAxis.selectAll(".tick text")
-        .attr("font-size", "11px")
-        .attr("fill", "#444");
-
-    //horizontal gridlines
-    svg.append("g")
-        .attr("transform", `translate(${margin.left}, 0)`)
-        .call(d3.axisLeft(yScale).ticks(8).tickSize(-(width - margin.left - margin.right)).tickFormat(""))
-        .call(g => g.select(".domain").remove())
-        .call(g => g.selectAll(".tick line")
-            .attr("stroke", "#d9d9d9")
-            .attr("stroke-width", 0.8)
-            .attr("stroke-opacity", 0.7)
-        );
-
-    //line generator
-    const line = d3.line()
-        .defined(d => Number.isFinite(d.percentage))
-        .x(d => xScale(d.Year))
-        .y(d => yScale(d.percentage));
-
-    //draw country lines
-    groupedData.forEach((values, country) => {
-
-        svg.append("path")
-            .datum(values)
-            .attr("fill", "none")
-            .attr("stroke", colour(country))
-            .attr("stroke-width", 1.5)
-            .attr("stroke-opacity", 0.9)
-            .attr("stroke-linejoin", "round")
-            .attr("stroke-linecap", "round")
-            .attr("d", line);
-
+        slider.on("input", (event) => {
+            const selectedYear = +event.target.value;
+            yearOutput.text(selectedYear);
+            updateChart(selectedYear);
         });
 
-    //y axis title
-    svg.append("text")
-        .attr("x", 5)
-        .attr("y", 15)
-        .attr("fill", "#333")
-        .attr("font-size", "11px")
-        .attr("font-weight", "500")
-        .text("↑ Health expenditure (% of GDP)");
-
-    //country labels at the end of lines
-    groupedData.forEach((values, country) => {
-
-        // only label selected important countries
-        if (!labelledCountries.includes(country)) return;
-        const lastPoint = values[values.length - 1];
-
-        svg.append("text")
-            .attr("x", xScale(lastPoint.year) + 7)
-            .attr("y", yScale(lastPoint.percentage))
-            .attr("dy", "0.35em")
-            .attr("font-size", "11px")
-            .attr("font-weight", "500")
-            .attr("fill", colour(country))
-            .text(country);
-        });
-
+    })
+    .catch(error => {
+        console.error("Error loading GDP line chart:", error);
     });
 
 })();

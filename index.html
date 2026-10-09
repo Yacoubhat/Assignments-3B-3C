@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Data Visualization Project: Health Expenditure vs Life Expectancy">
     <meta name="keywords" content="Data Visualization, Health Expenditure, Life Expectancy, D3.js, Interactive Charts">  
-    <meta name="author" content="Husseni Omar, Rohand Chandel, Yaeghoub Hatamy">
+    <meta name="author" content="Husseni Omar, Rohand Chandel, Yaeghoub Hatamy">  
     <title>Hataro</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
@@ -22,8 +24,8 @@
     </header>
    <main>
         <article>
-            <h2>Does higher healthcare expenditure guarantee longer life expectancy?</h2>
-            <h2>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h2>
+            <h1>Does higher healthcare expenditure guarantee longer life expectancy?</h1>
+            <h1>Which countries achieve optimal health returns relative to their total GDP expenditure on healthcare?</h1>
             <p>by Husseni Omar, Rohand Chandel, and Yaeghoub Hatamy</p>
             <p>published on 2026</p>
         </article>
@@ -42,11 +44,21 @@
         <div class="scatter-Plot"></div> <!-- use this div to render the scatter plot -->    
     </section>
 
-    <section id="connected-scatter-plot">
-        <h1>Connected Scatter Plot</h1>
-        <p>This connected scatter plot illustrates the changes in healthcare expenditure and life expectancy over time for selected countries.</p>
-        <div class="connected-scatterPlot"></div> <!-- use this div to render the connected scatter plot -->
-    </section>
+  <section id="connected-scatter-plot">
+
+    <h1>How has each country's health expenditure and life expectancy changed over time?</h1>
+    <p>Select countries below to compare how their health expenditure and life expectancy have changed over time.</p>
+
+    <div class="country-controls">
+        <h4>Select Countries</h4>
+        <div class="country-buttons">
+            <button id="select-all-countries" type="button">Select All</button>
+            <button id="clear-all-countries" type="button"> Clear All</button>
+        </div>
+        <div id="country-list"></div>
+    </div>
+    <div class="connected-scatterPlot"></div>
+  </section>
 
      <!-- Visual 4: Life expectancy gender gap -->
     <section id="gender-gap-visual" class="visual-section">
@@ -79,10 +91,15 @@
     </section>
 
     <section id="gdp-percentage">
-        <h1>Countries healthcare spending as a Percentage of GDP</h1>
-        <p>This analysis examines the percentage of GDP that countries allocate to healthcare spending.</p>
-        <div class="lineChart"></div>
-    </section>
+    <h1>Countries healthcare spending as a Percentage of GDP</h1>
+    <p>This analysis examines the percentage of GDP that countries allocate to healthcare spending.</p>
+    <div class="line-year-control">
+        <label for="lineYearSlider">Year: <span id="lineYearOutput"></span></label>
+        <input type="range" id="lineYearSlider" step="1" >
+    </div>
+
+    <div class="lineChart"></div>
+</section>
 
     <section id="gdp-spending-visual" class="visual-section">
       <div class="visual-heading">

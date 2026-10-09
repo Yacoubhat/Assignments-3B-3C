@@ -1,0 +1,128 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Targets the chart containers defined in your index.html and JS files */
+.scatter-Plot svg,
+.connected-scatterPlot svg,
+.gap-bar-chart svg,
+.lineChart svg,
+.gdp-bar-chart svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Wrapper for the bar charts to ensure they don't overflow */
+.chart-shell {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.scatter-controls,
+.country-controls,
+.visual-controls,
+.line-year-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.country-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.tooltip,
+.connected-scatter-tooltip,
+.chart-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    pointer-events: none; /* Prevents cursor interference */
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.story-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.summary-stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* connected scatter plot styles*/
+.country-controls {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 900px;
+}
+
+.country-buttons {
+    margin-bottom: 12px;
+}
+
+.country-buttons button {
+    padding: 6px 12px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#country-list {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(160px, 1fr));
+
+    gap: 8px 15px;
+
+    max-height: 220px;
+    overflow-y: auto;
+
+    padding: 10px;
+
+    border: 1px solid #eee;
+}
+
+.country-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.country-option input {
+    cursor: pointer;
+}
