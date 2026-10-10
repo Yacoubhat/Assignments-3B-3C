@@ -1,175 +1,279 @@
+<!DOCTYPE html>
+<!-- Tells the browser that this is an HTML5 document -->
 
-    
-    <!DOCTYPE html>
-<!--Tells the browser this is an HTML5 document-->
 <html lang="en">
-  <!-- Opens the HTML document and sets the language to English -->
-  <head>
-    <!--Contains metadata, scripts, links to CSS, and the page title -->
-    <meta charset="UTF-8" />
-    <!--Ensures the page supports all characters, including special symbols -->
-    <!--The following three metadata are used for search engines and page info-->
-    <meta name="description" content="Data Visualisation Assignment 3C" />
-    <!--short page description -->
-    <meta name="keywords" content="HTML, CSS, Javascript, D3, website" />
-    <!-- search keywords-->
-    <meta name="author" content="Rohan Chandel, Hussein Omar and Yacoub Hatamy" />
-    <!-- author of the document-->
-    <title>website and Visualization</title>
-    <!-- It is the title of the webpage which appears in the browser tab.
-It is used by search engines as the page title in search results.
-It is not displayed inside the page content.-->
+<head>
+    <!-- Contains page information, scripts, CSS links, and the title -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website display correctly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Data Visualisation Assignment 3C"
+    >
+
+    <meta
+        name="keywords"
+        content="HTML, CSS, JavaScript, D3, data visualisation, website"
+    >
+
+    <meta
+        name="author"
+        content="Rohan Chandel, Hussein Omar and Yacoub Hatamy"
+    >
+
+    <title>Website and Visualisation</title>
+
+    <!-- Loads the D3.js library -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- includes D3.js library in my webpage -->
-  </head>
-  <body>
-    <!--Contains everything that appears on the webpage including text, images, links, headings, lists, divs, sections, tables, etc.
-Everything inside <body> is visible in the browser.
- -->
-    
-    <div class="small-box">
-      <h1>
-        Assignment 3C:<br />
-        Website and Visualization
-      </h1>
-    </div>
 
-    <div class="health-spening-vs-life-expectancy">
+    <!-- Loads the external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Main website heading -->
+    <header>
+        <div class="small-box">
+            <h1>
+                Assignment 3C:<br>
+                Website and Visualisation
+            </h1>
+        </div>
+    </header>
+
+    <!-- Introductory healthcare section -->
+    <section class="health-spending-vs-life-expectancy">
         <h2>Healthcare Spending vs Life Expectancy</h2>
+
         <p class="chart1"></p>
-        <p>This chart shows the relationship between healthcare spending and life expectancy.</p>
 
-    <!-- first-level heading-->
-    <div class="small-box">
-      <h2>
-        By:<br />
-        <br />
-        Rohan Chandel, Yacoub Hatamy and Hussein Omar<br />
-      </h2>
+        <p>
+            This chart shows the relationship between healthcare spending
+            and life expectancy.
+        </p>
+    </section>
 
-    </div>
-    <!--second-level heading -->
+    <!-- Team members -->
+    <section class="small-box">
+        <h2>Created by</h2>
 
-    <div class="ellipse-box">
-      <!--div is an HTML element which creates a container for grouping the content.
-       There is a class defined here which applies the CSS associated with it -->
-      <h3>Assignment 3C: Website and Visualization</h3>
-      <!--third-level heading-->
-      <p>
-        <!--starts the paragraph -->
-        Word/time limit: N/A <br/> Weighting: 0%,(Please note that this assignment
-        will be assessed alongside Assignment 3B: Project process book).
-        <br>  Due date:  11.59pm AEST Monday 5 October 2026 (Exam Period)<br> 
-        <br>Individual/team task: Team<br>
-         After you have read this information, head over to the
-        Assignment 3 Q&A discussion board to ask any questions and see what your
-        peers are saying about this assignment.<br>  <h2>Assignment Details</h2> For the data
-        visualisation website, it is expected that you program your
-        visualisations in D3. However, if it becomes evident that you cannot
-        achieve your vision using D3 in the time required, then other tools are
-        acceptable. These need to be noted and fully justified in your
-        submission. This assignment supports unit learning outcomes 1, 2, 3 and
-        4.<br> Website requirements:<br> The data visualisation website is a major part
-        of this unit's assessment. It is expected that you program your
-        visualisations in D3. However, if it becomes evident that you cannot
-        achieve your vision using D3 in the time required, then other tools are
-        acceptable. These need to be noted and fully justified in the
-        submission. The assignment criteria provided for this assignment will
-        help guide how you and your team structure and develop your final
-        website. Most notably, you will be assessed on the complexity of your
-        website and your implementation (build and aesthetic). The following
-        table outlines the different levels of complexity and implementation you
-        will be assessed on.<br />
-      </p>
-      <br><br>
+        <p>
+            Rohan Chandel, Yacoub Hatamy and Hussein Omar
+        </p>
+    </section>
 
-      <table border="1">
-  <tr>
-    <th>Website criteria</th>
-    <th>Needs improvement</th>
-    <th>Good</th>
-    <th>Very good</th>
-  </tr>
-  <tr>
-    <td>Complexity of project</td>
-    <td>Very simple data set used and/or limited number of variables.</td>
-    <td>Rich dataset used. The user is able to interact with one or more variables to explore the dataset.</td>
-     <td>Multiple datasets used, datasets from different sources combined in new ways.
+    <!-- Main assignment information -->
+    <main class="ellipse-box">
+        <section>
+            <h2>Assignment Information</h2>
 
-Some variables be derived or specially calculated for use in the visualisation.</td>
-  </tr>
-  <tr>
-    <td>Implementation - Part 1</td>
-    <td>One or more of the following:
+            <p>
+                Word/time limit: N/A<br>
+                Weighting: 0% (Please note that this assignment will be assessed
+                alongside Assignment 3B: Project Process Book.)<br>
+                Due date: 11:59 pm AEST Monday 5 October 2026 (Exam Period)<br>
+                Individual/team task: Team
+            </p>
 
-no website built
-no data visualisation evident
-no interactivity website barely functional (i.e. data not displaying properly or interactivity not working as expected)
-interactivity managed by changing webpages rather than in programming of visualisation.</td>
-    <td>Website built and accessible on Mercury server.
+            <p>
+                After you have read this information, head over to the
+                Assignment 3 Q&amp;A discussion board to ask questions and see
+                what your peers are saying about this assignment.
+            </p>
+        </section>
 
-Demonstrates some of the following as appropriate for context:
+        <section>
+            <h2>Assignment Details</h2>
 
-scalable labeled axis
-data import
-transitions
-May have minor issues in functionality.
+            <p>
+                For the data visualisation website, it is expected that you
+                program your visualisations in D3. However, if it becomes
+                evident that you cannot achieve your vision using D3 in the
+                required time, other tools are acceptable. These tools need to
+                be noted and fully justified in your submission. This
+                assignment supports unit learning outcomes 1, 2, 3 and 4.
+            </p>
+        </section>
 
-Demonstrates one or more of the following interactive features:
+        <section>
+            <h2>Website Requirements</h2>
 
-zoom
-filter
-brushing
-details on demand
-Code is well formed and commented.
+            <p>
+                The data visualisation website is a major part of this unit's
+                assessment. It is expected that you program your visualisations
+                in D3. However, if it becomes evident that you cannot achieve
+                your vision using D3 in the required time, other tools are
+                acceptable. These tools need to be noted and fully justified
+                in your submission.
+            </p>
 
-Code from external sources is acknowledged and referenced.
+            <p>
+                The assignment criteria will help guide how you and your team
+                structure and develop your final website. Most notably, you
+                will be assessed on the complexity of your website and its
+                implementation, including its build and appearance. The
+                following table outlines the different assessment levels.
+            </p>
 
-Visualisation is presented with supporting context (i.e. page heading, explanatory text etc).</td>
-     <td>As per good, plus:
+            <!-- Assessment criteria table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Website criteria</th>
+                        <th>Needs improvement</th>
+                        <th>Good</th>
+                        <th>Very good</th>
+                    </tr>
+                </thead>
 
-Interactivity works as expected.
+                <tbody>
+                    <tr>
+                        <td>Complexity of project</td>
 
-User is able to interact with one or more variables to explore dataset.
+                        <td>
+                            A very simple dataset is used or there is a limited
+                            number of variables.
+                        </td>
 
-Shows a good response to original data visualisation questions.
+                        <td>
+                            A rich dataset is used. The user can interact with
+                            one or more variables to explore the dataset.
+                        </td>
 
-Very good supporting context.
+                        <td>
+                            Multiple datasets are used or datasets from
+                            different sources are combined in new ways. Some
+                            variables may be derived or specially calculated
+                            for use in the visualisation.
+                        </td>
+                    </tr>
 
-Largely programmed using D3.</td>
-  </tr>
-</table>
+                    <tr>
+                        <td>Implementation – Part 1</td>
 
-     <br><br>
-     
-<!-- Healthcare chart -->
-        <h1> Visuals</h1>
-<h2>Healthcare Expenditure & Life Expectancy</h2>
+                        <td>
+                            <ul>
+                                <li>No website built</li>
+                                <li>No data visualisation evident</li>
+                                <li>No interactivity</li>
+                                <li>
+                                    The website is barely functional, such as
+                                    data not displaying correctly
+                                </li>
+                                <li>
+                                    Interactivity is managed by changing
+                                    webpages instead of programming the
+                                    visualisation
+                                </li>
+                            </ul>
+                        </td>
 
-<div class="chartContainer"></div>
+                        <td>
+                            <p>
+                                The website is built and accessible on the
+                                Mercury server.
+                            </p>
 
-<p class="chart1-caption">
-  Graph 1: Healthcare expenditure per capita compared with life expectancy.
-  </p>
-  <!-- Rohan's Scatter Plot Visualisation -->
-    <h2>Healthcare Spending vs. Life Expectancy (OECD Countries)</h2>
-    <div id="visualisation-container"></div>
-    <p class="chart-caption">
-      Interactive scatter plot examining the relationship between health expenditure per capita and total life expectancy.
-    </p>
+                            <p>
+                                It demonstrates some of the following, where
+                                appropriate:
+                            </p>
 
-    <div class="small-box"><br>
-      <footer>Cos30045 Data Visualisation<br />TP3 - 2025</footer>
-    </div>
-    <!--Usually appears at the bottom of a page or section containing information like:
+                            <ul>
+                                <li>Scalable labelled axes</li>
+                                <li>Data import</li>
+                                <li>Transitions</li>
+                            </ul>
 
-Copyright notice, contact info, links to privacy policy or terms, author info or related resources -->
-        <script type="module" src="javaScripts/d3.js"></script>
-        <script type="module" src="javaScripts/scatterPlot.js"></script>
+                            <p>
+                                It may have minor functionality issues and
+                                demonstrates one or more interactive features:
+                            </p>
+
+                            <ul>
+                                <li>Zoom</li>
+                                <li>Filter</li>
+                                <li>Brushing</li>
+                                <li>Details on demand</li>
+                            </ul>
+
+                            <p>
+                                The code is well formed and commented. Code
+                                from external sources is acknowledged and
+                                referenced. The visualisation is presented
+                                with supporting context.
+                            </p>
+                        </td>
+
+                        <td>
+                            <p>As per the “Good” criteria, plus:</p>
+
+                            <ul>
+                                <li>Interactivity works as expected</li>
+                                <li>
+                                    Users can interact with one or more
+                                    variables to explore the dataset
+                                </li>
+                                <li>
+                                    The website responds well to the original
+                                    data visualisation questions
+                                </li>
+                                <li>Very good supporting context</li>
+                                <li>Largely programmed using D3</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Visualisations section -->
+        <section>
+            <h2>Visuals</h2>
+
+            <!-- Graph 1 -->
+            <article>
+                <h3>Healthcare Expenditure and Life Expectancy</h3>
+
+                <div class="chartContainer"></div>
+
+                <p class="chart1-caption">
+                    Graph 1: Healthcare expenditure per capita compared with
+                    life expectancy.
+                </p>
+            </article>
+
+            <!-- Scatter plot -->
+            <article>
+                <h3>
+                    Healthcare Spending vs. Life Expectancy
+                    (OECD Countries)
+                </h3>
+
+                <div id="visualisation-container"></div>
+
+                <p class="chart-caption">
+                    Interactive scatter plot examining the relationship
+                    between health expenditure per capita and total life
+                    expectancy.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Website footer -->
+    <footer class="small-box">
+        COS30045 Data Visualisation<br>
+        TP3 – 2025
+    </footer>
+
+    <!-- JavaScript visualisation files -->
+    <script type="module" src="javaScripts/d3.js"></script>
+    <script type="module" src="javaScripts/scatterPlot.js"></script>
 </body>
 </html>
-  </body>
-    
-</html>
+
 
