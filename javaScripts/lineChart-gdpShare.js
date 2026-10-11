@@ -9,9 +9,7 @@
         left: 55
     };
 
-    // -----------------------------------------------------
-    // SVG SETUP
-    // -----------------------------------------------------
+   
     const svg = d3.select(".lineChart")
         .append("svg")
         .attr("width", width)
@@ -29,9 +27,7 @@
     const labelGroup = svg.append("g")
         .attr("class", "country-labels");
 
-    // -----------------------------------------------------
-    // LOAD & CLEAN DATA
-    // -----------------------------------------------------
+    //load merged health data
     d3.csv("data/cleaned-health-expenditure-share-gdp.csv").then(data => {
         
         data.forEach(d => {
@@ -57,9 +53,6 @@
         const minYear = d3.min(countryData, d => d.year);
         const maxYear = d3.max(countryData, d => d.year);
 
-        // -----------------------------------------------------
-        // SLIDER SETUP
-        // -----------------------------------------------------
         const slider = d3.select("#lineYearSlider");
         const yearOutput = d3.select("#lineYearOutput");
 
@@ -70,9 +63,6 @@
 
         yearOutput.text(maxYear);
 
-        // -----------------------------------------------------
-        // SCALES & AXES
-        // -----------------------------------------------------
         const colour = d3.scaleOrdinal()
             .domain(selectedCountries)
             .range(d3.schemeTableau10);
@@ -111,10 +101,17 @@
             .attr("font-size", "11px")
             .attr("font-weight", "500")
             .text("↑ Health expenditure (% of GDP)");
+        
+        svg.append("text")
+            .attr("x", margin.left + (width - margin.left - margin.right) / 2)
+            .attr("y", height - 5)
+            .attr("text-anchor", "middle")
+            .attr("fill", "#333")
+            .attr("font-size", "14px")
+            .attr("font-weight", "800")
+            .text("(Years)");
+            
 
-        // -----------------------------------------------------
-        // UPDATE CHART FUNCTION
-        // -----------------------------------------------------
         function updateChart(selectedYear) {
             const filteredData = countryData.filter(d => d.year <= selectedYear);
 
@@ -209,9 +206,6 @@
                 .attr("dy", "0.35em");
         }
 
-        // -----------------------------------------------------
-        // INITIAL GRAPH & SLIDER EVENT
-        // -----------------------------------------------------
         updateChart(maxYear);
 
         slider.on("input", (event) => {

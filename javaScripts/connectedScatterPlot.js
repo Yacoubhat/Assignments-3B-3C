@@ -20,9 +20,7 @@
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    // ------------------------------------------
-    // TOOLTIP INITIALIZATION
-    // ------------------------------------------
+    
     d3.selectAll(".connected-scatter-tooltip").remove();
 
     const tooltip = d3.select("body")
@@ -37,9 +35,7 @@
         .style("border-radius", "4px")
         .style("font-size", "13px");
 
-    // ------------------------------------------
-    // LOAD DATA
-    // ------------------------------------------
+
     d3.csv("data/health_data_merged.csv").then(data => {
 
         data.forEach(d => {
@@ -70,9 +66,7 @@
             .domain(countries)
             .range(d3.quantize(d3.interpolateRainbow, countries.length));
 
-        // ------------------------------------------
-        // FIXED X AND Y SCALES
-        // ------------------------------------------
+       
         const x = d3.scaleLinear()
             .domain([0, d3.max(validData, d => d.expenditure) * 1.05])
             .nice()
@@ -86,9 +80,7 @@
             .nice()
             .range([height, 0]);
 
-        // ------------------------------------------
-        // GRIDLINES & AXES
-        // ------------------------------------------
+      
         chart.append("g")
             .attr("class", "grid x-grid")
             .attr("transform", `translate(0,${height})`)
@@ -134,9 +126,7 @@
             .x(d => x(d.expenditure))
             .y(d => y(d.lifeExpectancy));
 
-        // ------------------------------------------
-        // COUNTRY CHECKBOX LIST
-        // ------------------------------------------
+    
         const countryList = d3.select("#country-list");
         countryList.selectAll("*").remove();
 
@@ -170,9 +160,7 @@
             return selected;
         }
 
-        // ------------------------------------------
-        // UPDATE CHART FUNCTION
-        // ------------------------------------------
+      
         function updateChart() {
             const selectedCountries = getSelectedCountries();
 
@@ -251,9 +239,7 @@
             });
         }
 
-        // ------------------------------------------
-        // EVENT LISTENERS
-        // ------------------------------------------
+      -
         d3.selectAll(".country-checkbox").on("change", updateChart);
 
         d3.select("#select-all-countries").on("click", function() {
