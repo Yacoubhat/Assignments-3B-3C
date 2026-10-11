@@ -377,3 +377,99 @@ footer > p:last-child {
         width: 100%;
     }
 }
+
+
+/* Project title and research questions */
+
+.project-heading {
+    width: 90%;
+    max-width: 1250px;
+    margin: 60px auto 40px;
+    text-align: center;
+}
+
+.project-heading h1 {
+    width: fit-content;
+    max-width: 95%;
+    margin: 0 auto 35px;
+    padding: 20px 50px;
+    background-color: #8067ff;
+    color: #ffffff;
+    border: 3px solid #8067ff;
+    border-radius: 999px;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(128, 103, 255, 0.25);
+}
+
+.research-question {
+    width: 100%;
+    max-width: 1050px;
+    margin: 25px auto;
+    padding: 25px 50px;
+    background-color: #ffffff;
+    border: 3px solid #8067ff;
+    border-radius: 999px;
+    box-shadow: 0 5px 15px rgba(128, 103, 255, 0.12);
+}
+
+.research-question h3 {
+    margin: 0;
+    color: #26222d;
+    font-size: 25px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.project-authors {
+    width: fit-content;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 14px 40px;
+    background-color: #ffffff;
+    border: 2px solid #8067ff;
+    border-radius: 999px;
+    box-shadow: 0 5px 15px rgba(128, 103, 255, 0.12);
+}
+
+.project-authors p {
+    margin: 0;
+    color: #55505e;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .project-heading {
+        width: 94%;
+        margin-top: 35px;
+    }
+
+    .project-heading h1 {
+        max-width: 100%;
+        padding: 18px 25px;
+        border-radius: 45px;
+        font-size: 30px;
+    }
+
+    .research-question {
+        padding: 20px 25px;
+        border-radius: 45px;
+    }
+
+    .research-question h3 {
+        font-size: 20px;
+    }
+
+    .project-authors {
+        padding: 13px 25px;
+        border-radius: 40px;
+    }
+
+    .project-authors p {
+        font-size: 16px;
+    }
+}
